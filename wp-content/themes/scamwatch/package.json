@@ -1,0 +1,19 @@
+{
+  "name": "scamwatch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./src/styles.css -o ./assets/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "Ishtiak Sami",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14"
+  }
+}
+
+
