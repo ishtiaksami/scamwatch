@@ -23,7 +23,7 @@
 //     wp_enqueue_style('skylarks-editor-style', get_template_directory_uri() . '/_/css/screen.min.css', array(), substr(md5(rand()), 0, 5));
 // }
 
-//add_action('enqueue_block_editor_assets', 'skylarks_editor_styles');
+//add_action('enqueue_block_editor__', 'skylarks_editor_styles');
 
 // ----------------
 // Colour palette - add basic darks and white and leave rest to colour picker

@@ -4,15 +4,16 @@
 
 // Gutenberg ACF custom blocks
 // Main thing to note is custom blocks will not show unless added to underpants_allowed_block_types
-require(get_template_directory() . '/assets/inc/_gutenberg.php');
+
+require(get_template_directory() . '/_/inc/_gutenberg.php');
 
 // rest api call
 // require(get_template_directory() . '/_/inc/_rest_api_call.php');
 
 // Register navs
-require(get_template_directory() . '/assets/inc/_register-navs.php');
+require(get_template_directory() . '/_/inc/_register-navs.php');
 
-require(get_template_directory() . '/assets/inc/_custom-wpadmin.php');
+require(get_template_directory() . '/_/inc/_custom-wpadmin.php');
 
 // style and js include
 
@@ -25,14 +26,14 @@ function site_styles_scripts()
 
     //wp_enqueue_style('magnific-popup', $theme_url . '/_/css/magnific-popup.css', array(), filemtime(get_template_directory() . '/_/css/swiper-bundle.min.css'));
     // wp_enqueue_style('select2-min', $theme_url . '/_/css/select2.min.css', array(), filemtime(get_template_directory() . '/_/css/swiper-bundle.min.css'));
-    wp_enqueue_style('swiper-bundle-style', $theme_url . '/assets/css/swiper.min.css', array(), '');
+    wp_enqueue_style('swiper-bundle-style', $theme_url . '/_/css/swiper.min.css', array(), '');
     // wp_enqueue_style('select2-min', $theme_url . '/_/css/select2.min.css', array(), '');
     // wp_enqueue_style('theme-style', $theme_url . '/_/css/skylark.min.css', array(), filemtime(get_template_directory() . '/_/css/skylark.min.css'));
 
     // script
-    wp_enqueue_script('swiper-bundle-script', $theme_url . '/assets/js/swiper.min.js', array('jquery'), null, false);
+    wp_enqueue_script('swiper-bundle-script', $theme_url . '/_/js/swiper.min.js', array('jquery'), null, false);
     // wp_enqueue_script('select-2-script', $theme_url . '/_/js/select2.min.js', array(), null, true);
-    wp_enqueue_script('custom-script', $theme_url . '/assets/js/script.js', array(), filemtime(get_template_directory() . '/_/js/functions.js'), true);
+    wp_enqueue_script('custom-script', $theme_url . '/_/js/script.js', array(), filemtime(get_template_directory() . '/_/js/functions.js'), true);
 }
 add_action('wp_enqueue_scripts', 'site_styles_scripts');
 
