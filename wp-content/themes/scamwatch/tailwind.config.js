@@ -19,6 +19,10 @@ module.exports = {
       fontFamily: {
         Bebas: ["Bebas Neue", "sans-serif"],
       },
+      colors: {
+        'blue1': '#1361f0',
+        'blue-light': '#568df4',
+      },
     },
   },
   plugins: [],
