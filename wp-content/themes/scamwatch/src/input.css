@@ -11,3 +11,26 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.btn {
+  @apply px-4 py-4 inline-flex text-white bg-blue-600 border border-blue-600 font-bold text-center text-2xl leading-normal transition-all duration-300;
+}
+.btn:hover {
+  @apply bg-transparent;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+  bottom: 70px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  bottom: 42px;
+  width: 38px;
+}
+.swiper-button-prev {
+  right: auto;
+  left: 4rem;
+}
