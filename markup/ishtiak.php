@@ -25,11 +25,11 @@
         </div>
 
         <div class="holder flex flex-col md:flex-row justify-between items-center py-6 space-y-6 md:space-y-0">
-            <div>
-                <a href="">
-                    <h1 class="text-3xl uppercase font-bold">Scamwatch</h1>
-                </a>
-            </div>
+
+            <a href="">
+                <h1 class="text-3xl uppercase font-bold">Scamwatch</h1>
+            </a>
+
             <div class="flex items-center">
                 <input
                     type="text"
@@ -51,12 +51,12 @@
             <li class="[&>a]:hover:text-green-500 [&>a]:duration-500"><a href="">Home</a></li>
 
             <!-- Mega Menu Parent -->
-            <li class=" [&>a]:hover:text-green-500 [&>a]:duration-500 group">
-                <a href="#">Type of Scam</a>
+            <li class=" [&>a]:hover:text-green-500 [&>a]:duration-500  group">
+                <a href="#" class="after-effect relative">Type of Scam</a>
 
                 <!-- Mega Menu Dropdown -->
                 <div
-                    class="bg-gray-100 absolute left-0 top-10 w-screen shadow-md py-8 opacity-0 group-hover:opacity-100 ease-in-out flex justify-center transition-all duration-500">
+                    class="bg-gray-100 absolute -left-4 top-10 w-screen shadow-md py-8 opacity-0 group-hover:opacity-100 ease-in-out flex justify-center transition-all duration-500">
                     <div class="max-w-4xl w-full px-4">
                         <div class="grid grid-cols-3 gap-8">
                             <!-- Column 1 -->
@@ -93,13 +93,11 @@
 
             <li class="[&>a]:hover:text-green-500 [&>a]:duration-500 group"><a href="">I have been scam</a></li>
             <li class="[&>a]:hover:text-green-500 [&>a]:duration-500"><a href="">Protection against Scam</a></li>
-            <li class="[&>a]:hover:text-green-500 [&>a]:duration-500"><a href="">About Us</a></li>
+            <li class="[&>a]:hover:text-green-500 [&>a]:duration-500"><a href="">About</a></li>
             <li class="[&>a]:hover:text-green-500 [&>a]:duration-500"><a href="">More</a></li>
         </ul>
 
     </nav>
-
-
 
     <section class="bg-black py-8 md:py-50">
         <div class="holder">
@@ -126,7 +124,70 @@
         </div>
     </section>
 
+    <footer class="bg-black py-8 md:py-50">
+        <div class="holder">
+            <div class="grid md:grid-cols-4 gap-5 border-b-2 border-white text-white pb-10">
+                <div class="space-y-3">
+                    <h4 class="font-bold text-lg">Title Area</h4>
+                    <ul class="space-y-2">
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
 
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-lg">Title Area</h4>
+                    <ul class="space-y-2">
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-lg">Title Area</h4>
+                    <ul class="space-y-2">
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-lg">Title Area</h4>
+                    <ul class="space-y-2">
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+                        <li><a href="" class="text-sm font-normal">Demo</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-white flex md:flex-row flex-col justify-between j items-center pt-6 space-y-5 md:space-y-0">
+
+                <a href="">
+                    <h1 class="text-3xl uppercase font-bold">Scamwatch</h1>
+                </a>
+
+                <div class="space-x-4">
+                    <span>Site designed by <a href=""> Who</a></span>
+                    <a href="">Legal</a>
+                    <a href="">Cookie Policy</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
