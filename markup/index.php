@@ -9,8 +9,7 @@
 </head>
 
 <body>
-    <h1 class="bg-red-500">hello</h1>
-    <h1 class="bg-red-500 font-bold text-center">hello</h1>
+
 </body>
 
 </html>
