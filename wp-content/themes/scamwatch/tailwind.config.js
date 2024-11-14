@@ -13,6 +13,7 @@ module.exports = {
 
       padding: {
         30: "30px",
+        50: "50px",
       },
 
       fontFamily: {

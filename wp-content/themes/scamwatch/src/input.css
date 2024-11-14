@@ -34,3 +34,10 @@ body {
   right: auto;
   left: 4rem;
 }
+.after-effect::after {
+  @apply bg-black bottom-[-2px] content-[""] h-[1px] right-0 absolute w-0 transition-all duration-300;
+}
+
+.after-effect:hover::after {
+  @apply left-0 w-full;
+}
