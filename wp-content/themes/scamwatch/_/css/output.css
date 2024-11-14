@@ -951,6 +951,10 @@ video {
   font-weight: 300;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .font-normal{
   font-weight: 400;
 }
@@ -1041,14 +1045,14 @@ video {
   margin-left: auto;
   margin-right: auto;
   max-width: 1512px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 @media (min-width: 768px){
   .holder{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -1311,6 +1315,18 @@ body {
 
   .lg\:items-center{
     align-items: center;
+  }
+}
+
+.\[\&\>\*\]\:text-xs>*{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 768px){
+  .md\:\[\&\>\*\]\:text-base>*{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

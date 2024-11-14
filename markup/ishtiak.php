@@ -221,8 +221,8 @@
                     <h1 class="text-3xl uppercase font-bold">Scamwatch</h1>
                 </a>
 
-                <div class="space-x-4">
-                    <span>Site designed by <a href="" class="after-effect relative after:bg-white"> Who</a></span>
+                <div class="space-x-4 md:[&>*]:text-base [&>*]:text-xs font-medium">
+                    <span>Site designed by <a href="" class="after-effect relative after:bg-white"> Skylark</a></span>
                     <a href="" class="after-effect relative after:bg-white">Legal</a>
                     <a href="" class="after-effect relative after:bg-white">Cookie Policy</a>
                     <a href="" class="after-effect relative after:bg-white">Privacy Policy</a>
