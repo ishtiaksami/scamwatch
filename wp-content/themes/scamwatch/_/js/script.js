@@ -1,20 +1,7 @@
-new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true, 
-  },
-  autoplay: {
-    delay: 4000, // Delay in milliseconds between slides
-    disableOnInteraction: false, // Autoplay will be disabled after user interactions
-  },
-  speed: 1000, // Transition speed in milliseconds
-  loop: true, // Enable continuous loop mode
-});
+// conflict bugg solution
+var $ = jQuery.noConflict();
 
+// mega menu
 const scamLink = document.getElementById("scam-link");
 const megaMenu = document.getElementById("mega-menu");
 
@@ -59,4 +46,40 @@ scamLink.parentElement.addEventListener("mouseleave", () => {
     "pointer-events-auto",
     "translate-y-2"
   );
+});
+
+
+
+
+$(function () {
+  // video banner slider
+  new Swiper(".bannerSlider", {
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+      renderFraction: function (currentClass, totalClass) {
+        return (
+          '<span class="' +
+          currentClass +
+          '"></span>' +
+          "<span>/</span>" +
+          '<span class="' +
+          totalClass +
+          '"></span>'
+        );
+      },
+    },
+  });
 });
