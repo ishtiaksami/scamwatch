@@ -13,26 +13,10 @@ body {
 }
 
 .btn {
-  @apply px-4 py-4 inline-flex text-black bg-white border border-white font-bold text-center text-2xl leading-normal transition-all duration-300;
+  @apply px-3 py-3 md:px-4 md:py-4 inline-flex text-black bg-white border border-white font-bold text-center text-base md:text-2xl leading-normal transition-all duration-300;
 }
 .btn:hover {
   @apply bg-transparent text-white;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: "";
-  bottom: 70px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  bottom: 42px;
-  width: 38px;
-}
-.swiper-button-prev {
-  right: auto;
-  left: 4rem;
 }
 .after-effect::after {
   @apply bg-black bottom-[-2px] content-[""] h-[1px] right-0 absolute w-0 transition-all duration-300;
