@@ -26,6 +26,17 @@ body {
   @apply left-0 w-full;
 }
 
+.clip-path-polygon {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0 100%, 0 51%, 0 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  background: green;
+}
+
+.clip-path-polygon-2 {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  background: green;
+}
 @layer base {
   h1 {
     @apply text-64 font-normal leading-none;
