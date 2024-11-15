@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/wp-content/themes/scamwatch/_/css/swiper.min.css">
     <title>scamwatch</title>
     <link rel="stylesheet" href="/wp-content/themes/scamwatch/_/css/output.css">
@@ -31,8 +35,8 @@
                                     Help to spot and avoid scams
                                 </h1>
                             </div>
-                            <div class="btn mt-8">
-                                <a href="#">Check for scam warning signs</a>
+                            <div class="mt-8">
+                                <a class="btn" href="#">Check for scam warning signs</a>
                             </div>
                         </div>
                     </div>
@@ -51,8 +55,8 @@
                                     Know when to stop and check – stay scam safe.
                                 </h1>
                             </div>
-                            <div class="btn mt-8">
-                                <a href="#">Check for scam warning signs</a>
+                            <div class="mt-8">
+                                <a class="btn" href="#">Check for scam warning signs</a>
                             </div>
                         </div>
                     </div>
@@ -101,8 +105,8 @@
                 </h1>
 
             </div>
-            <div class="btn md:mt-16 mt-8">
-                <a href="#">Check for scam warning signs</a>
+            <div class="md:mt-16 mt-8">
+                <a href="#" class="btn">Check for scam warning signs</a>
             </div>
         </div>
         <img class=" hidden md:block absolute right-32 bottom-0 w-full max-w-[500px] h-[400px] object-cover"
@@ -154,6 +158,62 @@
         </div>
     </section>
     <!-- ============================ End OF  Banner Section ============================ -->
+
+    <section class=" bg-soft-vanilla block-pad">
+        <div class="holder">
+            <div class=" flex items-center justify-between">
+                <h1 class="text-3xl font-bold ">News and alerts</h1>
+
+                <div class=" hidden md:flex justify-center">
+                    <a href="#" class="btn">
+                        View all news and alerts <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
+
+                <a href="#"
+                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 before:absolute before:right-0 before:bottom-0 before:bg-blue1 before:w-10 before:h-10 after:absolute after:right-3 after:bottom-2 after:w-5 after:h-5 after:bg-[url('/wp-content/themes/scamwatch/_/assets/svg/arrow-right.svg')] after:bg-center after:bg-no-repeat bg-auto">
+
+                    <h2 class="text-xl font-bold mb-4">Scam alert: Bulk email extortion scam</h2>
+                    <div class=" space-y-4">
+                        <p>Criminals are emailing people and falsely claiming they have hacked into their
+                            computers or webcams and have access to compromising images and videos of them.</p>
+                        <p>They include personal details such as birth dates and addresses in the emails to
+                            intimidate people into sending them money.</p>
+                    </div>
+                </a>
+
+                <a href="#"
+                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 before:absolute before:right-0 before:bottom-0 before:bg-blue1 before:w-10 before:h-10 after:absolute after:right-3 after:bottom-2 after:w-5 after:h-5 after:bg-[url('/wp-content/themes/scamwatch/_/assets/svg/arrow-right.svg')] after:bg-center after:bg-no-repeat bg-auto">
+
+                    <h2 class="text-xl font-bold mb-4">Scam alert: Bulk email extortion scam</h2>
+                    <div class=" space-y-4">
+                        <p>Criminals are emailing people and falsely claiming they have hacked into their
+                            computers or webcams and have access to compromising images and videos of them.</p>
+                        <p>They include personal details such as birth dates and addresses in the emails to
+                            intimidate people into sending them money.</p>
+                    </div>
+                </a>
+
+                <a href="#"
+                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 before:absolute before:right-0 before:bottom-0 before:bg-blue1 before:w-10 before:h-10 after:absolute after:right-3 after:bottom-2 after:w-5 after:h-5 after:bg-[url('/wp-content/themes/scamwatch/_/assets/svg/arrow-right.svg')] after:bg-center after:bg-no-repeat bg-auto">
+
+                    <h2 class="text-xl font-bold mb-4">Scam alert: Bulk email extortion scam</h2>
+                    <div class=" space-y-4">
+                        <p>Criminals are emailing people and falsely claiming they have hacked into their
+                            computers or webcams and have access to compromising images and videos of them.</p>
+                        <p>They include personal details such as birth dates and addresses in the emails to
+                            intimidate people into sending them money.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
     <p class="text-center">
         <============================ Footer here=============================>
     </p>

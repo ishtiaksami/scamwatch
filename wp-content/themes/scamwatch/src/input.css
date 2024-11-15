@@ -13,7 +13,7 @@ body {
 }
 
 .btn {
-  @apply inline-flex border border-blue1 px-6 py-3 bg-blue1 text-white text-lg font-semibold rounded transition-all duration-300;
+  @apply border border-blue1 px-6 py-3 bg-blue1 text-white text-lg font-semibold rounded transition-all duration-300;
 }
 .btn:hover {
   @apply bg-transparent text-blue1 border border-blue1;
