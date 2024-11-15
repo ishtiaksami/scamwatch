@@ -13,10 +13,10 @@ body {
 }
 
 .btn {
-  @apply px-3 py-3 md:px-4 md:py-4 inline-flex text-black bg-white border border-white font-bold text-center text-base md:text-2xl leading-normal transition-all duration-300;
+  @apply inline-flex border border-blue1 px-6 py-3 bg-blue1 text-white text-lg font-semibold rounded transition-all duration-300 ;
 }
 .btn:hover {
-  @apply bg-transparent text-white;
+  @apply bg-transparent text-blue1 border border-blue1;
 }
 .after-effect::after {
   @apply bg-black bottom-[-2px] content-[""] h-[1px] right-0 absolute w-0 transition-all duration-300;
