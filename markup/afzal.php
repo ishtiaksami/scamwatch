@@ -91,7 +91,7 @@
         </div>
 
     </section>
-    <!-- ============================ End OF Banner Section ============================ -->
+    <!-- ============================ End OF Banner Slider Section ============================ -->
     <section class=" bg-bright-Orange relative md:py-20 py-10">
         <div class="holder">
             <div class="max-w-[550px]">
@@ -108,24 +108,24 @@
         <img class=" hidden md:block absolute right-32 bottom-0 w-full max-w-[500px] h-[400px] object-cover"
             src="/wp-content/themes/scamwatch/_/assets/image/image.png" alt="">
     </section>
-    <!-- ============================ End OF Banner Section ============================ -->
+    <!-- ============================ End OF Image Banner Section ============================ -->
 
     <section class=" bg-blue-light">
         <div class=" lg:max-w-siteWidth mx-auto ">
             <div class=" grid lg:grid-cols-4">
                 <div
-                    class=" py-8 px-5  lg:px-4 cursor-pointer text-center w-full border-b md:border-r border-blue1 transition-all duration-300 ease-in-out hover:bg-blue1">
+                    class=" py-8 px-5  lg:px-4 cursor-pointer text-center w-full border-b md:border-b-0 md:border-r border-blue1 transition-all duration-300 ease-in-out hover:bg-blue1">
                     <a class=" font-semibold text-2xl leading-5 text-white " href="#">Get help if you have been
                         scammed</a>
                 </div>
                 <div
-                    class=" py-8 px-5  lg:px-4 cursor-pointer text-center w-full border-b md:border-r border-blue1 transition-all duration-300 ease-in-out hover:bg-blue1">
+                    class=" py-8 px-5  lg:px-4 cursor-pointer text-center w-full border-b md:border-b-0  md:border-r border-blue1 transition-all duration-300 ease-in-out hover:bg-blue1">
                     <a class=" font-semibold text-2xl leading-5 text-white " href="#">check if something suspicious
                         is a
                         scam</a>
                 </div>
                 <div
-                    class=" py-8 px-5  lg:px-4 cursor-pointer text-center w-full border-b md:border-r border-blue1 transition-all duration-300 ease-in-out hover:bg-blue1">
+                    class=" py-8 px-5  lg:px-4 cursor-pointer text-center w-full border-b md:border-b-0 md:border-r border-blue1 transition-all duration-300 ease-in-out hover:bg-blue1">
                     <a class=" font-semibold text-2xl leading-5 text-white " href="#">Report a scam you have
                         encountered</a>
                 </div>
@@ -139,6 +139,21 @@
     </section>
     <!-- ============================ End OF Tab Link Section ============================ -->
 
+    <section class="bg-bright-Orange md:py-20 py-10">
+        <div class="holder">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="#" class="text-blue1 underline">Home</a>
+                    <span class="text-blue1"> / </span>
+                    <a href="#" class="text-blue1 underline">About us</a>
+                </div>
+            </div>
+            <div class=" mt-5 md:mt-10">
+                <h1 class=" text-3xl md:text-5xl font-bold text-blue1">News and alerts</h1>
+            </div>
+        </div>
+    </section>
+    <!-- ============================ End OF  Banner Section ============================ -->
     <p class="text-center">
         <============================ Footer here=============================>
     </p>
