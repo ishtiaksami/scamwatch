@@ -3,6 +3,11 @@ module.exports = {
 
   theme: {
     extend: {
+      clipPath: {
+        "custom-polygon":
+          "polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%)",
+      },
+
       maxWidth: {
         siteWidth: "1512px",
       },
@@ -20,8 +25,8 @@ module.exports = {
         Bebas: ["Bebas Neue", "sans-serif"],
       },
       colors: {
-        'blue1': '#1361f0',
-        'blue-light': '#568df4',
+        blue1: "#1361f0",
+        "blue-light": "#568df4",
       },
     },
   },

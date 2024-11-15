@@ -19,25 +19,22 @@ body {
   @apply bg-transparent text-white;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: "";
-  bottom: 70px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  bottom: 42px;
-  width: 38px;
-}
-.swiper-button-prev {
-  right: auto;
-  left: 4rem;
-}
 .after-effect::after {
   @apply bg-black bottom-[-2px] content-[""] h-[1px] right-0 absolute w-0 transition-all duration-300;
 }
 
 .after-effect:hover::after {
   @apply left-0 w-full;
+}
+
+.clip-path-polygon {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0 100%, 0 51%, 0 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  background: green;
+}
+
+.clip-path-polygon-2 {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  background: green;
 }

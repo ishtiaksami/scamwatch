@@ -1,6 +1,3 @@
-// conflict bugg solution
-var $ = jQuery.noConflict();
-
 // mega menu
 const scamLink = document.getElementById("scam-link");
 const megaMenu = document.getElementById("mega-menu");
@@ -48,9 +45,8 @@ scamLink.parentElement.addEventListener("mouseleave", () => {
   );
 });
 
-
-
-
+// conflict bugg solution
+var $ = jQuery.noConflict();
 $(function () {
   // video banner slider
   new Swiper(".bannerSlider", {
