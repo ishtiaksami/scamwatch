@@ -22,11 +22,16 @@ module.exports = {
       },
 
       fontFamily: {
-        Bebas: ["Bebas Neue", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+      },
+
+      fontSize: {
+        64: "4rem",
       },
       colors: {
-        blue1: "#1361f0",
-        "blue-light": "#568df4",
+        'blue1': "#0A2391",
+        'blue-light': "#568df4",
+        'bright-Orange': "#FF742D",
       },
     },
   },
