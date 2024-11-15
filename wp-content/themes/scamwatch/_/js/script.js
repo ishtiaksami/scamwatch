@@ -1,16 +1,35 @@
-new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+// conflict bugg solution
+var $ = jQuery.noConflict();
+
+$(function () {
+  // video banner slider
+  new Swiper(".bannerSlider", {
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
     scrollbar: {
       el: ".swiper-scrollbar",
       hide: true,
     },
-    autoplay: {
-      delay: 4000, // Delay in milliseconds between slides
-      disableOnInteraction: false, // Autoplay will be disabled after user interactions
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    speed: 1000, // Transition speed in milliseconds
-    loop: true, // Enable continuous loop mode
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+      renderFraction: function (currentClass, totalClass) {
+        return (
+          '<span class="' +
+          currentClass +
+          '"></span>' +
+          "<span>/</span>" +
+          '<span class="' +
+          totalClass +
+          '"></span>'
+        );
+      },
+    },
   });
+});
