@@ -41,18 +41,21 @@ body {
   background: green;
 }
 @layer base {
-  h1 {
+  /* h1 {
     @apply text-64 font-normal leading-none;
-  }
+  } */
 
-  h2 {
+  h1 {
     @apply text-5xl font-normal leading-none;
   }
-  h3 {
+  h2 {
     @apply text-4xl font-bold leading-none;
   }
-  h4 {
+  h3 {
     @apply text-2xl font-bold leading-none;
+  }
+  h4 {
+    @apply text-xl font-bold leading-none;
   }
 
   p {
@@ -64,4 +67,6 @@ body {
   }
 }
 
-
+#fullscreenSearch {
+  transform-origin: top right;
+}
