@@ -110,6 +110,8 @@ $(document).ready(function () {
   });
 });
 
+// accordion block
+
 $(document).ready(function () {
   $(".accordion-header").click(function () {
     const content = $(this).next(".accordion-content");
@@ -123,4 +125,38 @@ $(document).ready(function () {
     $(".accordion-content").not(content).slideUp(200);
     $(".accordion-icon").not(icon).removeClass("rotate-180");
   });
+});
+
+// form validation
+
+$(document).ready(function () {
+  $("#contactForm").on("submit", function (e) {
+    e.preventDefault();
+
+    // Simple validation
+    const name = $("#name").val().trim();
+    const email = $("#email").val().trim();
+    const subject = $("#subject").val().trim();
+    const message = $("#message").val().trim();
+
+    if (!name || !email || !subject || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    // If form is valid
+    alert("Thank you for your message!");
+    $(this).trigger("reset");
+  });
+
+  // Email validation function
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
 });

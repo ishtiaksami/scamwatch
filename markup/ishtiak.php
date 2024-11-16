@@ -27,23 +27,15 @@
             </div>
         </div>
 
-        <div class="holder flex justify-between items-center py-6 0">
-
+        <div class="holder flex justify-between items-center py-3">
             <a href="">
-                <h1 class="text-3xl uppercase font-bold">Scamwatch</h1>
+                <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
             </a>
-
-            <div class="flex items-center">
-
-                <input type="text" placeholder="Search..."
-                    class="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-700" />
-                <button
-                    class="px-4 py-2 bg-blue1 text-white rounded-r-md hover:bg-orange-500 duration-500 focus:outline-none">
-                    Search
-                </button>
-
-
-            </div>
+            <a href="" class="searchBtn">
+                <svg width="30" height="30" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z" stroke="black" stroke-width="1.57895" stroke-linecap="round"></path>
+                </svg>
+            </a>
         </div>
 
         <nav class="bg-gray-200 py-4 px-4 ">
@@ -65,7 +57,7 @@
                             <div>
                                 <h4 class="font-semibold mb-4">Online Scams</h4>
                                 <ul class="space-y-2">
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Phishing</a>
+                                    <li><a href="#" class=hover:text-orange-500 duration-500">Phishing</a>
                                     </li>
                                     <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Fake
                                             E-commerce</a></li>
@@ -122,7 +114,7 @@
     <section class="bg-white py-8 md:py-50">
         <div class="holder">
             <div class="space-y-5 text-center max-w-5xl mx-auto">
-                <h3 class="">Type of scam</h3>
+                <h2 class="">Type of scam</h2>
                 <div class="space-y-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fugiat numquam asperiores, distinctio autem, facilis eos quaerat cum odio tempore quibusdam explicabo hic eaque iste, cumque nam quia porro. Neque eaque necessitatibus praesentium cum ex exercitationem, voluptatem sit labore ut. Consequuntur alias veritatis amet, quia officia obcaecati autem quae iste?</p>
                 </div>
@@ -173,7 +165,7 @@
             </div>
 
             <div class="swiper cardSlider !overflow-visible">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper flex gap-5">
                     <div class="swiper-slide">
                         <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
@@ -302,15 +294,18 @@
     </section>
     <!-- end of the Text & media section -->
 
+    <!-- Start of the Accordion section -->
     <section class="block-pad">
         <div class="holder">
-            <div class="space-y-6">
 
+            <h2 class="text-black relative pb-6">FAQ</h2>
+
+            <div class="space-y-6">
                 <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                    <a class="accordion-header w-full p-4 flex justify-between items-center focus:outline-none">
-                        <h4 class="font-semibold">
+                    <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+                        <h3 class="font-semibold">
                             It's an amazing opportunity to make or save money
-                        </h4>
+                        </h3>
                         <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
@@ -320,10 +315,10 @@
                     </div>
                 </div>
                 <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                    <a class="accordion-header w-full p-4 flex justify-between items-center focus:outline-none">
-                        <h4 class="font-semibold">
+                    <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+                        <h3 class="font-semibold">
                             It's an amazing opportunity to make or save money
-                        </h4>
+                        </h3>
                         <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
@@ -333,10 +328,10 @@
                     </div>
                 </div>
                 <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                    <a class="accordion-header w-full p-4 flex justify-between items-center focus:outline-none">
-                        <h4 class="font-semibold">
+                    <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+                        <h3 class="font-semibold">
                             It's an amazing opportunity to make or save money
-                        </h4>
+                        </h3>
                         <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
@@ -346,10 +341,10 @@
                     </div>
                 </div>
                 <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                    <a class="accordion-header w-full p-4 flex justify-between items-center focus:outline-none">
-                        <h4 class="font-semibold">
+                    <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+                        <h3 class="font-semibold">
                             It's an amazing opportunity to make or save money
-                        </h4>
+                        </h3>
                         <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
@@ -358,17 +353,97 @@
                         <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+    <!-- end of the Accordion section -->
+
+    <!-- Start of the Contact Form section -->
+    <section class="block-pad">
+        <div class="holder grid items-center md:grid-cols-2 gap-8">
+            <div class="text-center space-y-7 px-8 py-8">
+                <h2>Where to find us</h2>
+                <div class="space-y-2">
+                    <h3 class=" text-xs font-normal leading-normal tracking-[1.228px] uppercase">Telephone</h3>
+                    <a class="text-xl font-semibold" href="tel:http://+353-1-6251145">+8801600081601</a>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class=" text-xs font-normal leading-normal tracking-[1.228px] uppercase">Email</h3>
+                    <a class="text-xl font-semibold  underlin" href="mailto:info@irishsquash.com">info@scamwatch.com</a>
+                </div>
+            </div>
+            <div class="w-full  shadow-md p-6">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Contact Us</h3>
+                <form id="contactForm" class="space-y-4">
+                    <!-- Name Input -->
+                    <div>
+                        <label for="name" class="block font-medium mb-2">Your Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue1"
+                            placeholder="Enter your name"
+                            required />
+                    </div>
+
+                    <!-- Email Input -->
+                    <div>
+                        <label for="email" class="block font-medium mb-2">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue1"
+                            placeholder="Enter your email"
+                            required />
+                    </div>
+
+                    <!-- Subject Input -->
+                    <div>
+                        <label for="subject" class="block font-medium mb-2">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue1"
+                            placeholder="Enter the subject"
+                            required />
+                    </div>
+
+                    <!-- Message Input -->
+                    <div>
+                        <label for="message" class="block font-medium mb-2">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue1"
+                            placeholder="Type your message here..."
+                            required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button
+                        type="submit"
+                        class="w-full btn">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end of the Contact Form section -->
 
     <!-- start of the News letter section -->
     <section class="bg-blue1 py-8 md:py-50">
         <div class="holder">
             <div class="flex lg:items-center justify-between gap-5 flex-col lg:flex-row">
                 <div class="space-y-6 lg:shrink-0">
-                    <h4 class="text-white text-4xl leading-none font-obviously font-normal ">Subscribe for our
-                        newsletter</h4>
+                    <h2 class="text-white leading-none font-obviously font-normal ">Subscribe for our
+                        newsletter</h2>
 
                     <p class="text-white  font-light hidden lg:block">Lorem ipsum dolor sit amet consectetur. Quisque
                         et.</p>
@@ -508,7 +583,7 @@
                 class="text-white flex md:flex-row flex-col justify-between j items-center pt-6 space-y-5 md:space-y-0">
 
                 <a href="">
-                    <h1 class="text-3xl uppercase font-bold">Scamwatch</h1>
+                    <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
                 </a>
 
                 <div class="space-x-4 md:[&>*]:text-base [&>*]:text-xs font-medium">
