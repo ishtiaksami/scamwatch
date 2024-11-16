@@ -164,17 +164,17 @@
             <div class=" flex items-center justify-between">
                 <h1 class="text-3xl font-bold ">News and alerts</h1>
 
-                <div class=" hidden md:flex justify-center">
+                <div class=" hidden md:flex">
                     <a href="#" class="btn">
                         View all news and alerts <i class="fas fa-arrow-right ml-3"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mt-10">
 
                 <a href="#"
-                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 before:absolute before:right-0 before:bottom-0 before:bg-blue1 before:w-10 before:h-10 after:absolute after:right-3 after:bottom-2 after:w-5 after:h-5 after:bg-[url('/wp-content/themes/scamwatch/_/assets/svg/arrow-right.svg')] after:bg-center after:bg-no-repeat bg-auto">
+                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
 
                     <h2 class="text-xl font-bold mb-4">Scam alert: Bulk email extortion scam</h2>
                     <div class=" space-y-4">
@@ -183,10 +183,13 @@
                         <p>They include personal details such as birth dates and addresses in the emails to
                             intimidate people into sending them money.</p>
                     </div>
+                    <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
+                        <i class="fas fa-arrow-right text-white"></i>
+                    </div>
                 </a>
 
                 <a href="#"
-                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 before:absolute before:right-0 before:bottom-0 before:bg-blue1 before:w-10 before:h-10 after:absolute after:right-3 after:bottom-2 after:w-5 after:h-5 after:bg-[url('/wp-content/themes/scamwatch/_/assets/svg/arrow-right.svg')] after:bg-center after:bg-no-repeat bg-auto">
+                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
 
                     <h2 class="text-xl font-bold mb-4">Scam alert: Bulk email extortion scam</h2>
                     <div class=" space-y-4">
@@ -195,10 +198,13 @@
                         <p>They include personal details such as birth dates and addresses in the emails to
                             intimidate people into sending them money.</p>
                     </div>
+                    <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
+                        <i class="fas fa-arrow-right text-white"></i>
+                    </div>
                 </a>
 
                 <a href="#"
-                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 before:absolute before:right-0 before:bottom-0 before:bg-blue1 before:w-10 before:h-10 after:absolute after:right-3 after:bottom-2 after:w-5 after:h-5 after:bg-[url('/wp-content/themes/scamwatch/_/assets/svg/arrow-right.svg')] after:bg-center after:bg-no-repeat bg-auto">
+                    class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
 
                     <h2 class="text-xl font-bold mb-4">Scam alert: Bulk email extortion scam</h2>
                     <div class=" space-y-4">
@@ -207,8 +213,17 @@
                         <p>They include personal details such as birth dates and addresses in the emails to
                             intimidate people into sending them money.</p>
                     </div>
+                    <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
+                        <i class="fas fa-arrow-right text-white"></i>
+                    </div>
                 </a>
 
+            </div>
+
+            <div class=" block text-center md:hidden mt-10">
+                <a href="#" class="btn">
+                    View all news and alerts <i class="fas fa-arrow-right ml-3"></i>
+                </a>
             </div>
         </div>
 

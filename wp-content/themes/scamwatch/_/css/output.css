@@ -929,6 +929,10 @@ p{
   gap: 2rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1055,6 +1059,11 @@ p{
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-blue1{
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 35 145 / var(--tw-bg-opacity));
+}
+
 .bg-auto{
   background-size: auto;
 }
@@ -1066,6 +1075,18 @@ p{
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-4{
@@ -1106,6 +1127,11 @@ p{
 .py-\[15px\]{
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-10{
@@ -1603,6 +1629,10 @@ body{
 
   .md\:min-w-\[9\.625rem\]{
     min-width: 9.625rem;
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{
