@@ -35,7 +35,7 @@
                                     Help to spot and avoid scams
                                 </h1>
                             </div>
-                            <div class="mt-8">
+                            <div class="mt-8 flex flex-wrap">
                                 <a class="btn" href="#">Check for scam warning signs</a>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                                     Know when to stop and check – stay scam safe.
                                 </h1>
                             </div>
-                            <div class="mt-8">
+                            <div class="mt-8 flex flex-wrap ">
                                 <a class="btn" href="#">Check for scam warning signs</a>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                 </h1>
 
             </div>
-            <div class="md:mt-16 mt-8">
+            <div class="md:mt-16 mt-8 flex flex-wrap">
                 <a href="#" class="btn">Check for scam warning signs</a>
             </div>
         </div>
@@ -165,7 +165,7 @@
                 <h1 class="text-3xl font-bold ">News and alerts</h1>
 
                 <div class=" hidden md:flex">
-                    <a href="#" class="btn">
+                    <a href="#" class="btn flex flex-wrap items-center">
                         View all news and alerts <i class="fas fa-arrow-right ml-3"></i>
                     </a>
                 </div>
@@ -220,7 +220,7 @@
 
             </div>
 
-            <div class=" block text-center md:hidden mt-10">
+            <div class=" text-center flex flex-wrap items-center md:hidden mt-10">
                 <a href="#" class="btn">
                     View all news and alerts <i class="fas fa-arrow-right ml-3"></i>
                 </a>
