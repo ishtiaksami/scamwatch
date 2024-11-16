@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/wp-content/themes/scamwatch/_/css/output.css">
+    <link rel="stylesheet" href="/wp-content/themes/scamwatch/_/css/swiper.min.css">
     <title>Ishtiak | Scamwatch</title>
 </head>
 
 <body>
 
-
+    <!-- start of the header section -->
     <header>
-        <div class="bg-blue-700 py-2">
+        <div class="bg-blue1 py-2  ">
             <div class="holder">
                 <ul
                     class="flex justify-end items-center gap-4 md:gap-10 [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:text-sm ">
@@ -26,7 +27,7 @@
             </div>
         </div>
 
-        <div class="holder flex flex-col md:flex-row justify-between items-center py-6 space-y-6 md:space-y-0">
+        <div class="holder flex justify-between items-center py-6 0">
 
             <a href="">
                 <h1 class="text-3xl uppercase font-bold">Scamwatch</h1>
@@ -37,16 +38,15 @@
                 <input type="text" placeholder="Search..."
                     class="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-700" />
                 <button
-                    class="px-4 py-2 bg-blue-700 text-white rounded-r-md hover:bg-orange-500 duration-500 focus:outline-none">
+                    class="px-4 py-2 bg-blue1 text-white rounded-r-md hover:bg-orange-500 duration-500 focus:outline-none">
                     Search
                 </button>
 
 
             </div>
-
         </div>
 
-        <nav class="bg-gray-200 py-4 px-4">
+        <nav class="bg-gray-200 py-4 px-4 ">
             <ul
                 class="relative flex justify-center items-center gap-4 md:gap-10 [&>li>a]:text-blue-700 [&>li>a]:font-medium [&>li>a]:text-xs  lg:[&>li>a]:text-base [&>li>a]:uppercase">
                 <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">Home</a>
@@ -116,7 +116,9 @@
         </nav>
 
     </header>
+    <!-- end of the header section -->
 
+    <!-- start of the Intro section -->
     <section class="bg-white py-8 md:py-50">
         <div class="holder">
             <div class="space-y-5 text-center max-w-5xl mx-auto">
@@ -128,8 +130,240 @@
 
         </div>
     </section>
+    <!-- end of the Intro section -->
 
-    <section class="bg-blue-700 py-8 md:py-50">
+    <!-- start of the cardSlider section -->
+    <section
+        class="block-pad bg-green-100 overflow-hidden">
+        <div class="holder">
+            <div
+                class="flex items-center pb-8 [&>p]:text-white [&>p]:text-base [&>p]:leading-[150%] [&>p]:font-normal">
+                <div class="fade-up-scroll space-y-4">
+                    <h2 class="font-bold leading-none uppercase">
+                        Explore
+                    </h2>
+                </div>
+
+                <div class="fade-up-scroll hidden md:flex items-center gap-8 ml-auto">
+                    <div class="promo-prev bg-white rounded-full shadow-md p-[15px]">
+                        <svg
+                            width="11"
+                            height="11"
+                            viewBox="0 0 12 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.9718 18.9411C11.2354 18.6773 11.3835 18.3197 11.3835 17.9468C11.3835 17.5739 11.2354 17.2163 10.9718 16.9526L4.01088 9.99167L10.9718 3.03074C11.228 2.76551 11.3697 2.41029 11.3665 2.04158C11.3633 1.67286 11.2154 1.32016 10.9547 1.05943C10.694 0.798698 10.3413 0.650806 9.97254 0.647602C9.60382 0.644398 9.2486 0.78614 8.98338 1.0423L1.02822 8.99746C0.764588 9.26117 0.616488 9.61879 0.616488 9.99167C0.616488 10.3646 0.764588 10.7222 1.02822 10.9859L8.98338 18.9411C9.24709 19.2047 9.60471 19.3528 9.9776 19.3528C10.3505 19.3528 10.7081 19.2047 10.9718 18.9411Z"
+                                fill="#0A1425" />
+                        </svg>
+                    </div>
+                    <div class="promo-next bg-white rounded-full shadow-md p-[15px]">
+                        <svg
+                            width="11"
+                            height="11"
+                            viewBox="0 0 12 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.02819 1.05919C0.764555 1.3229 0.616455 1.68052 0.616455 2.05341C0.616455 2.4263 0.764555 2.78392 1.02819 3.04763L7.98912 10.0086L1.02819 16.9695C0.772026 17.2347 0.630284 17.59 0.633488 17.9587C0.636692 18.3274 0.784586 18.6801 1.04532 18.9408C1.30605 19.2015 1.65875 19.3494 2.02747 19.3526C2.39618 19.3558 2.7514 19.2141 3.01662 18.9579L10.9718 11.0028C11.2354 10.7391 11.3835 10.3815 11.3835 10.0086C11.3835 9.63568 11.2354 9.27806 10.9718 9.01435L3.01662 1.05919C2.75291 0.795561 2.39529 0.647461 2.0224 0.647461C1.64952 0.647461 1.2919 0.795561 1.02819 1.05919Z"
+                                fill="#0A1425" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper cardSlider !overflow-visible">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+
+                            <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                            <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+
+                            <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                            <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+
+                            <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                            <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/33930/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+
+                            <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                            <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+
+                            <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                            <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:hidden flex items-center justify-center pt-4 gap-5 ml-auto">
+                <div class="promo-prev bg-white rounded-full p-[15px]">
+                    <svg
+                        width="11"
+                        height="11"
+                        viewBox="0 0 12 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.9718 18.9411C11.2354 18.6773 11.3835 18.3197 11.3835 17.9468C11.3835 17.5739 11.2354 17.2163 10.9718 16.9526L4.01088 9.99167L10.9718 3.03074C11.228 2.76551 11.3697 2.41029 11.3665 2.04158C11.3633 1.67286 11.2154 1.32016 10.9547 1.05943C10.694 0.798698 10.3413 0.650806 9.97254 0.647602C9.60382 0.644398 9.2486 0.78614 8.98338 1.0423L1.02822 8.99746C0.764588 9.26117 0.616488 9.61879 0.616488 9.99167C0.616488 10.3646 0.764588 10.7222 1.02822 10.9859L8.98338 18.9411C9.24709 19.2047 9.60471 19.3528 9.9776 19.3528C10.3505 19.3528 10.7081 19.2047 10.9718 18.9411Z"
+                            fill="#0A1425" />
+                    </svg>
+                </div>
+                <div class="promo-next bg-white rounded-full p-[15px]">
+                    <svg
+                        width="11"
+                        height="11"
+                        viewBox="0 0 12 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.02819 1.05919C0.764555 1.3229 0.616455 1.68052 0.616455 2.05341C0.616455 2.4263 0.764555 2.78392 1.02819 3.04763L7.98912 10.0086L1.02819 16.9695C0.772026 17.2347 0.630284 17.59 0.633488 17.9587C0.636692 18.3274 0.784586 18.6801 1.04532 18.9408C1.30605 19.2015 1.65875 19.3494 2.02747 19.3526C2.39618 19.3558 2.7514 19.2141 3.01662 18.9579L10.9718 11.0028C11.2354 10.7391 11.3835 10.3815 11.3835 10.0086C11.3835 9.63568 11.2354 9.27806 10.9718 9.01435L3.01662 1.05919C2.75291 0.795561 2.39529 0.647461 2.0224 0.647461C1.64952 0.647461 1.2919 0.795561 1.02819 1.05919Z"
+                            fill="#0A1425" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of the cardSlider section -->
+
+    <!-- start of the Text & media section -->
+    <section class="block-pad">
+        <div class="holder">
+            <div class="grid lg:grid-cols-5 items-center lg:gap-14 gap-8">
+
+
+                <div class="lg:col-span-3 lg:order-2">
+                    <img src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Empowering Local Talent" class="w-full">
+                </div>
+
+                <div class="lg:col-span-2 space-y-4 lg:space-y-6 order-2 lg:order-1">
+                    <h2 class="text-black relative pb-6 after:content-[''] after:absolute after:bg-[skyblue] after:w-[74px] after:h-[1px] after:bottom-[0] after:left-[0]">
+                        Sustainability</h2>
+
+                    <div class="[&amp;>*]:text-xl [&amp;>*]:leading-[160%]">
+                        <p>Lorem ipsum dolor sit amet consectetur. Quisque et viverra ultrices nulla. Bibendum proin
+                            vulputate velit adipiscing commodo justo amet.</p>
+                    </div>
+
+
+                    <div class="gap-30 flex flex-wrap items-center pt-10">
+                        <a href="#" class="btn group flex items-center gap-3">
+                            Find out more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end of the Text & media section -->
+
+    <section class="block-pad">
+        <div class="holder">
+            <div class="space-y-6">
+
+                <div class="accordion-item border border-gray-300 rounded-md mb-2">
+                    <a class="accordion-header w-full p-4 flex justify-between items-center focus:outline-none">
+                        <h4 class="font-semibold">
+                            It's an amazing opportunity to make or save money
+                        </h4>
+                        <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="accordion-content px-4 py-2 hidden">
+                        <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
+                    </div>
+                </div>
+                <div class="accordion-item border border-gray-300 rounded-md mb-2">
+                    <a class="accordion-header w-full p-4 flex justify-between items-center focus:outline-none">
+                        <h4 class="font-semibold">
+                            It's an amazing opportunity to make or save money
+                        </h4>
+                        <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="accordion-content px-4 py-2 hidden">
+                        <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
+                    </div>
+                </div>
+                <div class="accordion-item border border-gray-300 rounded-md mb-2">
+                    <a class="accordion-header w-full p-4 flex justify-between items-center focus:outline-none">
+                        <h4 class="font-semibold">
+                            It's an amazing opportunity to make or save money
+                        </h4>
+                        <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="accordion-content px-4 py-2 hidden">
+                        <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
+                    </div>
+                </div>
+                <div class="accordion-item border border-gray-300 rounded-md mb-2">
+                    <a class="accordion-header w-full p-4 flex justify-between items-center focus:outline-none">
+                        <h4 class="font-semibold">
+                            It's an amazing opportunity to make or save money
+                        </h4>
+                        <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="accordion-content px-4 py-2 hidden">
+                        <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start of the News letter section -->
+    <section class="bg-blue1 py-8 md:py-50">
         <div class="holder">
             <div class="flex lg:items-center justify-between gap-5 flex-col lg:flex-row">
                 <div class="space-y-6 lg:shrink-0">
@@ -162,8 +396,10 @@
             </div>
         </div>
     </section>
+    <!-- end of the footer section -->
 
-    <footer class="bg-blue-700 py-8 md:py-50 ">
+    <!-- Start of the footer section -->
+    <footer class="bg-blue1 py-8 md:py-50 ">
         <div class="holder">
             <div class="md:hidden border-b-2 border-white text-white pb-10 space-y-4">
 
@@ -288,10 +524,11 @@
             </div>
         </div>
     </footer>
+    <!-- end of the footer section -->
 
 
-
-
+    <script src="/wp-content/themes/scamwatch/_/js/jquery.min.js"></script>
+    <script src="/wp-content/themes/scamwatch/_/js/swiper.min.js"></script>
     <script src="/wp-content/themes/scamwatch/_/js/script.js"></script>
 </body>
 

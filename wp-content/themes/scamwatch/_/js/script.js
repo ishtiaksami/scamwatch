@@ -79,3 +79,48 @@ $(function () {
     },
   });
 });
+
+// card slider
+
+$(document).ready(function () {
+  var swiper = new Swiper(".cardSlider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    speed: 700,
+    loop: true,
+    // Uncomment the autoplay section if needed
+    // autoplay: {
+    //   delay: 2000,
+    // },
+    navigation: {
+      nextEl: ".promo-next",
+      prevEl: ".promo-prev",
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".accordion-header").click(function () {
+    const content = $(this).next(".accordion-content");
+    const icon = $(this).find(".accordion-icon");
+
+    // Toggle current accordion
+    content.slideToggle(200);
+    icon.toggleClass("rotate-180");
+
+    // Close other accordions if open
+    $(".accordion-content").not(content).slideUp(200);
+    $(".accordion-icon").not(icon).removeClass("rotate-180");
+  });
+});
