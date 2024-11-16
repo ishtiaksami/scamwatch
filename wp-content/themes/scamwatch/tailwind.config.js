@@ -3,11 +3,10 @@ module.exports = {
 
   theme: {
     extend: {
-      clipPath: {
-        "custom-polygon":
-          "polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%)",
+      boxShadow: {
+        custom1: '0 0 0.3rem rgba(0, 0, 0, 0.06), 0 0 0.2rem rgba(0, 0, 0, 0.12)',
+        custom2: '0 .2rem .4rem rgba(0,0,0,.16),0 .2rem .4rem rgba(0,0,0,.23)',
       },
-
       maxWidth: {
         siteWidth: "1512px",
       },
@@ -32,6 +31,7 @@ module.exports = {
         'blue1': "#0A2391",
         'blue-light': "#568df4",
         'bright-Orange': "#FF742D",
+        'soft-vanilla': "#FFF5D2",
       },
     },
   },
