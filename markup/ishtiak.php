@@ -258,7 +258,7 @@
 
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide"> 
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
@@ -552,7 +552,7 @@
     <!-- end of the footer section -->
 
     <!-- Start of the footer section -->
-    <footer class="bg-blue1 py-8 md:py-50 ">
+    <footer class="bg-blue1 py-8">
         <div class="holder">
             <div class="md:hidden border-b-2 border-white text-white pb-6 space-y-3">
 
@@ -643,7 +643,7 @@
                 </a>
             </div>
 
-            <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-6">
+            <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-4">
                 <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">About</a>
                 <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">I have been
                     scam</a>
@@ -658,13 +658,13 @@
             </div>
 
             <div
-                class="text-white flex justify-between j items-center pt-3 space-y-5 md:space-y-0">
+                class="text-white flex justify-between j items-center pt-2 space-y-5 md:space-y-0">
 
                 <a href="" class="w-14 h-14">
                     <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
                 </a>
 
-                <div class="space-x-4 md:[&>*]:text-base [&>*]:text-xs font-medium">
+                <div class="space-x-4 md:[&>*]:text-sm [&>*]:text-xs">
                     <span>Site designed by <a href=""
                             class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">
                             Skylark</a></span>
@@ -678,7 +678,6 @@
         </div>
     </footer>
     <!-- end of the footer section -->
-
 
 
     <script src="/wp-content/themes/scamwatch/_/js/jquery.min.js"></script>
