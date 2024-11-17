@@ -67,6 +67,17 @@ body {
   }
 }
 
-#fullscreenSearch {
-  transform-origin: top right;
+.promo-prev > svg > path {
+  @apply hover:fill-red-500 transition-all duration-300;
+}
+.promo-next > svg > path {
+  @apply hover:fill-red-500 transition-all duration-300;
+}
+
+
+.active .max-w-0 {
+  max-width: 100% !important;
+}
+.active .opacity-0 {
+  opacity: 1 !important;
 }
