@@ -163,7 +163,7 @@
     <!-- end of the header section -->
 
     <!-- start of the Intro section -->
-    <section class="bg-white py-8 md:py-50">
+    <section class="py-8 md:py-50">
         <div class="holder">
             <div class="space-y-5 text-center max-w-5xl mx-auto">
                 <h2 class="">Type of scam</h2>
@@ -190,27 +190,13 @@
 
                 <div class="fade-up-scroll hidden md:flex items-center gap-8 ml-auto">
                     <div class="promo-prev">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 12 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.9718 18.9411C11.2354 18.6773 11.3835 18.3197 11.3835 17.9468C11.3835 17.5739 11.2354 17.2163 10.9718 16.9526L4.01088 9.99167L10.9718 3.03074C11.228 2.76551 11.3697 2.41029 11.3665 2.04158C11.3633 1.67286 11.2154 1.32016 10.9547 1.05943C10.694 0.798698 10.3413 0.650806 9.97254 0.647602C9.60382 0.644398 9.2486 0.78614 8.98338 1.0423L1.02822 8.99746C0.764588 9.26117 0.616488 9.61879 0.616488 9.99167C0.616488 10.3646 0.764588 10.7222 1.02822 10.9859L8.98338 18.9411C9.24709 19.2047 9.60471 19.3528 9.9776 19.3528C10.3505 19.3528 10.7081 19.2047 10.9718 18.9411Z"
-                                fill="#0A1425" />
+                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.0125 22.4835L1 12.0015L11.0125 1.51953L11.431 1.83453L1.72225 12.0015L11.4344 22.1685L11.0125 22.4835Z" fill="black" stroke="black"></path>
                         </svg>
                     </div>
                     <div class="promo-next ">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 12 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.02819 1.05919C0.764555 1.3229 0.616455 1.68052 0.616455 2.05341C0.616455 2.4263 0.764555 2.78392 1.02819 3.04763L7.98912 10.0086L1.02819 16.9695C0.772026 17.2347 0.630284 17.59 0.633488 17.9587C0.636692 18.3274 0.784586 18.6801 1.04532 18.9408C1.30605 19.2015 1.65875 19.3494 2.02747 19.3526C2.39618 19.3558 2.7514 19.2141 3.01662 18.9579L10.9718 11.0028C11.2354 10.7391 11.3835 10.3815 11.3835 10.0086C11.3835 9.63568 11.2354 9.27806 10.9718 9.01435L3.01662 1.05919C2.75291 0.795561 2.39529 0.647461 2.0224 0.647461C1.64952 0.647461 1.2919 0.795561 1.02819 1.05919Z"
-                                fill="#0A1425" />
+                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.9875 1.52039L12 12.0024L1.9875 22.4844L1.569 22.1694L11.2778 12.0024L1.56563 1.83539L1.9875 1.52039Z" fill="black" stroke="black"></path>
                         </svg>
                     </div>
                 </div>
@@ -221,6 +207,8 @@
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
@@ -234,6 +222,8 @@
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
 
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
                             <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
@@ -245,6 +235,7 @@
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
@@ -257,6 +248,7 @@
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/33930/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
@@ -269,6 +261,7 @@
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
@@ -411,10 +404,10 @@
     </section>
     <!-- end of the Accordion section -->
 
-
     <!-- Start of the Tab section -->
     <section class="block-pad">
         <div class="holder">
+            <h2 class="font-bold pb-6">Guides & Alerts</h2>
             <div class="tab-container">
                 <!-- Tab Navigation -->
                 <div class="tab-nav flex border-b border-gray-300">
@@ -443,7 +436,6 @@
         </div>
     </section>
     <!-- end of the Tab section -->
-
 
     <!-- Start of the Contact Form section -->
     <section class="block-pad">

@@ -178,6 +178,20 @@
             src="/wp-content/themes/scamwatch/_/assets/image/image.png" alt="">
     </section>
 
+    <!-- start of the Intro section -->
+    <section class="py-8 md:py-50">
+        <div class="holder">
+            <div class="space-y-5 text-center max-w-5xl mx-auto">
+                <h2 class="">Type of scam</h2>
+                <div class="space-y-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fugiat numquam asperiores, distinctio autem, facilis eos quaerat cum odio tempore quibusdam explicabo hic eaque iste, cumque nam quia porro. Neque eaque necessitatibus praesentium cum ex exercitationem, voluptatem sit labore ut. Consequuntur alias veritatis amet, quia officia obcaecati autem quae iste?</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end of the Intro section -->
+
 
     <section class=" bg-soft-vanilla block-pad">
         <div class="holder">
@@ -348,7 +362,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- start of the News letter section -->
     <section class="bg-blue1 py-4">

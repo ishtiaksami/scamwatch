@@ -211,3 +211,7 @@ $(document).ready(function () {
       .animate({ opacity: 1, transform: "scale(1)" }, 300);
   });
 });
+
+// search bar
+
+
