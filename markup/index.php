@@ -294,8 +294,6 @@
                         <img class="max-h-[150px] w-auto mx-auto pb-6 "
                             src="https://cdn.pixabay.com/photo/2016/08/21/18/48/emoticon-1610518_1280.png" alt="">
 
-                        <div class=" w-3/4 h-[1px] bg-red-500  mx-auto"></div>
-
                         <figcaption class="pt-6">
                             <h3>Is this a scam?</h3>
                             <p class=" mt-6">Warning signs to help you identify if you've encountered a scam.</p>
@@ -305,6 +303,8 @@
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
                         <i class="fas fa-arrow-right text-white"></i>
                     </div>
+
+                    <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
                 </a>
 
                 <a href="#"
@@ -313,8 +313,6 @@
                         <img class="max-h-[150px] w-auto mx-auto pb-6 "
                             src="https://cdn.pixabay.com/photo/2016/08/21/18/48/emoticon-1610518_1280.png" alt="">
 
-                        <div class=" w-3/4 h-[1px] bg-red-500  mx-auto"></div>
-
                         <figcaption class="pt-6">
                             <h3>Is this a scam?</h3>
                             <p class=" mt-6">Warning signs to help you identify if you've encountered a scam.</p>
@@ -324,6 +322,8 @@
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
                         <i class="fas fa-arrow-right text-white"></i>
                     </div>
+
+                    <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
                 </a>
 
                 <a href="#"
@@ -332,8 +332,6 @@
                         <img class="max-h-[150px] w-auto mx-auto pb-6 "
                             src="https://cdn.pixabay.com/photo/2016/08/21/18/48/emoticon-1610518_1280.png" alt="">
 
-                        <div class=" w-3/4 h-[1px] bg-red-500  mx-auto"></div>
-
                         <figcaption class="pt-6">
                             <h3>Is this a scam?</h3>
                             <p class=" mt-6">Warning signs to help you identify if you've encountered a scam.</p>
@@ -343,7 +341,10 @@
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
                         <i class="fas fa-arrow-right text-white"></i>
                     </div>
+
+                    <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
                 </a>
+
             </div>
         </div>
     </section>
