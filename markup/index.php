@@ -400,9 +400,9 @@
     <!-- end of the footer section -->
 
     <!-- Start of the footer section -->
-    <footer class="bg-blue1 py-8 md:py-50 ">
+    <footer class="bg-blue1 py-8">
         <div class="holder">
-            <div class="md:hidden border-b-2 border-white text-white pb-6 space-y-3">
+            <div class="md:hidden border-b-2 border-white text-white pb-4 space-y-3">
 
                 <a href=""
                     class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">About
@@ -491,7 +491,7 @@
                 </a>
             </div>
 
-            <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-6">
+            <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-4">
                 <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">About</a>
                 <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">I have been
                     scam</a>
@@ -506,13 +506,13 @@
             </div>
 
             <div
-                class="text-white flex justify-between j items-center pt-3 space-y-5 md:space-y-0">
+                class="text-white flex justify-between j items-center pt-2 space-y-5 md:space-y-0">
 
                 <a href="" class="w-14 h-14">
                     <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
                 </a>
 
-                <div class="space-x-4 md:[&>*]:text-base [&>*]:text-xs font-medium">
+                <div class="space-x-4 md:[&>*]:text-sm [&>*]:text-xs">
                     <span>Site designed by <a href=""
                             class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">
                             Skylark</a></span>

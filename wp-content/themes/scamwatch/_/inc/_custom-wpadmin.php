@@ -5,10 +5,11 @@
 
 
 /* Theme support for menus */
-add_theme_support('menus');
+
 add_post_type_support('page', 'excerpt');
 add_theme_support('title-tag');
-
+// enable featured image 
+add_theme_support('post-thumbnails');
 // Remove width and height attributes from images via WYSIWYG/admin
 add_filter('post_thumbnail_html', 'remove_width_attribute', 10);
 add_filter('image_send_to_editor', 'remove_width_attribute', 10);

@@ -15,20 +15,14 @@ require(get_template_directory() . '/_/inc/_register-navs.php');
 
 require(get_template_directory() . '/_/inc/_custom-wpadmin.php');
 
-// style and js include
 
-// enable featured image 
-add_theme_support('post-thumbnails');
 
 function site_styles_scripts()
 {
     $theme_url = get_template_directory_uri();
 
-    //wp_enqueue_style('magnific-popup', $theme_url . '/_/css/magnific-popup.css', array(), filemtime(get_template_directory() . '/_/css/swiper-bundle.min.css'));
-    // wp_enqueue_style('select2-min', $theme_url . '/_/css/select2.min.css', array(), filemtime(get_template_directory() . '/_/css/swiper-bundle.min.css'));
-    wp_enqueue_style('swiper-bundle-style', $theme_url . '/_/css/swiper.min.css', array(), '');
-    // wp_enqueue_style('select2-min', $theme_url . '/_/css/select2.min.css', array(), '');
-    // wp_enqueue_style('theme-style', $theme_url . '/_/css/skylark.min.css', array(), filemtime(get_template_directory() . '/_/css/skylark.min.css'));
+    wp_enqueue_style('swiper-bundle-style', $theme_url . '/_/css/swiper.min.css', array(), '');  
+    wp_enqueue_style('theme-style', $theme_url . '/_/css/output.css', array(), filemtime(get_template_directory() . '/_/css/output.css'));
 
     // script
     wp_enqueue_script('swiper-bundle-script', $theme_url . '/_/js/swiper.min.js', array('jquery'), null, false);
@@ -78,42 +72,3 @@ function prefix_nav_menu_classes($items, $menu, $args)
     _wp_menu_item_classes_by_context($items);
     return $items;
 }
-
-
-function load_posts()
-{
-    check_ajax_referer('ajax-nonce', 'nonce');
-
-    $paged = $_POST['page'];
-    $category = $_POST['category'];
-    $args = [
-        'post_type'      => 'post',
-        'paged'          => $paged,
-        'post_status' => 'publish',
-        'posts_per_page' => 9,
-    ];
-
-    if ($category != 'all') {
-        $args['cat'] = intval($category);  // Ensure the category is an integer
-    }
-
-    $query = new WP_Query($args);
-
-    ob_start(); // Start output buffering
-
-    if ($query->have_posts()) {
-        while ($query->have_posts()) : $query->the_post();
-            get_template_part('layout-modules/_news-list-item');
-        endwhile;
-    }
-
-    wp_reset_postdata();
-
-    $response = ob_get_clean(); // Get the buffered output and clean the buffer
-
-    echo $response;
-    die();
-}
-
-add_action('wp_ajax_load_posts', 'load_posts');
-add_action('wp_ajax_nopriv_load_posts', 'load_posts');

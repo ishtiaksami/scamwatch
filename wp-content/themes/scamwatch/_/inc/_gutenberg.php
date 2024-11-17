@@ -70,7 +70,7 @@ function skylarks_allowed_block_types_all($allowed_blocks, $post)
         'core/quote',
         //'core/audio',
         // 'core/cover',
-         'core/file',
+        'core/file',
         'core/video',
         // -- Formatting
         'core/table',
@@ -101,14 +101,39 @@ function skylarks_allowed_block_types_all($allowed_blocks, $post)
         'gravityforms/form',
         // --- Custom/ACF
         'acf/page-intro-block',
-        'acf/studio-cta-block',
-        
+
+
 
     );
 
 
     return $allowed_blocks;
 }
+
+
+// if (function_exists('acf_register_block')) {
+
+//     acf_register_block(array(
+//         'name' => 'page-intro-block',
+//         'title' => __('Page Intro Block'),
+//         'description' => __('Page Intro Block'),
+//         'render_callback' => 'my_acf_block_render_callback',
+//         'category' => 'layout',
+//         'icon' => 'text-page',
+//         'keywords' => array('Page', 'Intro'),
+//         'mode' => 'edit',
+//         'supports' => array('align' => false),
+//         'anchor' => true,
+//         'example' => array(
+//             'attributes' => array(
+//                 'mode' => 'preview',
+//                 'is_preview' => true,
+//             ),
+//         ),
+//     ));
+// }
+
+
 
 
 
