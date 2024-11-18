@@ -342,8 +342,6 @@
             </div>
         </div>
     </section>
-    <!-- ============================ End Grid image Section ============================ -->
-
     <footer class="bg-blue1 py-8 md:py-50 ">
         <div class="holder">
             <div class="md:hidden border-b-2 border-white text-white pb-10 space-y-4">
