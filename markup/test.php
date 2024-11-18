@@ -11,64 +11,124 @@
 
 <body>
 
+    <div class="w-full max-w-md mx-auto">
+        <div class="space-y-4">
+            <!-- Accordion Item 1 -->
+            <div class="border rounded-lg">
+                <button
+                    type="button"
+                    class="w-full flex justify-between items-center px-4 py-2 text-left text-gray-800 font-medium hover:bg-gray-100"
+                    data-accordion-toggle>
+                    <span>Accordion Item #1</span>
+                    <svg
+                        class="w-4 h-4 transform transition-transform"
+                        data-accordion-icon
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div
+                    class="px-4 py-2 text-gray-600 max-h-0 overflow-hidden transition-all duration-300"
+                    data-accordion-content>
+                    Content for accordion item #1 goes here. Add any text or HTML elements.
+                </div>
+            </div>
 
-    <h2>Language Translator</h2>
-    <textarea id="text-to-translate" rows="4" cols="50" placeholder="Enter text to translate"></textarea>
-    <br><br>
+            <!-- Accordion Item 2 -->
+            <div class="border rounded-lg">
+                <button
+                    type="button"
+                    class="w-full flex justify-between items-center px-4 py-2 text-left text-gray-800 font-medium hover:bg-gray-100"
+                    data-accordion-toggle>
+                    <span>Accordion Item #2</span>
+                    <svg
+                        class="w-4 h-4 transform transition-transform"
+                        data-accordion-icon
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div
+                    class="px-4 py-2 text-gray-600 max-h-0 overflow-hidden transition-all duration-300"
+                    data-accordion-content>
+                    Content for accordion item #2 goes here. Add any text or HTML elements.
+                </div>
+            </div>
 
-    <select id="language-select">
-        <option value="es">Spanish</option>
-        <option value="fr">French</option>
-        <option value="de">German</option>
-        <option value="hi">Hindi</option>
-        <option value="bn">Bengali</option>
-        <option value="ja">Japanese</option>
-    </select>
-    <button id="translate-btn">Translate</button>
+            <!-- Accordion Item 3 -->
+            <div class="border rounded-lg">
+                <button
+                    type="button"
+                    class="w-full flex justify-between items-center px-4 py-2 text-left text-gray-800 font-medium hover:bg-gray-100"
+                    data-accordion-toggle>
+                    <span>Accordion Item #3</span>
+                    <svg
+                        class="w-4 h-4 transform transition-transform"
+                        data-accordion-icon
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div
+                    class="px-4 py-2 text-gray-600 max-h-0 overflow-hidden transition-all duration-300"
+                    data-accordion-content>
+                    Content for accordion item #3 goes here. Add any text or HTML elements.
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h3>Translation:</h3>
-    <p id="translated-text"></p>
 
     <script>
-        $(document).ready(function() {
-            $('#translate-btn').on('click', function() {
-                const text = $('#text-to-translate').val();
-                const targetLang = $('#language-select').val();
+        const accordionButtons = document.querySelectorAll('[data-accordion-toggle]');
 
-                if (text === "") {
-                    alert("Please enter text to translate");
-                    return;
-                }
+        accordionButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('[data-accordion-icon]');
+                const isOpen = !content.classList.contains('max-h-0');
 
-                // Translation API URL
-                const url = 'https://libretranslate.com/translate';
-
-                // Ajax call to translate text
-                $.ajax({
-                    url: url,
-                    type: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    data: JSON.stringify({
-                        q: text,
-                        source: 'en', // assuming input text is in English
-                        target: targetLang,
-                        format: 'text'
-                    }),
-                    success: function(response) {
-                        $('#translated-text').text(response.translatedText);
-                    },
-                    error: function(error) {
-                        console.error("Error:", error);
-                        alert("Translation failed. Please try again later.");
+                // Close all other accordions
+                document.querySelectorAll('[data-accordion-content]').forEach((otherContent) => {
+                    if (otherContent !== content) {
+                        otherContent.classList.add('max-h-0');
+                        const otherIcon = otherContent.previousElementSibling.querySelector('[data-accordion-icon]');
+                        otherIcon.classList.remove('rotate-180');
                     }
                 });
+
+                // Toggle current accordion
+                if (isOpen) {
+                    content.classList.add('max-h-0');
+                    icon.classList.remove('rotate-180');
+                } else {
+                    content.classList.remove('max-h-0');
+                    icon.classList.add('rotate-180');
+                }
             });
         });
     </script>
-
-
 
 
 

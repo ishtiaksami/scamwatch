@@ -24,11 +24,11 @@ if ($is_preview) {
                     <h2 class="text-black relative pb-2 "> <?php echo esc_html($title); ?></h2>
                 <?php endif; ?>
 
-                <div class=" <?php ksa('[&>*]:text-xl [&>*]:leading-[160%]'); ?>">
-                    <?php if ($content = get_field('content')) : ?>
+                <?php if ($content = get_field('content')) : ?>
+                    <div class=" <?php ksa('[&>*]:text-xl [&>*]:leading-[160%]'); ?>">
                         <?php echo $content; ?>
-                    <?php endif; ?>
-                </div>
+                    </div>
+                <?php endif; ?>
 
                 <?php
                 $link = get_field('cta_button');
@@ -39,9 +39,8 @@ if ($is_preview) {
                 ?>
                     <div class="gap-30 flex flex-wrap items-center pt-6">
                         <a class="btn group flex items-center gap-3" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z" fill="white"></path>
-                            </svg>
+                           
+                            <?php get_template_part('svgs/right-arrow'); ?>
                         </a>
                     </div>
                 <?php endif; ?>

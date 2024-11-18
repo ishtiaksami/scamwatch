@@ -1,0 +1,23 @@
+{
+  "name": "acf/accordion-block",
+  "title": "Accordion Block",
+  "description": "show a accordion text of a page in this block",
+  "category": "layout",
+  "icon": "editor-justify",
+  "keywords": ["accordion", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "accordion-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}
