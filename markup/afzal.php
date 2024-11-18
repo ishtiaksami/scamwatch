@@ -216,8 +216,8 @@
                 <a href="#" class="btn">Check for scam warning signs</a>
             </div>
         </div>
-        <img class=" hidden md:block absolute right-32 bottom-0 w-full max-w-[500px] h-[400px] object-cover"
-            src="/wp-content/themes/scamwatch/_/assets/image/image.png" alt="">
+        <img class=" hidden md:block absolute right-32 bottom-0 w-full max-w-[500px] h-[250px] object-cover"
+            src="https://images.pexels.com/photos/1181394/pexels-photo-1181394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
     </section>
     <!-- ============================ End OF Image Banner Section ============================ -->
 

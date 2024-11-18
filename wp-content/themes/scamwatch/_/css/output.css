@@ -905,6 +905,10 @@ p{
   height: 100%;
 }
 
+.h-\[250px\]{
+  height: 250px;
+}
+
 .max-h-0{
   max-height: 0px;
 }
