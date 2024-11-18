@@ -35,7 +35,9 @@
             <div class="flex items-center gap-6">
                 <a href="" class="searchBtn">
                     <svg width="22" height="22" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z" stroke="#266df1" stroke-width="1.57895" stroke-linecap="round"></path>
+                        <path
+                            d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z"
+                            stroke="#266df1" stroke-width="1.57895" stroke-linecap="round"></path>
                     </svg>
                 </a>
 
@@ -44,20 +46,25 @@
                         <!-- Hamburger Icon (Mobile) -->
                         <div class="lg:hidden flex items-center">
                             <button onclick="toggleMenu()" class="outline-none mobile-menu-button relative">
-                                <span id="line1" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out"></span>
-                                <span id="line2" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
-                                <span id="line3" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
+                                <span id="line1"
+                                    class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out"></span>
+                                <span id="line2"
+                                    class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
+                                <span id="line3"
+                                    class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
                             </button>
                         </div>
 
                     </div>
 
                     <!-- Mobile Menu (Slide in from right) -->
-                    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-full bg-gray-200 shadow-lg transform translate-x-full transition-transform duration-500 z-50">
+                    <div id="mobile-menu"
+                        class="fixed top-0 right-0 h-full w-full bg-gray-200 shadow-lg transform translate-x-full transition-transform duration-500 z-50">
                         <!-- Close Button -->
                         <button onclick="toggleMenu()" class="absolute top-4 right-4">
                             <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
                         </button>
 
@@ -65,18 +72,25 @@
                         <ul class="flex flex-col gap-4 px-6 py-4 mt-10">
                             <li><a href="#" class="hover:text-orange-500 duration-500">Home</a></li>
                             <li class="relative">
-                                <button id="scamToggle" class="flex items-center justify-between w-full hover:text-orange-500 duration-500">
+                                <button id="scamToggle"
+                                    class="flex items-center justify-between w-full hover:text-orange-500 duration-500">
                                     Type of Scam
-                                    <svg class="w-4 h-4 ml-2 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    <svg class="w-4 h-4 ml-2 text-blue-700" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7"></path>
                                     </svg>
                                 </button>
 
                                 <!-- Mega Menu Content (Sub-menu) -->
                                 <div id="megaMenuContent" class="overflow-hidden transition-all duration-500 max-h-0">
-                                    <a href="#" class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Phishing</a>
-                                    <a href="#" class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Fake E-commerce</a>
-                                    <a href="#" class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Email Scams</a>
+                                    <a href="#"
+                                        class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Phishing</a>
+                                    <a href="#" class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Fake
+                                        E-commerce</a>
+                                    <a href="#"
+                                        class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Email
+                                        Scams</a>
                                 </div>
                             </li>
                             <li><a href="#" class="hover:text-orange-500 duration-500">I have been scammed</a></li>
@@ -98,7 +112,8 @@
 
                 <!-- Mega Menu Parent -->
                 <li class="group">
-                    <a id="scam-link" href="#" class="after-effect relative  hover:text-orange-500 duration-500">Type of Scam</a>
+                    <a id="scam-link" href="#" class="after-effect relative  hover:text-orange-500 duration-500">Type of
+                        Scam</a>
 
                     <!-- Mega Menu Dropdown -->
                     <div id="mega-menu"
@@ -124,7 +139,8 @@
                                             Schemes</a></li>
                                     <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Crypto
                                             Scams</a></li>
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Stock Market
+                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Stock
+                                            Market
                                             Scams</a></li>
                                 </ul>
                             </div>
@@ -146,13 +162,16 @@
                     </div>
                 </li>
 
-                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500 group"><a href="" class="after-effect relative">I
+                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500 group"><a href=""
+                        class="after-effect relative">I
                         have been scam</a></li>
                 <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500"><a href=""
                         class="after-effect relative">Protection against Scam</a></li>
-                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500"><a href="" class="after-effect relative">About</a>
+                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500"><a href=""
+                        class="after-effect relative">About</a>
                 </li>
-                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500"><a href="" class="after-effect relative">More</a>
+                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500"><a href=""
+                        class="after-effect relative">More</a>
                 </li>
             </ul>
 
@@ -174,8 +193,8 @@
                 <a href="#" class="btn">Check for scam warning signs</a>
             </div>
         </div>
-        <img class=" hidden md:block absolute right-32 bottom-0 w-full max-w-[500px] h-[400px] object-cover"
-            src="/wp-content/themes/scamwatch/_/assets/image/image.png" alt="">
+        <img class=" hidden md:block absolute right-32 bottom-0 w-full max-w-[500px] h-[350px] object-cover"
+            src="/wp-content/themes/scamwatch/_/img/banner-img.jpg" alt="">
     </section>
 
     <!-- start of the Intro section -->
@@ -184,7 +203,10 @@
             <div class="space-y-5 text-center max-w-5xl mx-auto">
                 <h2 class="">Type of scam</h2>
                 <div class="space-y-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fugiat numquam asperiores, distinctio autem, facilis eos quaerat cum odio tempore quibusdam explicabo hic eaque iste, cumque nam quia porro. Neque eaque necessitatibus praesentium cum ex exercitationem, voluptatem sit labore ut. Consequuntur alias veritatis amet, quia officia obcaecati autem quae iste?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fugiat numquam asperiores,
+                        distinctio autem, facilis eos quaerat cum odio tempore quibusdam explicabo hic eaque iste,
+                        cumque nam quia porro. Neque eaque necessitatibus praesentium cum ex exercitationem, voluptatem
+                        sit labore ut. Consequuntur alias veritatis amet, quia officia obcaecati autem quae iste?</p>
                 </div>
             </div>
 
@@ -200,7 +222,12 @@
 
                 <div class=" hidden md:flex">
                     <a href="#" class="btn flex flex-wrap items-center">
-                        View all news and alerts <i class="fas fa-arrow-right ml-3"></i>
+                        View all news and alerts
+                        <svg class=" ml-3 w-5 h-5" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                fill="#fff" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -218,7 +245,11 @@
                             intimidate people into sending them money.</p>
                     </div>
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
+                        <svg class=" w-5 h-5" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                fill="#fff" />
+                        </svg>
                     </div>
                 </a>
 
@@ -233,7 +264,11 @@
                             intimidate people into sending them money.</p>
                     </div>
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
+                        <svg class=" w-5 h-5" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                fill="#fff" />
+                        </svg>
                     </div>
                 </a>
 
@@ -248,7 +283,11 @@
                             intimidate people into sending them money.</p>
                     </div>
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
+                        <svg class=" w-5 h-5" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                fill="#fff" />
+                        </svg>
                     </div>
                 </a>
 
@@ -256,7 +295,12 @@
 
             <div class=" text-center flex flex-wrap items-center md:hidden mt-10">
                 <a href="#" class="btn">
-                    View all news and alerts <i class="fas fa-arrow-right ml-3"></i>
+                    View all news and alerts
+                    <svg class=" w-5 h-5" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                            fill="#fff" />
+                    </svg>
                 </a>
             </div>
         </div>
@@ -270,7 +314,8 @@
 
 
                 <div class="lg:col-span-3 lg:order-2">
-                    <img src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Empowering Local Talent" class="w-full">
+                    <img src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Empowering Local Talent" class="w-full">
                 </div>
 
                 <div class="lg:col-span-2 space-y-4  order-2 lg:order-1">
@@ -278,15 +323,24 @@
                         Sustainability</h2>
 
                     <div class="[&amp;>*]:text-xl [&amp;>*]:leading-[160%]">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, suscipit consectetur. Corrupti voluptatibus expedita harum enim quaerat amet est ut magni at. Doloribus autem nisi dolore nihil id eveniet alias est aut explicabo excepturi. Aut, id autem consequuntur sit aperiam, est facere quae distinctio omnis ad molestias, eaque reiciendis iusto quidem perferendis provident iure odit. Delectus incidunt quam nostrum aspernatur atque animi repellendus magnam eaque cupiditate soluta facilis veritatis modi consectetur consequatur error est dicta odio deserunt, aperiam perferendis. Soluta?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, suscipit consectetur.
+                            Corrupti voluptatibus expedita harum enim quaerat amet est ut magni at. Doloribus autem nisi
+                            dolore nihil id eveniet alias est aut explicabo excepturi. Aut, id autem consequuntur sit
+                            aperiam, est facere quae distinctio omnis ad molestias, eaque reiciendis iusto quidem
+                            perferendis provident iure odit. Delectus incidunt quam nostrum aspernatur atque animi
+                            repellendus magnam eaque cupiditate soluta facilis veritatis modi consectetur consequatur
+                            error est dicta odio deserunt, aperiam perferendis. Soluta?</p>
                     </div>
 
 
                     <div class="gap-30 flex flex-wrap items-center pt-6">
                         <a href="#" class="btn group flex items-center gap-3">
                             Find out more
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z" fill="white"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z"
+                                    fill="white"></path>
                             </svg>
                         </a>
                     </div>
@@ -315,7 +369,11 @@
                     </figure>
 
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
+                        <svg class=" w-5 h-5" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                fill="#fff" />
+                        </svg>
                     </div>
 
                     <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
@@ -334,7 +392,11 @@
                     </figure>
 
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
+                        <svg class=" w-5 h-5" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                fill="#fff" />
+                        </svg>
                     </div>
 
                     <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
@@ -353,7 +415,11 @@
                     </figure>
 
                     <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
+                        <svg class=" w-5 h-5" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                fill="#fff" />
+                        </svg>
                     </div>
 
                     <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
@@ -397,10 +463,7 @@
             </div>
         </div>
     </section>
-    <!-- end of the footer section -->
-
-    <!-- Start of the footer section -->
-    <footer class="bg-blue1 py-8">
+    <footer class="bg-blue1 py-8 md:py-50 ">
         <div class="holder">
             <div class="md:hidden border-b-2 border-white text-white pb-4 space-y-3">
 
@@ -505,8 +568,7 @@
                 </a>
             </div>
 
-            <div
-                class="text-white flex justify-between j items-center pt-2 space-y-5 md:space-y-0">
+            <div class="text-white flex justify-between j items-center pt-2 space-y-5 md:space-y-0">
 
                 <a href="" class="w-14 h-14">
                     <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
