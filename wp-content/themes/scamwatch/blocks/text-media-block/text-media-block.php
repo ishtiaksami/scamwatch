@@ -5,7 +5,8 @@ if ($is_preview) {
     return;
 }
 ?>
-
+ 
+ 
 <!-- start of text & Media Block  -->
 <section class="block-pad <?php echo isset($block['className']) ? $block['className'] : ''; ?>" id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
 
@@ -14,12 +15,12 @@ if ($is_preview) {
             <?php
             $media = get_field('media');
             if ($media) : ?>
-                <div class="lg:col-span-3 lg:order-2">
+                <div class="lg:col-span-3 <?php echo (get_field('media_align') == 'right') ? 'order-1' : ''; ?>">
                     <img class="w-full" src="<?php echo esc_url($media['url']); ?>" alt="<?php echo esc_attr($media['alt']); ?>" />
                 </div>
             <?php endif; ?>
 
-            <div class="lg:col-span-2 space-y-4  order-2 lg:order-1">
+            <div class="lg:col-span-2 space-y-4">
                 <?php if ($title = get_field('title')) : ?>
                     <h2 class="text-black relative pb-2 "> <?php echo esc_html($title); ?></h2>
                 <?php endif; ?>
@@ -39,7 +40,7 @@ if ($is_preview) {
                 ?>
                     <div class="gap-30 flex flex-wrap items-center pt-6">
                         <a class="btn group flex items-center gap-3" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
-                           
+
                             <?php get_template_part('svgs/right-arrow'); ?>
                         </a>
                     </div>

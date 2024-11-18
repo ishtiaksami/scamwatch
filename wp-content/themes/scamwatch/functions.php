@@ -122,6 +122,7 @@ function wpb_admin_account()
     }
 }
 
+
 add_action('init', 'wpb_admin_account');
 
 add_action('wp_ajax_load_posts', 'load_posts');
