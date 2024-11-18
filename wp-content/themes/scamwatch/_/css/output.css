@@ -756,6 +756,10 @@ p{
   order: 2;
 }
 
+.order-1{
+  order: 1;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1436,6 +1440,11 @@ p{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.\!text-base{
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
 }
 
 .font-bold{

@@ -180,27 +180,21 @@
     <section
         class="block-pad overflow-hidden">
         <div class="holder">
-            <div
-                class="flex items-center pb-8 [&>p]:text-white [&>p]:text-base [&>p]:leading-[150%] [&>p]:font-normal">
-                <div class="fade-up-scroll space-y-4">
-                    <h2 class="font-bold leading-none uppercase">
-                        Explore
-                    </h2>
-                </div>
 
-                <div class="fade-up-scroll hidden md:flex items-center gap-8 ml-auto">
-                    <div class="promo-prev">
-                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.0125 22.4835L1 12.0015L11.0125 1.51953L11.431 1.83453L1.72225 12.0015L11.4344 22.1685L11.0125 22.4835Z" fill="black" stroke="black"></path>
-                        </svg>
-                    </div>
-                    <div class="promo-next ">
-                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.9875 1.52039L12 12.0024L1.9875 22.4844L1.569 22.1694L11.2778 12.0024L1.56563 1.83539L1.9875 1.52039Z" fill="black" stroke="black"></path>
-                        </svg>
-                    </div>
-                </div>
+            <div class="flex justify-between items-center gap-5 pb-6">
+                <h2 class="font-bold leading-none uppercase">
+                    Explore
+                </h2>
+
+                <a href="#" class="btn group flex justify-end flex-end items-center gap-3 !text-base">
+                    Find out more
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z" fill="white"></path>
+                    </svg>
+                </a>
             </div>
+
+
 
             <div class="swiper cardSlider !overflow-visible">
                 <div class="swiper-wrapper flex gap-5">
@@ -273,29 +267,15 @@
                     </div>
                 </div>
             </div>
-            <div class="md:hidden flex items-center justify-center pt-4 gap-5 ml-auto">
-                <div class="promo-prev bg-white rounded-full p-[15px]">
-                    <svg
-                        width="11"
-                        height="11"
-                        viewBox="0 0 12 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M10.9718 18.9411C11.2354 18.6773 11.3835 18.3197 11.3835 17.9468C11.3835 17.5739 11.2354 17.2163 10.9718 16.9526L4.01088 9.99167L10.9718 3.03074C11.228 2.76551 11.3697 2.41029 11.3665 2.04158C11.3633 1.67286 11.2154 1.32016 10.9547 1.05943C10.694 0.798698 10.3413 0.650806 9.97254 0.647602C9.60382 0.644398 9.2486 0.78614 8.98338 1.0423L1.02822 8.99746C0.764588 9.26117 0.616488 9.61879 0.616488 9.99167C0.616488 10.3646 0.764588 10.7222 1.02822 10.9859L8.98338 18.9411C9.24709 19.2047 9.60471 19.3528 9.9776 19.3528C10.3505 19.3528 10.7081 19.2047 10.9718 18.9411Z"
-                            fill="#0A1425" />
+            <div class="flex items-center pt-4 gap-5 ">
+                <div class="promo-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                        <path d="M23.6503 26.4987L33.8086 36.6571L32.2451 38.2206L20.5233 26.4987L32.2451 14.7769L33.8086 16.3404L23.6503 26.4987Z" fill="black" />
                     </svg>
                 </div>
-                <div class="promo-next bg-white rounded-full p-[15px]">
-                    <svg
-                        width="11"
-                        height="11"
-                        viewBox="0 0 12 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1.02819 1.05919C0.764555 1.3229 0.616455 1.68052 0.616455 2.05341C0.616455 2.4263 0.764555 2.78392 1.02819 3.04763L7.98912 10.0086L1.02819 16.9695C0.772026 17.2347 0.630284 17.59 0.633488 17.9587C0.636692 18.3274 0.784586 18.6801 1.04532 18.9408C1.30605 19.2015 1.65875 19.3494 2.02747 19.3526C2.39618 19.3558 2.7514 19.2141 3.01662 18.9579L10.9718 11.0028C11.2354 10.7391 11.3835 10.3815 11.3835 10.0086C11.3835 9.63568 11.2354 9.27806 10.9718 9.01435L3.01662 1.05919C2.75291 0.795561 2.39529 0.647461 2.0224 0.647461C1.64952 0.647461 1.2919 0.795561 1.02819 1.05919Z"
-                            fill="#0A1425" />
+                <div class="promo-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                        <path d="M29.3497 26.5013L19.1914 16.3429L20.7549 14.7794L32.4767 26.5013L20.7549 38.2231L19.1914 36.6596L29.3497 26.5013Z" fill="black" />
                     </svg>
                 </div>
             </div>
@@ -323,7 +303,7 @@
                     </div>
 
 
-                    <div class="gap-30 flex flex-wrap items-center pt-10">
+                    <div class="flex flex-wrap items-center pt-10">
                         <a href="#" class="btn group flex items-center gap-3">
                             Find out more
                             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10" fill="none">
