@@ -1419,6 +1419,14 @@ p{
   padding-top: 1.5rem;
 }
 
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
 .text-left{
   text-align: left;
 }
