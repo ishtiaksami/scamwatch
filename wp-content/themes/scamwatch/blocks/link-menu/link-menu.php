@@ -12,7 +12,7 @@ if ($is_preview) {
 
         <?php if (have_rows('custom_links')): ?>
             <div
-                class=" grid lg:grid-cols-4  <?php ksa('[&>a]:font-semibold [&>a]:text-2xl [&>a]:leading-5 [&>a]:text-white [&>a]:py-8 [&>a]:px-5  [&>a]:lg:px-4 [&>a]:cursor-pointer [&>a]:text-center divide-y-[1px]  md:divide-x-[1px] divide-blue1 [&>a:hover]:bg-blue1 [&>a]:transition [&>a]:duration-300'); ?>">
+                class=" flex  items-center <?php ksa('[&>a]:font-semibold [&>a]:text-2xl [&>a]:leading-5 [&>a]:text-white [&>a]:py-8 [&>a]:px-5  [&>a]:lg:px-4 [&>a]:cursor-pointer [&>a]:text-center divide-y-[1px]  md:divide-x-[1px] divide-blue1 [&>a:hover]:bg-blue1 [&>a]:transition [&>a]:duration-300'); ?>">
 
 
                 <?php while (have_rows('custom_links')):

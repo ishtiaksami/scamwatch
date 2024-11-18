@@ -1,0 +1,23 @@
+{
+  "name": "acf/news-grid-block",
+  "title": "News Grid Block",
+  "description": "This block will show multiple items",
+  "category": "layout",
+  "icon": "grid-view",
+  "keywords": ["news", "grid"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "news-grid-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}
