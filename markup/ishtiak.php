@@ -258,7 +258,7 @@
 
                         </a>
                     </div>
-                    <div class="swiper-slide"> 
+                    <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
@@ -342,67 +342,71 @@
     <!-- Start of the Accordion section -->
     <section class="block-pad">
         <div class="holder">
+            <h2 class="text-black pb-6">FAQ</h2>
 
-            <h2 class="text-black relative pb-6">FAQ</h2>
-
-            <div class="space-y-6">
-                <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                    <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
-                        <h3 class="font-semibold">
-                            It's an amazing opportunity to make or save money
-                        </h3>
-                        <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                    <div class="accordion-content px-4 py-2 hidden">
-                        <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
-                    </div>
+            <div class="accordion-item pb-4">
+                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none border-b border-gray-300  mb-2">
+                    <h3 class="font-semibold">
+                        It's an amazing opportunity to make or save money
+                    </h3>
+                    <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <div class="accordion-content px-4 py-2 hidden">
+                    <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
                 </div>
-                <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                    <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
-                        <h3 class="font-semibold">
-                            It's an amazing opportunity to make or save money
-                        </h3>
-                        <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                    <div class="accordion-content px-4 py-2 hidden">
-                        <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
-                    </div>
-                </div>
-                <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                    <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
-                        <h3 class="font-semibold">
-                            It's an amazing opportunity to make or save money
-                        </h3>
-                        <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                    <div class="accordion-content px-4 py-2 hidden">
-                        <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
-                    </div>
-                </div>
-                <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                    <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
-                        <h3 class="font-semibold">
-                            It's an amazing opportunity to make or save money
-                        </h3>
-                        <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                    <div class="accordion-content px-4 py-2 hidden">
-                        <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="accordion-item border border-gray-300 rounded-md mb-2">
+                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+                    <h3 class="font-semibold">
+                        It's an amazing opportunity to make or save money
+                    </h3>
+                    <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <div class="accordion-content px-4 py-2 hidden">
+                    <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
+                </div>
+            </div>
+            <div class="accordion-item border border-gray-300 rounded-md mb-2">
+                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+                    <h3 class="font-semibold">
+                        It's an amazing opportunity to make or save money
+                    </h3>
+                    <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <div class="accordion-content px-4 py-2 hidden">
+                    <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
+                </div>
+            </div>
+            <div class="accordion-item border border-gray-300 rounded-md mb-2">
+                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+                    <h3 class="font-semibold">
+                        It's an amazing opportunity to make or save money
+                    </h3>
+                    <svg class="accordion-icon w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <div class="accordion-content px-4 py-2 hidden">
+                    <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
+                </div>
+            </div>
+
+
         </div>
     </section>
     <!-- end of the Accordion section -->
+
+
+
+
+
 
     <!-- Start of the Tab section -->
     <section class="block-pad">

@@ -15,11 +15,11 @@ if ($is_preview) {
                 <h2><?php echo esc_html($title); ?></h2>
             <?php endif; ?>
 
-            <div class="space-y-4">
-                <?php if ($content = get_field('content')) : ?>
+            <?php if ($content = get_field('content')) : ?>
+                <div class="space-y-4">
                     <?php echo $content; ?>
-                <?php endif; ?>
-            </div>
+                </div>
+            <?php endif; ?>
         </div>
 
     </div>
