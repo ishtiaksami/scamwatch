@@ -1,0 +1,23 @@
+{
+  "name": "acf/short-banner",
+  "title": "Short Banner Block",
+  "description": "show a accordion text of a page in this block",
+  "category": "layout",
+  "icon": "text-page",
+  "keywords": ["Short", "Banner", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "short-banner.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}
