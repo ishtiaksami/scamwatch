@@ -1027,10 +1027,6 @@ p{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.cursor-pointer{
-  cursor: pointer;
-}
-
 .resize{
   resize: both;
 }
@@ -1135,6 +1131,17 @@ p{
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.divide-y-\[1px\] > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-blue1 > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(38 109 241 / var(--tw-divide-opacity));
 }
 
 .overflow-hidden{
@@ -1457,10 +1464,6 @@ p{
 
 .uppercase{
   text-transform: uppercase;
-}
-
-.leading-5{
-  line-height: 1.25rem;
 }
 
 .leading-\[90\%\]{
@@ -1899,11 +1902,6 @@ body{
   content: var(--tw-content);
 }
 
-.hover\:bg-blue1:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 109 241 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -2036,16 +2034,14 @@ body{
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:divide-x-\[1px\] > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .md\:border{
     border-width: 1px;
-  }
-
-  .md\:border-b-0{
-    border-bottom-width: 0px;
-  }
-
-  .md\:border-r{
-    border-right-width: 1px;
   }
 
   .md\:bg-white{
@@ -2175,11 +2171,6 @@ body{
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .lg\:py-50{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -2226,13 +2217,83 @@ body{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.\[\&\>a\:hover\]\:bg-blue1>a:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 109 241 / var(--tw-bg-opacity));
+}
+
+.\[\&\>a\]\:cursor-pointer>a{
+  cursor: pointer;
+}
+
+.\[\&\>a\]\:px-5>a{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.\[\&\>a\]\:py-8>a{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.\[\&\>a\]\:text-center>a{
+  text-align: center;
+}
+
+.\[\&\>a\]\:text-2xl>a{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.\[\&\>a\]\:font-semibold>a{
+  font-weight: 600;
+}
+
+.\[\&\>a\]\:leading-5>a{
+  line-height: 1.25rem;
+}
+
+.\[\&\>a\]\:text-white>a{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[\&\>a\]\:transition>a{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .\[\&\>a\]\:duration-500>a{
   transition-duration: 500ms;
+}
+
+.\[\&\>a\]\:duration-300>a{
+  transition-duration: 300ms;
+}
+
+.\[\&\>a\]\:hover\:bg-blue1:hover>a{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 109 241 / var(--tw-bg-opacity));
 }
 
 .\[\&\>a\]\:hover\:text-orange-500:hover>a{
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
+.group:hover .\[\&\>a\]\:group-hover\:bg-blue1>a{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 109 241 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px){
+  .\[\&\>a\]\:lg\:px-4>a{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .\[\&\>li\>a\]\:text-sm>li>a{

@@ -1,0 +1,23 @@
+{
+  "name": "acf/link-menu",
+  "title": "Link Menu Block",
+  "description": "show a link menu in this block",
+  "category": "layout",
+  "icon": "dashicons-editor-table",
+  "keywords": ["Menu", "Link", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "link-menu.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}
