@@ -1,0 +1,23 @@
+{
+  "name": "acf/page-intro-block",
+  "title": "Page Intro Block",
+  "description": "show a accordion text of a page in this block",
+  "category": "layout",
+  "icon": "text-page",
+  "keywords": ["Page", "Intro", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "page-intro-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

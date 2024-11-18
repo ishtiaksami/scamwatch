@@ -1,0 +1,23 @@
+{
+  "name": "acf/text-media-block",
+  "title": "Text Media Block",
+  "description": "show a accordion text of a page in this block",
+  "category": "layout",
+  "icon": "admin-media",
+  "keywords": ["Text", "Image","media", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "text-media-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

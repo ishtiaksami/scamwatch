@@ -31,6 +31,7 @@ $(function () {
     },
   });
 });
+
 // mega menu
 const scamLink = document.getElementById("scam-link");
 const megaMenu = document.getElementById("mega-menu");
@@ -160,3 +161,57 @@ $(document).ready(function () {
     return regex.test(email);
   }
 });
+
+// header mobile menu toggle
+
+// Toggle mobile menu visibility
+function toggleMenu() {
+  const mobileMenu = document.getElementById("mobile-menu");
+  mobileMenu.classList.toggle("translate-x-0");
+  mobileMenu.classList.toggle("translate-x-full");
+}
+
+// Toggle Mega Menu in Mobile with smooth height animation
+const scamToggle = document.getElementById("scamToggle");
+const megaMenuContent = document.getElementById("megaMenuContent");
+
+scamToggle.addEventListener("click", () => {
+  if (megaMenuContent.style.maxHeight) {
+    megaMenuContent.style.maxHeight = null;
+  } else {
+    megaMenuContent.style.maxHeight = megaMenuContent.scrollHeight + "px";
+  }
+});
+
+//  Tab Block
+
+$(document).ready(function () {
+  // Initialize the first tab as active
+  $(".tab-pane").hide().css({ opacity: 0, transform: "scale(0.95)" });
+  $(".tab-pane:first").show().css({ opacity: 1, transform: "scale(1)" });
+  $(".tab-btn:first").addClass("text-red-500 border-red-500");
+
+  // Click event for tab buttons
+  $(".tab-btn").on("click", function () {
+    const tabId = $(this).data("tab");
+
+    // Update active styles for buttons
+    $(".tab-btn").removeClass("text-red-500 border-red-500");
+    $(this).addClass("text-red-500 border-red-500");
+
+    // Hide all tab panes with fade-out and transform effect
+    $(".tab-pane").each(function () {
+      $(this).css({ opacity: 0, transform: "scale(0.95)" }).hide();
+    });
+
+    // Show the selected tab pane with smooth fade-in and transform effect
+    $("#" + tabId)
+      .show()
+      .css({ opacity: 0, transform: "scale(0.95)" })
+      .animate({ opacity: 1, transform: "scale(1)" }, 300);
+  });
+});
+
+// search bar
+
+

@@ -14,7 +14,7 @@
 
     <!-- start of the header section -->
     <header>
-        <div class="bg-blue1 py-2  ">
+        <div class="bg-blue1 py-1  ">
             <div class="holder">
                 <ul
                     class="flex justify-end items-center gap-4 md:gap-10 [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:text-sm ">
@@ -27,20 +27,72 @@
             </div>
         </div>
 
-        <div class="holder flex justify-between items-center py-3">
-            <a href="">
+        <div class="holder flex justify-between items-center py-1">
+            <a href="" class="w-12 h-12">
                 <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
             </a>
-            <a href="" class="searchBtn">
-                <svg width="30" height="30" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z" stroke="black" stroke-width="1.57895" stroke-linecap="round"></path>
-                </svg>
-            </a>
+
+            <div class="flex items-center gap-6">
+                <a href="" class="searchBtn">
+                    <svg width="22" height="22" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z" stroke="#266df1" stroke-width="1.57895" stroke-linecap="round"></path>
+                    </svg>
+                </a>
+
+                <nav class="md:hidden block ">
+                    <div class="flex justify-between items-center max-w-7xl mx-auto">
+                        <!-- Hamburger Icon (Mobile) -->
+                        <div class="lg:hidden flex items-center">
+                            <button onclick="toggleMenu()" class="outline-none mobile-menu-button relative">
+                                <span id="line1" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out"></span>
+                                <span id="line2" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
+                                <span id="line3" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Mobile Menu (Slide in from right) -->
+                    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-full bg-gray-200 shadow-lg transform translate-x-full transition-transform duration-500 z-50">
+                        <!-- Close Button -->
+                        <button onclick="toggleMenu()" class="absolute top-4 right-4">
+                            <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+
+                        <!-- Mobile Menu Items -->
+                        <ul class="flex flex-col gap-4 px-6 py-4 mt-10">
+                            <li><a href="#" class="hover:text-orange-500 duration-500">Home</a></li>
+                            <li class="relative">
+                                <button id="scamToggle" class="flex items-center justify-between w-full hover:text-orange-500 duration-500">
+                                    Type of Scam
+                                    <svg class="w-4 h-4 ml-2 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+
+                                <!-- Mega Menu Content (Sub-menu) -->
+                                <div id="megaMenuContent" class="overflow-hidden transition-all duration-500 max-h-0">
+                                    <a href="#" class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Phishing</a>
+                                    <a href="#" class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Fake E-commerce</a>
+                                    <a href="#" class="block text-gray-700 hover:text-orange-500 duration-500 py-2">Email Scams</a>
+                                </div>
+                            </li>
+                            <li><a href="#" class="hover:text-orange-500 duration-500">I have been scammed</a></li>
+                            <li><a href="#" class="hover:text-orange-500 duration-500">Protection against Scam</a></li>
+                            <li><a href="#" class="hover:text-orange-500 duration-500">About</a></li>
+                            <li><a href="#" class="hover:text-orange-500 duration-500">More</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
         </div>
 
-        <nav class="bg-gray-200 py-4 px-4 ">
+        <nav class="md:block hidden bg-gray-200 py-2 px-4 ">
             <ul
-                class="relative flex justify-center items-center gap-4 md:gap-10 [&>li>a]:text-blue-700 [&>li>a]:font-medium [&>li>a]:text-xs  lg:[&>li>a]:text-base [&>li>a]:uppercase">
+                class="relative flex justify-center items-center gap-4 md:gap-10 [&>li>a]:text-blue-700 [&>li>a]:font-medium [&>li>a]:text-xs  lg:[&>li>a]:text-base">
                 <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">Home</a>
                 </li>
 
@@ -50,7 +102,7 @@
 
                     <!-- Mega Menu Dropdown -->
                     <div id="mega-menu"
-                        class="bg-gray-100 absolute -left-4 top-5 w-screen shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
+                        class="bg-gray-100 absolute -left-4 top-4 w-screen shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
 
                         <div class="grid grid-cols-3 gap-8 max-w-[53rem] w-full px-4">
                             <!-- Column 1 -->
@@ -111,7 +163,7 @@
     <!-- end of the header section -->
 
     <!-- start of the Intro section -->
-    <section class="bg-white py-8 md:py-50">
+    <section class="py-8 md:py-50">
         <div class="holder">
             <div class="space-y-5 text-center max-w-5xl mx-auto">
                 <h2 class="">Type of scam</h2>
@@ -126,7 +178,7 @@
 
     <!-- start of the cardSlider section -->
     <section
-        class="block-pad bg-green-100 overflow-hidden">
+        class="block-pad overflow-hidden">
         <div class="holder">
             <div
                 class="flex items-center pb-8 [&>p]:text-white [&>p]:text-base [&>p]:leading-[150%] [&>p]:font-normal">
@@ -137,28 +189,14 @@
                 </div>
 
                 <div class="fade-up-scroll hidden md:flex items-center gap-8 ml-auto">
-                    <div class="promo-prev bg-white rounded-full shadow-md p-[15px]">
-                        <svg
-                            width="11"
-                            height="11"
-                            viewBox="0 0 12 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.9718 18.9411C11.2354 18.6773 11.3835 18.3197 11.3835 17.9468C11.3835 17.5739 11.2354 17.2163 10.9718 16.9526L4.01088 9.99167L10.9718 3.03074C11.228 2.76551 11.3697 2.41029 11.3665 2.04158C11.3633 1.67286 11.2154 1.32016 10.9547 1.05943C10.694 0.798698 10.3413 0.650806 9.97254 0.647602C9.60382 0.644398 9.2486 0.78614 8.98338 1.0423L1.02822 8.99746C0.764588 9.26117 0.616488 9.61879 0.616488 9.99167C0.616488 10.3646 0.764588 10.7222 1.02822 10.9859L8.98338 18.9411C9.24709 19.2047 9.60471 19.3528 9.9776 19.3528C10.3505 19.3528 10.7081 19.2047 10.9718 18.9411Z"
-                                fill="#0A1425" />
+                    <div class="promo-prev">
+                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.0125 22.4835L1 12.0015L11.0125 1.51953L11.431 1.83453L1.72225 12.0015L11.4344 22.1685L11.0125 22.4835Z" fill="black" stroke="black"></path>
                         </svg>
                     </div>
-                    <div class="promo-next bg-white rounded-full shadow-md p-[15px]">
-                        <svg
-                            width="11"
-                            height="11"
-                            viewBox="0 0 12 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.02819 1.05919C0.764555 1.3229 0.616455 1.68052 0.616455 2.05341C0.616455 2.4263 0.764555 2.78392 1.02819 3.04763L7.98912 10.0086L1.02819 16.9695C0.772026 17.2347 0.630284 17.59 0.633488 17.9587C0.636692 18.3274 0.784586 18.6801 1.04532 18.9408C1.30605 19.2015 1.65875 19.3494 2.02747 19.3526C2.39618 19.3558 2.7514 19.2141 3.01662 18.9579L10.9718 11.0028C11.2354 10.7391 11.3835 10.3815 11.3835 10.0086C11.3835 9.63568 11.2354 9.27806 10.9718 9.01435L3.01662 1.05919C2.75291 0.795561 2.39529 0.647461 2.0224 0.647461C1.64952 0.647461 1.2919 0.795561 1.02819 1.05919Z"
-                                fill="#0A1425" />
+                    <div class="promo-next ">
+                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.9875 1.52039L12 12.0024L1.9875 22.4844L1.569 22.1694L11.2778 12.0024L1.56563 1.83539L1.9875 1.52039Z" fill="black" stroke="black"></path>
                         </svg>
                     </div>
                 </div>
@@ -167,9 +205,11 @@
             <div class="swiper cardSlider !overflow-visible">
                 <div class="swiper-wrapper flex gap-5">
                     <div class="swiper-slide">
-                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
 
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
                             <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
@@ -179,9 +219,11 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
 
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
                             <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
@@ -191,8 +233,9 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
@@ -203,8 +246,9 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/33930/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
@@ -214,9 +258,10 @@
 
                         </a>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="" class="h-[300px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                    <div class="swiper-slide"> 
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
 
@@ -359,6 +404,39 @@
     </section>
     <!-- end of the Accordion section -->
 
+    <!-- Start of the Tab section -->
+    <section class="block-pad">
+        <div class="holder">
+            <h2 class="font-bold pb-6">Guides & Alerts</h2>
+            <div class="tab-container">
+                <!-- Tab Navigation -->
+                <div class="tab-nav flex border-b border-gray-300">
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab1">Scam Alerts</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab2">Tips & Guides</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab3">Report Scams</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content mt-4">
+                    <div id="tab1" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
+                        <h2 class="text-xl font-semibold text-red-600">Latest Scam Alerts</h2>
+                        <p class="mt-2 text-gray-700">Stay updated on the latest scams and how to avoid them. Protect yourself from fraudsters.</p>
+                    </div>
+                    <div id="tab2" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
+                        <h2 class="text-xl font-semibold text-red-600">Safety Tips & Guides</h2>
+                        <p class="mt-2 text-gray-700">Learn essential tips and read guides to safeguard your personal and financial information.</p>
+                    </div>
+                    <div id="tab3" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
+                        <h2 class="text-xl font-semibold text-red-600">Report a Scam</h2>
+                        <p class="mt-2 text-gray-700">Help us fight scams by reporting any suspicious activity you encounter.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end of the Tab section -->
+
     <!-- Start of the Contact Form section -->
     <section class="block-pad">
         <div class="holder grid items-center md:grid-cols-2 gap-8">
@@ -438,7 +516,7 @@
     <!-- end of the Contact Form section -->
 
     <!-- start of the News letter section -->
-    <section class="bg-blue1 py-8 md:py-50">
+    <section class="bg-blue1 py-4">
         <div class="holder">
             <div class="flex lg:items-center justify-between gap-5 flex-col lg:flex-row">
                 <div class="space-y-6 lg:shrink-0">
@@ -474,12 +552,12 @@
     <!-- end of the footer section -->
 
     <!-- Start of the footer section -->
-    <footer class="bg-blue1 py-8 md:py-50 ">
+    <footer class="bg-blue1 py-8">
         <div class="holder">
-            <div class="md:hidden border-b-2 border-white text-white pb-10 space-y-4">
+            <div class="md:hidden border-b-2 border-white text-white pb-6 space-y-3">
 
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">About
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">About
 
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -493,7 +571,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">I
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">I
                     have been scam
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -507,7 +585,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Protection
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Protection
                     against Scam
 
                     <span>
@@ -522,7 +600,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Type
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Type
                     of scam
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -536,7 +614,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">News
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">News
                     & Alerts
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -550,7 +628,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Contact
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Contact
                     Us
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -565,7 +643,7 @@
                 </a>
             </div>
 
-            <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-10">
+            <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-4">
                 <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">About</a>
                 <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">I have been
                     scam</a>
@@ -580,13 +658,13 @@
             </div>
 
             <div
-                class="text-white flex md:flex-row flex-col justify-between j items-center pt-6 space-y-5 md:space-y-0">
+                class="text-white flex justify-between j items-center pt-2 space-y-5 md:space-y-0">
 
-                <a href="">
+                <a href="" class="w-14 h-14">
                     <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
                 </a>
 
-                <div class="space-x-4 md:[&>*]:text-base [&>*]:text-xs font-medium">
+                <div class="space-x-4 md:[&>*]:text-sm [&>*]:text-xs">
                     <span>Site designed by <a href=""
                             class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">
                             Skylark</a></span>

@@ -15,20 +15,14 @@ require(get_template_directory() . '/_/inc/_register-navs.php');
 
 require(get_template_directory() . '/_/inc/_custom-wpadmin.php');
 
-// style and js include
 
-// enable featured image 
-add_theme_support('post-thumbnails');
 
 function site_styles_scripts()
 {
     $theme_url = get_template_directory_uri();
 
-    //wp_enqueue_style('magnific-popup', $theme_url . '/_/css/magnific-popup.css', array(), filemtime(get_template_directory() . '/_/css/swiper-bundle.min.css'));
-    // wp_enqueue_style('select2-min', $theme_url . '/_/css/select2.min.css', array(), filemtime(get_template_directory() . '/_/css/swiper-bundle.min.css'));
     wp_enqueue_style('swiper-bundle-style', $theme_url . '/_/css/swiper.min.css', array(), '');
-    // wp_enqueue_style('select2-min', $theme_url . '/_/css/select2.min.css', array(), '');
-    // wp_enqueue_style('theme-style', $theme_url . '/_/css/skylark.min.css', array(), filemtime(get_template_directory() . '/_/css/skylark.min.css'));
+    wp_enqueue_style('theme-style', $theme_url . '/_/css/output.css', array(), filemtime(get_template_directory() . '/_/css/output.css'));
 
     // script
     wp_enqueue_script('swiper-bundle-script', $theme_url . '/_/js/swiper.min.js', array('jquery'), null, false);
