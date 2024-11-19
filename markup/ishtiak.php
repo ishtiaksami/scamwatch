@@ -13,11 +13,11 @@
 <body>
 
     <!-- start of the header section -->
-    <header>
-        <div class="bg-blue1 py-1  ">
+    <header class="relative">
+        <div class="bg-blue1 py-1">
             <div class="holder">
                 <ul
-                    class="flex justify-end items-center gap-4 md:gap-10 [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:text-sm ">
+                    class="flex justify-end items-center gap-4 md:gap-10 [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:text-sm [&>li>a]:tracking-normal">
                     <li><a href="">News & Alerts</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Services</a></li>
@@ -27,10 +27,57 @@
             </div>
         </div>
 
-        <div class="holder flex justify-between items-center py-1">
-            <a href="" class="w-12 h-12">
+        <div class="holder flex justify-between gap-8 items-center py-2 ">
+            <a href="#" class="w-14 h-14">
                 <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
             </a>
+
+            <nav class="md:block hidden py-2 px-4 ">
+                <ul class="flex justify-center items-center gap-4 md:gap-8 xl:gap-10 [&>li>a]:text-blue1 [&>li>a]:font-medium [&>li>a]:text-xs xl:[&>li>a]:text-base [&>li>a]:uppercase [&>li>a]:tracking-normal">
+                    <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">Home</a></li>
+                    <!-- Mega Menu Parent -->
+                    <li>
+                        <a id="scam-link" href="#" class="after-effect relative hover:text-orange-500 duration-500">Type of Scam</a>
+                        <!-- Mega Menu Dropdown -->
+                        <div id="mega-menu"
+                            class="bg-gray-100 absolute left-0 top-[74px] w-screen shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
+                            <div class="grid grid-cols-3 gap-8 max-w-[53rem] w-full px-4">
+                                <!-- Column 1 -->
+                                <div>
+                                    <h4 class="font-semibold mb-4">Online Scams</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="#">Phishing</a></li>
+                                        <li><a href="#">Fake E-commerce</a></li>
+                                        <li><a href="#">Email Scams</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Column 2 -->
+                                <div>
+                                    <h4 class="font-semibold mb-4">Investment Scams</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="#">Ponzi Schemes</a></li>
+                                        <li><a href="#">Crypto Scams</a></li>
+                                        <li><a href="#">Stock Market Scams</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Column 3 -->
+                                <div>
+                                    <h4 class="font-semibold mb-4">Social Media Scams</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="#">Fake Profiles</a></li>
+                                        <li><a href="#">Romance Scams</a></li>
+                                        <li><a href="#">Impersonation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">I have been scam</a></li>
+                    <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">Protection against Scam</a></li>
+                    <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">About</a></li>
+                    <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">More</a></li>
+                </ul>
+            </nav>
 
             <div class="flex items-center gap-6">
                 <a href="" class="searchBtn">
@@ -49,7 +96,6 @@
                                 <span id="line3" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
                             </button>
                         </div>
-
                     </div>
 
                     <!-- Mobile Menu (Slide in from right) -->
@@ -62,15 +108,15 @@
                         </button>
 
                         <!-- Mobile Menu Items -->
-                        <ul class="flex flex-col gap-4 px-6 py-4 mt-10">
+                        <ul class="flex flex-col gap-4 px-6 py-4 mt-10 [&>li>a]:tracking-normal [&>li>a]:upperrcase [&>li>a]:font-semibold ">
                             <li><a href="#" class="hover:text-orange-500 duration-500">Home</a></li>
                             <li class="relative">
-                                <button id="scamToggle" class="flex items-center justify-between w-full hover:text-orange-500 duration-500">
+                                <a href="#" id="scamToggle" class="flex items-center justify-between w-full hover:text-orange-500 duration-500">
                                     Type of Scam
                                     <svg class="w-4 h-4 ml-2 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                     </svg>
-                                </button>
+                                </a>
 
                                 <!-- Mega Menu Content (Sub-menu) -->
                                 <div id="megaMenuContent" class="overflow-hidden transition-all duration-500 max-h-0">
@@ -90,82 +136,14 @@
 
         </div>
 
-        <nav class="md:block hidden bg-gray-200 py-2 px-4 ">
-            <ul
-                class="relative flex justify-center items-center gap-4 md:gap-10 [&>li>a]:text-blue-700 [&>li>a]:font-medium [&>li>a]:text-xs  lg:[&>li>a]:text-base">
-                <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">Home</a>
-                </li>
-
-                <!-- Mega Menu Parent -->
-                <li class="group">
-                    <a id="scam-link" href="#" class="after-effect relative  hover:text-orange-500 duration-500">Type of Scam</a>
-
-                    <!-- Mega Menu Dropdown -->
-                    <div id="mega-menu"
-                        class="bg-gray-100 absolute -left-4 top-4 w-screen shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
-
-                        <div class="grid grid-cols-3 gap-8 max-w-[53rem] w-full px-4">
-                            <!-- Column 1 -->
-                            <div>
-                                <h4 class="font-semibold mb-4">Online Scams</h4>
-                                <ul class="space-y-2">
-                                    <li><a href="#" class=hover:text-orange-500 duration-500">Phishing</a>
-                                    </li>
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Fake
-                                            E-commerce</a></li>
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Email
-                                            Scams</a></li>
-                                </ul>
-                            </div>
-                            <!-- Column 2 -->
-                            <div>
-                                <h4 class="font-semibold mb-4">Investment Scams</h4>
-                                <ul class="space-y-2">
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Ponzi
-                                            Schemes</a></li>
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Crypto
-                                            Scams</a></li>
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Stock Market
-                                            Scams</a></li>
-                                </ul>
-                            </div>
-                            <!-- Column 3 -->
-                            <div>
-                                <h4 class="font-semibold mb-4">Social Media Scams</h4>
-                                <ul class="space-y-2">
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Fake
-                                            Profiles</a></li>
-                                    <li><a href="#" class="text-gray-700 hover:text-orange-500 duration-500">Romance
-                                            Scams</a></li>
-                                    <li><a href="#"
-                                            class="text-gray-700 hover:text-orange-500 duration-500">Impersonation</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500 group"><a href="" class="after-effect relative">I
-                        have been scam</a></li>
-                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500"><a href=""
-                        class="after-effect relative">Protection against Scam</a></li>
-                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500"><a href="" class="after-effect relative">About</a>
-                </li>
-                <li class="[&>a]:hover:text-orange-500 [&>a]:duration-500"><a href="" class="after-effect relative">More</a>
-                </li>
-            </ul>
-
-        </nav>
 
     </header>
     <!-- end of the header section -->
 
     <!-- start of the Intro section -->
-    <section class="py-8 md:py-50">
+    <section class="block-pad">
         <div class="holder">
-            <div class="space-y-5 text-center max-w-5xl mx-auto">
+            <div class="space-y-6 text-center max-w-5xl mx-auto">
                 <h2 class="">Type of scam</h2>
                 <div class="space-y-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fugiat numquam asperiores, distinctio autem, facilis eos quaerat cum odio tempore quibusdam explicabo hic eaque iste, cumque nam quia porro. Neque eaque necessitatibus praesentium cum ex exercitationem, voluptatem sit labore ut. Consequuntur alias veritatis amet, quia officia obcaecati autem quae iste?</p>
@@ -175,6 +153,15 @@
         </div>
     </section>
     <!-- end of the Intro section -->
+
+    <section class="bg-lightBlue">
+        <div class="grid justify-center items-center md:grid-cols-2 lg:grid-cols-4">
+            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">Get help if you have been scammed</a>
+            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">check if something suspicious is a scam</a>
+            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">Report a scam you have encountered</a>
+            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">Protect yourself against scams</a>
+        </div>
+    </section>
 
     <!-- start of the cardSlider section -->
     <section
@@ -197,17 +184,13 @@
                             <path d="M29.3497 26.5013L19.1914 16.3429L20.7549 14.7794L32.4767 26.5013L20.7549 38.2231L19.1914 36.6596L29.3497 26.5013Z" fill="black" />
                         </svg>
                     </div>
-
                 </div>
-
             </div>
-
-
 
             <div class="swiper cardSlider !overflow-visible">
                 <div class="swiper-wrapper flex gap-4">
                     <div class="swiper-slide">
-                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
 
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
@@ -221,7 +204,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
 
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
@@ -235,7 +218,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -248,7 +231,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/33930/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -261,7 +244,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-custom-gradient before:z-10 group hover:before:bg-black/50 before:transition-all">
+                        <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
                             <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -280,9 +263,6 @@
 
                 <a href="#" class="btn group flex justify-end flex-end items-center gap-3 !text-base">
                     Find out more
-                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z" fill="white"></path>
-                    </svg>
                 </a>
             </div>
         </div>
@@ -296,24 +276,31 @@
 
 
                 <div class="lg:col-span-3 lg:order-2">
-                    <img src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Empowering Local Talent" class="w-full">
+                    <img src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Empowering Local Talent" class="w-full">
                 </div>
 
-                <div class="lg:col-span-2 space-y-4 lg:space-y-6 order-2 lg:order-1">
-                    <h2 class="text-black relative pb-6 after:content-[''] after:absolute after:bg-[skyblue] after:w-[74px] after:h-[1px] after:bottom-[0] after:left-[0]">
+                <div class="lg:col-span-2 space-y-4 order-2 lg:order-1">
+                    <h2 class="text-black relative pb-2 ">
                         Sustainability</h2>
 
-                    <div class="[&amp;>*]:text-xl [&amp;>*]:leading-[160%]">
-                        <p>Lorem ipsum dolor sit amet consectetur. Quisque et viverra ultrices nulla. Bibendum proin
-                            vulputate velit adipiscing commodo justo amet.</p>
+                    <div class="[&>*]:leading-[160%]">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, suscipit consectetur.
+                            Corrupti voluptatibus expedita harum enim quaerat amet est ut magni at. Doloribus autem nisi
+                            dolore nihil id eveniet alias est aut explicabo excepturi. Aut, id autem consequuntur sit
+                            aperiam, est facere quae distinctio omnis ad molestias, eaque reiciendis iusto quidem
+                        </p>
                     </div>
 
 
-                    <div class="flex flex-wrap items-center pt-10">
+                    <div class="gap-30 flex flex-wrap items-center pt-6">
                         <a href="#" class="btn group flex items-center gap-3">
                             Find out more
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z" fill="white"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z"
+                                    fill="white"></path>
                             </svg>
                         </a>
                     </div>
@@ -343,9 +330,8 @@
                     <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
                 </div>
             </div>
-
-            <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+            <div class="accordion-item pb-4">
+                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none border-b border-gray-300  mb-2">
                     <h3 class="font-semibold">
                         It's an amazing opportunity to make or save money
                     </h3>
@@ -357,8 +343,8 @@
                     <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
                 </div>
             </div>
-            <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+            <div class="accordion-item pb-4">
+                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none border-b border-gray-300  mb-2">
                     <h3 class="font-semibold">
                         It's an amazing opportunity to make or save money
                     </h3>
@@ -370,8 +356,8 @@
                     <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
                 </div>
             </div>
-            <div class="accordion-item border border-gray-300 rounded-md mb-2">
-                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none">
+            <div class="accordion-item pb-4">
+                <a class="accordion-header w-full p-4 flex justify-between items-center gap-8 focus:outline-none border-b border-gray-300  mb-2">
                     <h3 class="font-semibold">
                         It's an amazing opportunity to make or save money
                     </h3>
@@ -383,7 +369,6 @@
                     <p class="text-gray-700">This is the content of the first accordion item. It can include any HTML elements.</p>
                 </div>
             </div>
-
 
         </div>
     </section>
@@ -395,25 +380,713 @@
             <h2 class="font-bold pb-6">Guides & Alerts</h2>
             <div class="tab-container">
                 <!-- Tab Navigation -->
-                <div class="tab-nav flex border-b border-gray-300">
+                <div class="tab-nav flex border-b border-t border-gray-300">
                     <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab1">Scam Alerts</button>
                     <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab2">Tips & Guides</button>
                     <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab3">Report Scams</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab4">Scam Alerts</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab5">Tips & Guides</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab6">Report Scams</button>
                 </div>
 
                 <!-- Tab Content -->
-                <div class="tab-content mt-4">
+                <div class="tab-content mt-5">
                     <div id="tab1" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <h2 class="text-xl font-semibold text-red-600">Latest Scam Alerts</h2>
-                        <p class="mt-2 text-gray-700">Stay updated on the latest scams and how to avoid them. Protect yourself from fraudsters.</p>
+                        <div class="grid grid-cols-4 gap-4">
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                        </div>
                     </div>
                     <div id="tab2" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <h2 class="text-xl font-semibold text-red-600">Safety Tips & Guides</h2>
-                        <p class="mt-2 text-gray-700">Learn essential tips and read guides to safeguard your personal and financial information.</p>
+                        <div class="grid grid-cols-4 gap-4">
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                        </div>
                     </div>
                     <div id="tab3" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <h2 class="text-xl font-semibold text-red-600">Report a Scam</h2>
-                        <p class="mt-2 text-gray-700">Help us fight scams by reporting any suspicious activity you encounter.</p>
+                        <div class="grid grid-cols-4 gap-4">
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
+                        <div class="grid grid-cols-4 gap-4">
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div id="tab5" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
+                        <div class="grid grid-cols-4 gap-4">
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div id="tab6" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
+                        <div class="grid grid-cols-4 gap-4">
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+
+                                <span class="text-white z-20 text-xs pb-2">Date & time</span>
+
+                                <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
+
+                                <div class="relative z-20 [&>*]:text-white [&>*]:font-light [&>*]:font-brother max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all duration-500 max-w-56">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quisquam.</p>
+                                </div>
+
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

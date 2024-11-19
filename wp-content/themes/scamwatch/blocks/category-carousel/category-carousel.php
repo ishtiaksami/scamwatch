@@ -18,14 +18,11 @@ if ($is_preview) {
 
             <div class="flex items-center">
                 <div class="promo-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
-                        <path d="M23.6503 26.4987L33.8086 36.6571L32.2451 38.2206L20.5233 26.4987L32.2451 14.7769L33.8086 16.3404L23.6503 26.4987Z" fill="black" />
-                    </svg>
+                    <?php get_template_part('svgs/category-prev-arrow') ?>
                 </div>
                 <div class="promo-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
-                        <path d="M29.3497 26.5013L19.1914 16.3429L20.7549 14.7794L32.4767 26.5013L20.7549 38.2231L19.1914 36.6596L29.3497 26.5013Z" fill="black" />
-                    </svg>
+
+                    <?php get_template_part('svgs/category-next-arrow') ?>
                 </div>
 
             </div>
@@ -71,9 +68,7 @@ if ($is_preview) {
                 $link_target = $link['target'] ? $link['target'] : '_self';
             ?>
                 <a class="btn group flex justify-end flex-end items-center gap-3 !text-base" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="10" viewBox="0 0 41 10" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0946 4.47949L0 4.47949V5.52116L39.0951 5.52116L37.1992 7.56283L37.9625 8.27163L41 5.00056L37.9625 1.72949L37.1992 2.4383L39.0946 4.47949Z" fill="white"></path>
-                    </svg>
+                    <?php get_template_part('svgs/right-arrow') ?>
                 </a>
             <?php endif; ?>
         </div>
