@@ -40,7 +40,7 @@
                         <a id="scam-link" href="#" class="after-effect relative hover:text-orange-500 duration-500">Type of Scam</a>
                         <!-- Mega Menu Dropdown -->
                         <div id="mega-menu"
-                            class="bg-gray-100 absolute left-0 top-[74px] w-screen shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
+                            class="bg-gray-100 absolute left-0 top-[74px] w-full shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
                             <div class="grid grid-cols-3 gap-8 max-w-[53rem] w-full px-4">
                                 <!-- Column 1 -->
                                 <div>
@@ -155,7 +155,7 @@
     <!-- end of the Intro section -->
 
     <section class="bg-lightBlue">
-        <div class="grid justify-center items-center md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid justify-center items-center lg md:grid-cols-2 lg:grid-cols-4">
             <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">Get help if you have been scammed</a>
             <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">check if something suspicious is a scam</a>
             <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">Report a scam you have encountered</a>
@@ -191,7 +191,7 @@
                 <div class="swiper-wrapper flex gap-4">
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
 
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -205,7 +205,7 @@
                     </div>
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
 
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -219,7 +219,7 @@
                     </div>
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
@@ -232,7 +232,7 @@
                     </div>
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/33930/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/33930/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
@@ -245,7 +245,7 @@
                     </div>
                     <div class="swiper-slide">
                         <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative group overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EAT">
+                            <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                             <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
                             <h3 class="relative z-20 text-white mb-3 uppercase">Demo</h3>
@@ -380,21 +380,21 @@
             <h2 class="font-bold pb-6">Guides & Alerts</h2>
             <div class="tab-container">
                 <!-- Tab Navigation -->
-                <div class="tab-nav flex border-b border-t border-gray-300">
-                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab1">Scam Alerts</button>
-                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab2">Tips & Guides</button>
-                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab3">Report Scams</button>
-                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab4">Scam Alerts</button>
-                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab5">Tips & Guides</button>
-                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent" data-tab="tab6">Report Scams</button>
+                <div class="tab-nav flex border-b border-gray-300">
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent uppercase" data-tab="tab1">Scam Alerts</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent uppercase" data-tab="tab2">Tips & Guides</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent uppercase" data-tab="tab3">Report Scams</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent uppercase" data-tab="tab4">Scam Alerts</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent uppercase" data-tab="tab5">Tips & Guides</button>
+                    <button class="tab-btn flex-1 py-2 text-gray-600 hover:text-red-500 border-b-2 border-transparent uppercase" data-tab="tab6">Report Scams</button>
                 </div>
 
                 <!-- Tab Content -->
-                <div class="tab-content mt-5">
+                <div class="pt-6">
                     <div id="tab1" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <div class="grid grid-cols-4 gap-4">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -406,7 +406,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -418,7 +418,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -430,7 +430,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -442,7 +442,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -454,7 +454,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -466,7 +466,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -478,7 +478,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -490,7 +490,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -504,9 +504,9 @@
                         </div>
                     </div>
                     <div id="tab2" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <div class="grid grid-cols-4 gap-4">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -518,7 +518,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -530,7 +530,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -543,7 +543,7 @@
                             </a>
 
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -555,7 +555,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -567,7 +567,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -579,7 +579,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -593,9 +593,9 @@
                         </div>
                     </div>
                     <div id="tab3" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <div class="grid grid-cols-4 gap-4">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -607,7 +607,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -619,7 +619,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -631,7 +631,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -643,7 +643,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -655,7 +655,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -667,7 +667,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -679,7 +679,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -691,7 +691,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -703,7 +703,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -715,7 +715,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -727,7 +727,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -739,7 +739,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -753,9 +753,9 @@
                         </div>
                     </div>
                     <div id="tab4" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <div class="grid grid-cols-4 gap-4">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -767,7 +767,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -779,7 +779,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -791,7 +791,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -803,7 +803,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -815,7 +815,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -827,7 +827,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -839,7 +839,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -851,7 +851,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -865,9 +865,9 @@
                         </div>
                     </div>
                     <div id="tab5" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <div class="grid grid-cols-4 gap-4">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -879,7 +879,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -891,7 +891,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -903,7 +903,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -915,7 +915,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -927,7 +927,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -939,7 +939,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -951,7 +951,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -963,7 +963,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -977,9 +977,9 @@
                         </div>
                     </div>
                     <div id="tab6" class="tab-pane hidden opacity-0 transform scale-95 transition-all duration-300">
-                        <div class="grid grid-cols-4 gap-4">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -991,7 +991,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -1003,7 +1003,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -1015,7 +1015,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image4.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -1027,7 +1027,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image5.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -1039,7 +1039,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image6.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -1051,7 +1051,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image7.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -1063,7 +1063,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image3.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -1075,7 +1075,7 @@
 
                             </a>
                             <a href="" class="h-[350px] flex flex-wrap flex-col justify-end p-5 relative overflow-hidden before:absolute before:w-full before:h-full before:top-0 before:left-0  before:z-10 group hover:before:bg-black/50 before:transition-all">
-                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="EAT">
+                                <img class="absolute left-0 top-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-all duration-500" src="/wp-content/themes/scamwatch/_/img/image2.jpg" alt="">
 
                                 <span class="text-white z-20 text-xs pb-2">Date & time</span>
 
@@ -1090,10 +1090,82 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- end of the Tab section -->
+
+
+    <section class="block-pad bg-soft-vanilla">
+        <div class="holder">
+            <h2 class="tracking-wider pb-8">Types of scams</h2>
+            <div class="space-y-6">
+                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-2 w-[200px]">
+                        <img src="/wp-content/themes/scamwatch/_/img/dateromance.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Online dating and romance scams</h3>
+                        <p>Online dating and romance scams are on the rise. Criminals use dating sites and social media to build a relationship with their victims. They may pretend to be a soldier, a diplomat, a businessperson, or even a government official. They may even pretend to be a victim of a natural</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-2 w-[200px]">
+                        <img src="/wp-content/themes/scamwatch/_/img/invest.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Investment scams</h3>
+                        <p>If you're looking to make money through investing, watch out – scammers have created all sorts of fake opportunities to get you excited and take away your cash.</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-2 w-[200px]">
+                        <img src="/wp-content/themes/scamwatch/_/img/products.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Product and service scams</h3>
+                        <p>Scammers prey on consumers and businesses that are buying or selling products and services. Not every transaction is legitimate. </p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-2 w-[200px]">
+                        <img src="/wp-content/themes/scamwatch/_/img/treats.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Threats and extortion scams</h3>
+                        <p>Scammers will use any means possible to steal your identity or your money – including threatening your life or 'hijacking' your computer.</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-2 w-[200px]">
+                        <img src="/wp-content/themes/scamwatch/_/img/job.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Jobs and employment scams</h3>
+                        <p>Jobs and employment scams deceive you into handing over your money by offering you a ‘guaranteed’ way to make fast money or a high-paying job for little effort.</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-2 w-[200px]">
+                        <img src="/wp-content/themes/scamwatch/_/img/unespected.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Unexpected money</h3>
+                        <p>Don't be lured by a surprise win. These scams try to deceive you into giving money upfront or your personal information in order to receive a prize from a lottery or competition that you never entered.</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-2 w-[200px]">
+                        <img src="/wp-content/themes/scamwatch/_/img/impersonation.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">impersonation scams</h3>
+                        <p>Scammers impersonate trusted businesses, friends or family, to steal your money or personal information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Start of the Contact Form section -->
     <section class="block-pad">
@@ -1203,13 +1275,13 @@
                                     stroke-linejoin="round" class="md:group-hover:stroke-blue-700 duration-500"></path>
                             </svg> </button>
                     </form>
-                </div><!-- form wrap -->
+                </div>
             </div>
         </div>
     </section>
     <!-- end of the footer section -->
 
-    <!-- Start of the footer section -->
+    <!-- start of the footer section -->
     <footer class="bg-blue1 py-8">
         <div class="holder">
             <div class="md:hidden border-b-2 border-white text-white pb-6 space-y-3">

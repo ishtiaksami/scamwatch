@@ -73,16 +73,3 @@ body {
 .active .opacity-0 {
   opacity: 1 !important;
 }
-
-/* Additional styling for smooth transitions */
-#searchOverlay {
-  transition: opacity 0.3s ease;
-}
-#searchOverlay.open {
-  display: flex !important;
-  opacity: 1;
-}
-#searchOverlay.hidden {
-  opacity: 0;
-  display: none !important;
-}
