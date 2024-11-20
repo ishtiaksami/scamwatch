@@ -339,6 +339,50 @@
     </section>
     <!-- ============================ End News Letter Grid Section ============================ -->
 
+    <section class="block-pad">
+        <div class="holder">
+
+            <ol class="accc-cards__list px-4 md:px-0">
+                <li class="">
+                    <a href="#">
+                        <h3>stop</h3>
+                        <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
+                            delete.</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <h3>stop</h3>
+                        <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
+                            delete.</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <h3>stop</h3>
+                        <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
+                            delete.</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <h3>stop</h3>
+                        <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
+                            delete.</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <h3>stop</h3>
+                        <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
+                            delete.</p>
+                    </a>
+                </li>
+            </ol>
+
+        </div>
+    </section>
+
     <section class="bg-soft-vanilla block-pad">
         <div class="holder">
 

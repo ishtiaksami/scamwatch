@@ -14,10 +14,10 @@ body {
 }
 
 .btn {
-  @apply  px-6 py-3 bg-blue1 text-white text-lg font-semibold rounded transition-all duration-500;
+  @apply px-6 py-3 bg-blue1 text-white text-lg font-semibold rounded transition-all duration-500;
 }
 .btn:hover {
-  @apply bg-bright-Orange    ;
+  @apply bg-bright-Orange;
 }
 .btn:hover > svg > path {
   @apply fill-white transition-all duration-300;
@@ -72,4 +72,61 @@ body {
 }
 .active .opacity-0 {
   opacity: 1 !important;
+}
+
+
+
+.accc-cards__list > li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  counter-increment: item;
+}
+
+.accc-cards__list a {
+  color: #342d8c;
+  background-color: #fff;
+  display: block;
+  padding: 1.5rem 1.5rem 2.5rem 3.5rem;
+  border-bottom: none;
+  border-left: 0.5rem solid #9d9d9d;
+  transition: background-color 0.1s linear, color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+.accc-cards__list li:nth-child(2n) a{
+  background-color: #fafafa;
+}
+.accc-cards__list a:hover {
+  border-left-color: #0a2391;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.06), 0 0 0.2rem rgba(0, 0, 0, 0.12);
+}
+
+.accc-cards__list h3 {
+  font-size: 1.6rem;
+  font-width: bold;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+}
+.accc-cards__list a:hover h3 {
+  text-decoration: underline;
+  text-decoration-color: #0a2391;
+}
+.accc-cards__list > li::after {
+  position: absolute;
+  top: 1rem;
+  left: -1.3rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  content: counter(item);
+  background: #fff;
+  border: 0.5rem solid #9d9d9d;
+  border-radius: 50%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.accc-cards__list > li:hover::after {
+  border-color: #0a2391;
 }
