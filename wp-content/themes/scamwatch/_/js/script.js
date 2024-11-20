@@ -186,32 +186,35 @@ scamToggle.addEventListener("click", () => {
 //  Tab Block
 
 $(document).ready(function () {
-  // Initialize the first tab as active
-  $(".tab-pane").hide().css({ opacity: 0, transform: "scale(0.95)" });
-  $(".tab-pane:first").show().css({ opacity: 1, transform: "scale(1)" });
-  $(".tab-btn:first").addClass("text-red-500 border-red-500");
+  // Set the default active tab
+  $(".tab-btn:first")
+    .removeClass("text-gray-600 border-transparent")
+    .addClass("text-red-500 border-red-500");
+  $(".tab-pane:first")
+    .removeClass("hidden opacity-0 scale-95")
+    .addClass("opacity-100 scale-100");
 
-  // Click event for tab buttons
+  // Tab navigation functionality
   $(".tab-btn").on("click", function () {
-    const tabId = $(this).data("tab");
+    // Remove active class from all buttons and add to clicked button
+    $(".tab-btn")
+      .removeClass("text-red-500 border-red-500")
+      .addClass("text-gray-600 border-transparent");
+    $(this)
+      .removeClass("text-gray-600 border-transparent")
+      .addClass("text-red-500 border-red-500");
 
-    // Update active styles for buttons
-    $(".tab-btn").removeClass("text-red-500 border-red-500");
-    $(this).addClass("text-red-500 border-red-500");
+    // Get the target tab
+    const targetTab = $(this).data("tab");
 
-    // Hide all tab panes with fade-out and transform effect
-    $(".tab-pane").each(function () {
-      $(this).css({ opacity: 0, transform: "scale(0.95)" }).hide();
-    });
+    // Hide all tab content
+    $(".tab-pane").addClass("hidden opacity-0 scale-95");
 
-    // Show the selected tab pane with smooth fade-in and transform effect
-    $("#" + tabId)
-      .show()
-      .css({ opacity: 0, transform: "scale(0.95)" })
-      .animate({ opacity: 1, transform: "scale(1)" }, 300);
+    // Show the target tab with transition
+    $(`#${targetTab}`)
+      .removeClass("hidden opacity-0 scale-95")
+      .addClass("opacity-100 scale-100");
   });
 });
 
 // search bar
-
-
