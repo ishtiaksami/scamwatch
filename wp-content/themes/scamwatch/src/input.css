@@ -14,10 +14,10 @@ body {
 }
 
 .btn {
-  @apply border border-blue1 px-4 py-3 bg-white text-blue1 text-lg font-semibold rounded transition-all duration-300;
+  @apply  px-6 py-3 bg-blue1 text-white text-lg font-semibold rounded transition-all duration-500;
 }
 .btn:hover {
-  @apply bg-blue1 text-white border;
+  @apply bg-bright-Orange    ;
 }
 .btn:hover > svg > path {
   @apply fill-white transition-all duration-300;
