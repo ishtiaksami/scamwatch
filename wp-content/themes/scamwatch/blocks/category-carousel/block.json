@@ -1,0 +1,23 @@
+{
+  "name": "acf/category-carousel",
+  "title": "Category Carousel Block",
+  "description": "Category Carousel Block",
+  "category": "layout",
+  "icon": "editor-justify",
+  "keywords": ["Carousel", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "category-carousel.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

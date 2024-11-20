@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -561,30 +563,38 @@ video {
   } */
 
 h1{
+  font-family: Raleway, sans-serif;
   font-size: 3rem;
   font-weight: 400;
   line-height: 1;
+  letter-spacing: 0.025em;
 }
 
 h2{
+  font-family: Raleway, sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 0.025em;
 }
 
 h3{
+  font-family: Raleway, sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 0.025em;
 }
 
 h4{
+  font-family: Raleway, sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 0.025em;
 }
 
 p{
@@ -595,15 +605,8 @@ p{
 }
 
 .block-pad{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-@media (min-width: 768px){
-  .block-pad{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .container{
@@ -736,6 +739,10 @@ p{
   top: 48%;
 }
 
+.top-\[74px\]{
+  top: 74px;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -795,10 +802,6 @@ p{
 
 .mt-10{
   margin-top: 2.5rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .mt-4{
@@ -883,6 +886,10 @@ p{
 
 .h-\[250px\]{
   height: 250px;
+}
+
+.h-\[341px\]{
+  height: 341px;
 }
 
 .h-\[350px\]{
@@ -1039,6 +1046,10 @@ p{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1186,6 +1197,10 @@ p{
   border-bottom-width: 5px;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-none{
   border-style: none;
 }
@@ -1244,6 +1259,11 @@ p{
   background-color: rgb(233 233 228 / var(--tw-bg-opacity));
 }
 
+.bg-lightBlue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 121 255 / var(--tw-bg-opacity));
+}
+
 .bg-soft-vanilla{
   --tw-bg-opacity: 1;
   background-color: rgb(255 245 210 / var(--tw-bg-opacity));
@@ -1277,6 +1297,10 @@ p{
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-3{
@@ -1363,20 +1387,20 @@ p{
   padding-bottom: 1.5rem;
 }
 
-.pt-10{
-  padding-top: 2.5rem;
-}
-
 .pt-2{
   padding-top: 0.5rem;
 }
 
-.pt-4{
-  padding-top: 1rem;
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-left{
@@ -1389,6 +1413,10 @@ p{
 
 .text-right{
   text-align: right;
+}
+
+.font-montserrat{
+  font-family: Montserrat, sans-serif;
 }
 
 .\!text-base{
@@ -1650,7 +1678,7 @@ body{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: Roboto, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
 }
 
@@ -1678,10 +1706,14 @@ body{
 }
 
 .btn:hover > svg > path{
-  fill: #266df1;
+  fill: #fff;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+
+.btn > svg > path{
+  fill: #266df1;
 }
 
 .after-effect::after{
@@ -1702,18 +1734,6 @@ body{
 .after-effect:hover::after{
   left: 0px;
   width: 100%;
-}
-
-.clip-path-polygon {
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0 100%, 0 51%, 0 0);
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  background: green;
-}
-
-.clip-path-polygon-2 {
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  background: green;
 }
 
 .promo-prev > svg > path{
@@ -1841,51 +1861,20 @@ body{
   transition-duration: 150ms;
 }
 
-.after\:absolute::after{
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.after\:bottom-\[0\]::after{
-  content: var(--tw-content);
-  bottom: 0;
-}
-
-.after\:left-\[0\]::after{
-  content: var(--tw-content);
-  left: 0;
-}
-
-.after\:h-\[1px\]::after{
-  content: var(--tw-content);
-  height: 1px;
-}
-
-.after\:w-\[74px\]::after{
-  content: var(--tw-content);
-  width: 74px;
-}
-
-.after\:bg-\[skyblue\]::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(135 206 235 / var(--tw-bg-opacity));
-}
-
 .after\:bg-white::after{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.after\:content-\[\'\'\]::after{
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
 .after\:content-none::after{
   --tw-content: none;
   content: var(--tw-content);
+}
+
+.hover\:bg-blue1:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 109 241 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-100:hover{
@@ -2012,6 +2001,10 @@ body{
 
   .md\:gap-11{
     gap: 2.75rem;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -2151,21 +2144,16 @@ body{
     gap: 3.5rem;
   }
 
-  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-  }
-
   .lg\:py-50{
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 
-.\[\&\>\*\]\:text-xl>*{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+@media (min-width: 1280px){
+  .xl\:gap-10{
+    gap: 2.5rem;
+  }
 }
 
 .\[\&\>\*\]\:text-xs>*{
@@ -2286,13 +2274,26 @@ body{
   font-weight: 500;
 }
 
+.\[\&\>li\>a\]\:font-semibold>li>a{
+  font-weight: 600;
+}
+
 .\[\&\>li\>a\]\:uppercase>li>a{
   text-transform: uppercase;
+}
+
+.\[\&\>li\>a\]\:tracking-normal>li>a{
+  letter-spacing: 0em;
 }
 
 .\[\&\>li\>a\]\:text-blue-700>li>a{
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.\[\&\>li\>a\]\:text-blue1>li>a{
+  --tw-text-opacity: 1;
+  color: rgb(38 109 241 / var(--tw-text-opacity));
 }
 
 .\[\&\>li\>a\]\:text-white>li>a{
@@ -2302,6 +2303,13 @@ body{
 
 @media (min-width: 1024px){
   .lg\:\[\&\>li\>a\]\:text-base>li>a{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:\[\&\>li\>a\]\:text-base>li>a{
     font-size: 1rem;
     line-height: 1.5rem;
   }

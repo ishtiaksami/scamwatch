@@ -5,8 +5,8 @@ if ($is_preview) {
     return;
 }
 ?>
- 
- 
+
+
 <!-- start of text & Media Block  -->
 <section class="block-pad <?php echo isset($block['className']) ? $block['className'] : ''; ?>" id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
 
@@ -20,13 +20,13 @@ if ($is_preview) {
                 </div>
             <?php endif; ?>
 
-            <div class="lg:col-span-2 space-y-4">
+            <div class="lg:col-span-2 space-y-6">
                 <?php if ($title = get_field('title')) : ?>
-                    <h2 class="text-black relative pb-2 "> <?php echo esc_html($title); ?></h2>
+                    <h2> <?php echo esc_html($title); ?></h2>
                 <?php endif; ?>
 
                 <?php if ($content = get_field('content')) : ?>
-                    <div class=" <?php ksa('[&>*]:text-xl [&>*]:leading-[160%]'); ?>">
+                    <div class=" <?php ksa('[&>*]:leading-[160%]'); ?>">
                         <?php echo $content; ?>
                     </div>
                 <?php endif; ?>
@@ -38,7 +38,7 @@ if ($is_preview) {
                     $link_title = $link['title'];
                     $link_target = $link['target'] ? $link['target'] : '_self';
                 ?>
-                    <div class="gap-30 flex flex-wrap items-center pt-6">
+                    <div class="gap-30 flex flex-wrap items-center pt-5">
                         <a class="btn group flex items-center gap-3" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
 
                             <?php get_template_part('svgs/right-arrow'); ?>

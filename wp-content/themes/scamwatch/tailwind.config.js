@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        custom1: '0 0 0.3rem rgba(0, 0, 0, 0.06), 0 0 0.2rem rgba(0, 0, 0, 0.12)',
-        custom2: '0 .2rem .4rem rgba(0,0,0,.16),0 .2rem .4rem rgba(0,0,0,.23)',
+        custom1:
+          "0 0 0.3rem rgba(0, 0, 0, 0.06), 0 0 0.2rem rgba(0, 0, 0, 0.12)",
+        custom2: "0 .2rem .4rem rgba(0,0,0,.16),0 .2rem .4rem rgba(0,0,0,.23)",
       },
       maxWidth: {
         siteWidth: "1512px",
@@ -21,18 +22,20 @@ module.exports = {
       },
 
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
 
       fontSize: {
         64: "4rem",
       },
       colors: {
-        'blue1': "#266df1",
-        'gray1': "#e9e9e4",
-        'blue-light': "#568df4",
-        'bright-Orange': "#FF742D",
-        'soft-vanilla': "#FFF5D2",
+        lightBlue: "#3a79ff",
+        blue1: "#266df1",
+        gray1: "#e9e9e4",
+        "blue-light": "#568df4",
+        "bright-Orange": "#FF742D",
+        "soft-vanilla": "#FFF5D2",
       },
     },
   },

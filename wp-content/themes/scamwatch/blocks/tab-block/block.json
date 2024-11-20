@@ -1,0 +1,23 @@
+{
+  "name": "acf/tab-block",
+  "title": "Tab block",
+  "description": "This block will show tab with multiple content",
+  "category": "layout",
+  "icon": "table-row-after",
+  "keywords": ["Title", "Content"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "tab-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}
