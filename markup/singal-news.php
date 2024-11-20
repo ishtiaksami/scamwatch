@@ -130,7 +130,7 @@
             <div class="flex justify-between items-center">
                 <div>
                     <a href="#" class="text-blue1 underline">Home</a>
-                    <span class="text-blue1"> / </span> 
+                    <span class="text-blue1"> / </span>
                     <a href="#" class="text-blue1 underline">News and alerts</a>
                 </div>
             </div>
@@ -164,6 +164,21 @@
                             have
                             access to people’s webcam or computer.</p>
                         <p>There have been hundreds of reports recently of people who have been targeted this way.</p>
+
+                        <div
+                            class="bg-gray4 relative pt-4 px-12 pb-16 rounded-t-none rounded-br-[0.5rem] rounded-bl-[0.5rem] shadow-custom1 overflow-hidden">
+
+                            <div class="space-y-5 mt-6">
+                                <h3>Find out more</h3>
+                                <p>This scam is a type of <a class=" underline text-blue1" href="#">threat and extortion scam.</a></p>
+                                <p>In these kinds of scams, criminals threaten you so you will pay them money. Speak
+                                    up and report before handing over money to someone who threatens you</p>
+                            </div>
+
+                            <span
+                                class=" border-t-[3rem] border-t-pink  absolute border-r-[3rem] border-transparent top-0 -left-[1.5rem] p-3"></span>
+
+                        </div>
                     </div>
                 </div>
                 <aside class="basis-1/4 grow-0 shrink-0 max-w-1/4 order-3 hidden md:block">
