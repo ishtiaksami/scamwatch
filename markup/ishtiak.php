@@ -80,12 +80,24 @@
             </nav>
 
             <div class="flex items-center gap-6">
-                <a href="" class="searchBtn">
+                <!-- Search Icon -->
+                <a href="#" class="searchBtn" id="openSearch">
                     <svg width="22" height="22" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z" stroke="#266df1" stroke-width="1.57895" stroke-linecap="round"></path>
+                        <path d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z"
+                            stroke="#266df1" stroke-width="1.57895" stroke-linecap="round">
+                        </path>
                     </svg>
                 </a>
-
+                <!-- Fullscreen Search Bar -->
+                <div id="fullscreenSearch" class="fixed top-0 right-0 w-0 h-0 bg-blue1 bg-opacity-70 flex justify-center items-center z-50 overflow-hidden transition-all duration-500">
+                    <div class="w-full max-w-3xl px-4">
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                            class="w-full p-4 bg-white rounded-lg shadow-lg text-gray-800 text-lg focus:outline-none" />
+                        <button id="closeSearch" class="absolute top-4 right-4 text-white text-4xl">&times;</button>
+                    </div>
+                </div>
                 <nav class="md:hidden block ">
                     <div class="flex justify-between items-center max-w-7xl mx-auto">
                         <!-- Hamburger Icon (Mobile) -->
@@ -156,10 +168,10 @@
 
     <section class="bg-lightBlue">
         <div class="grid justify-center items-center lg md:grid-cols-2 lg:grid-cols-4">
-            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">Get help if you have been scammed</a>
-            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">check if something suspicious is a scam</a>
-            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">Report a scam you have encountered</a>
-            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center  duration-500">Protect yourself against scams</a>
+            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center duration-500">Get help if you have been scammed</a>
+            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center duration-500">check if something suspicious is a scam</a>
+            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center duration-500">Report a scam you have encountered</a>
+            <a href="" class="p-8 hover:bg-blue1 text-white uppercase text-center duration-500">Protect yourself against scams</a>
         </div>
     </section>
 
@@ -273,8 +285,6 @@
     <section class="block-pad">
         <div class="holder">
             <div class="grid lg:grid-cols-5 items-center lg:gap-14 gap-8">
-
-
                 <div class="lg:col-span-3 lg:order-2">
                     <img src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Empowering Local Talent" class="w-full">
@@ -305,8 +315,6 @@
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -1099,66 +1107,65 @@
         <div class="holder">
             <h2 class="tracking-wider pb-8">Types of scams</h2>
             <div class="space-y-6">
-                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-2 w-[200px]">
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
                         <img src="/wp-content/themes/scamwatch/_/img/dateromance.png" alt="" class="w-full">
                     </div>
-                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
                         <h3 class="tracking-wider">Online dating and romance scams</h3>
                         <p>Online dating and romance scams are on the rise. Criminals use dating sites and social media to build a relationship with their victims. They may pretend to be a soldier, a diplomat, a businessperson, or even a government official. They may even pretend to be a victim of a natural</p>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-2 w-[200px]">
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
                         <img src="/wp-content/themes/scamwatch/_/img/invest.png" alt="" class="w-full">
                     </div>
-                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
                         <h3 class="tracking-wider">Investment scams</h3>
                         <p>If you're looking to make money through investing, watch out – scammers have created all sorts of fake opportunities to get you excited and take away your cash.</p>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-2 w-[200px]">
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
                         <img src="/wp-content/themes/scamwatch/_/img/products.png" alt="" class="w-full">
                     </div>
-                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
                         <h3 class="tracking-wider">Product and service scams</h3>
                         <p>Scammers prey on consumers and businesses that are buying or selling products and services. Not every transaction is legitimate. </p>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-2 w-[200px]">
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
                         <img src="/wp-content/themes/scamwatch/_/img/treats.png" alt="" class="w-full">
                     </div>
-                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
                         <h3 class="tracking-wider">Threats and extortion scams</h3>
                         <p>Scammers will use any means possible to steal your identity or your money – including threatening your life or 'hijacking' your computer.</p>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-2 w-[200px]">
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
                         <img src="/wp-content/themes/scamwatch/_/img/job.png" alt="" class="w-full">
                     </div>
-                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
                         <h3 class="tracking-wider">Jobs and employment scams</h3>
                         <p>Jobs and employment scams deceive you into handing over your money by offering you a ‘guaranteed’ way to make fast money or a high-paying job for little effort.</p>
                     </div>
                 </div>
-
-                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-2 w-[200px]">
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
                         <img src="/wp-content/themes/scamwatch/_/img/unespected.png" alt="" class="w-full">
                     </div>
-                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
                         <h3 class="tracking-wider">Unexpected money</h3>
                         <p>Don't be lured by a surprise win. These scams try to deceive you into giving money upfront or your personal information in order to receive a prize from a lottery or competition that you never entered.</p>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-9 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-2 w-[200px]">
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
                         <img src="/wp-content/themes/scamwatch/_/img/impersonation.png" alt="" class="w-full">
                     </div>
-                    <div class="col-span-7 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
                         <h3 class="tracking-wider">impersonation scams</h3>
                         <p>Scammers impersonate trusted businesses, friends or family, to steal your money or personal information.</p>
                     </div>

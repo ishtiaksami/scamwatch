@@ -218,3 +218,26 @@ $(document).ready(function () {
 });
 
 // search bar
+
+$(document).ready(function () {
+  // Open search overlay
+  $("#openSearch").click(function (e) {
+    e.preventDefault();
+    $("#fullscreenSearch").removeClass("w-0 h-0").addClass("w-full h-full");
+    $("body").addClass("no-scroll"); // Disable body scroll
+  });
+
+  // Close search overlay
+  $("#closeSearch").click(function () {
+    $("#fullscreenSearch").removeClass("w-full h-full").addClass("w-0 h-0");
+    $("body").removeClass("no-scroll"); // Enable body scroll
+  });
+
+  // Close on ESC key
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape") {
+      $("#fullscreenSearch").removeClass("w-full h-full").addClass("w-0 h-0");
+      $("body").removeClass("no-scroll"); // Enable body scroll
+    }
+  });
+});

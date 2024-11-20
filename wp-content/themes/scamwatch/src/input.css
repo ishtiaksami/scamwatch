@@ -22,9 +22,7 @@ body {
 .btn:hover > svg > path {
   @apply fill-white transition-all duration-300;
 }
-.btn > svg > path {
-  @apply fill-blue1;
-}
+
 .after-effect::after {
   @apply bg-black bottom-[-2px] content-[""] h-[1px] right-0 absolute w-0 transition-all duration-300;
 }
