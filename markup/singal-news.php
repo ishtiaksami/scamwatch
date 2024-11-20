@@ -125,77 +125,100 @@
     </header>
     <!-- end of the header section -->
 
-    <section class="bg-soft-vanilla block-pad">
+    <section class="bg-bright-Orange md:py-20 py-10">
         <div class="holder">
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-                <a href="#"
-                    class="relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
-                    <figure class="relative w-full">
-                        <img class="max-h-[150px] w-auto mx-auto pb-6 "
-                            src="https://cdn.pixabay.com/photo/2016/08/21/18/48/emoticon-1610518_1280.png" alt="">
-
-                        <figcaption class="pt-6">
-                            <h3>Is this a scam?</h3>
-                            <p class=" mt-6">Warning signs to help you identify if you've encountered a scam.</p>
-                        </figcaption>
-                    </figure>
-
-                    <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
-                    </div>
-
-                    <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
-                </a>
-
-                <a href="#"
-                    class="relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
-                    <figure class="relative w-full">
-                        <img class="max-h-[150px] w-auto mx-auto pb-6 "
-                            src="https://cdn.pixabay.com/photo/2016/08/21/18/48/emoticon-1610518_1280.png" alt="">
-
-                        <figcaption class="pt-6">
-                            <h3>Is this a scam?</h3>
-                            <p class=" mt-6">Warning signs to help you identify if you've encountered a scam.</p>
-                        </figcaption>
-                    </figure>
-
-                    <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
-                    </div>
-
-                    <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
-                </a>
-
-                <a href="#"
-                    class="relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
-                    <figure class="relative w-full">
-                        <img class="max-h-[150px] w-auto mx-auto pb-6 "
-                            src="https://cdn.pixabay.com/photo/2016/08/21/18/48/emoticon-1610518_1280.png" alt="">
-
-                        <figcaption class="pt-6">
-                            <h3>Is this a scam?</h3>
-                            <p class=" mt-6">Warning signs to help you identify if you've encountered a scam.</p>
-                        </figcaption>
-                    </figure>
-
-                    <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                        <i class="fas fa-arrow-right text-white"></i>
-                    </div>
-
-                    <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
-                </a>
-
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="#" class="text-blue1 underline">Home</a>
+                    <span class="text-blue1"> / </span> 
+                    <a href="#" class="text-blue1 underline">News and alerts</a>
+                </div>
+            </div>
+            <div class=" mt-5 md:mt-10 max-w-[1100px]">
+                <h2 class=" text-blue-700 text-64 ">Scam alert: Bulk email extortion scam</h2>
             </div>
         </div>
     </section>
-    <!-- ============================ End Grid image Section ============================ -->
-    <footer class="bg-blue1 py-8 md:py-50 ">
+
+    <section class=" block-pad">
         <div class="holder">
-            <div class="md:hidden border-b-2 border-white text-white pb-10 space-y-4">
+
+            <div class=" flex gap-8">
+                <div class=" order-2 grow-0 shrink-0 basis-full max-w-full md:basis-2/3 md:max-w-2/3 space-y-6">
+                    <h3 class="text-3xl leading-normal">Background</h3>
+                    <div class="space-y-5">
+                        <p>Criminals are emailing people and falsely claiming they have hacked into their computers or
+                            webcams
+                            and have access to compromising images and videos of them. These criminals are threatening
+                            people by
+                            saying they will release the images and videos unless they’re paid. They include personal
+                            details
+                            such as birth dates and addresses in the emails to intimidate people into sending them
+                            money.
+                        </p>
+                        <p>These personal details are most likely from previous public data breaches. Anyone receiving
+                            this
+                            scam
+                            email should know that there is no evidence that the criminals sending these emails really
+                            do
+                            have
+                            access to people’s webcam or computer.</p>
+                        <p>There have been hundreds of reports recently of people who have been targeted this way.</p>
+                    </div>
+                </div>
+                <aside class="basis-1/4 grow-0 shrink-0 max-w-1/4 order-3 hidden md:block">
+                    <div
+                        class=" bg-gray2 relative py-6 pr-6 pl-8 mb-10 shadow-custom3 border border-gray3 after:border-[0.5rem] after:border-blue1 after:absolute after:top-0 after:left-0 after:block after:h-full ">
+                        <p>Subscribe for email alerts on the latest scams. </p>
+                        <a class="btn !p-2 !text-sm !mt-5 inline-block" href="#">Subscribe to email alerts</a>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-blue1 py-4">
+        <div class="holder">
+            <div class="flex lg:items-center justify-between gap-5 flex-col lg:flex-row">
+                <div class="space-y-6 lg:shrink-0">
+                    <h2 class="text-white leading-none font-obviously font-normal ">Subscribe for our
+                        newsletter</h2>
+
+                    <p class="text-white  font-light hidden lg:block">Lorem ipsum dolor sit amet consectetur. Quisque
+                        et.</p>
+                </div><!-- Newsletter text -->
+
+                <div class="max-w-[44.375rem] w-full">
+                    <form action="" class="flex items-end gap-5 relative">
+                        <div class="flex-1 border-b border-white">
+                            <input type="email" placeholder="Enter your email address*"
+                                class="text-white md:text-blue-700 bg-transparent md:bg-white w-[calc(100%_-_100px)]  md:w-full py-[15px] px-5 border-none leading-none focus:outline-none placeholder:text-white md:placeholder:text-blue-700 placeholder:text-sm placeholder:opacity-50 placeholder: placeholder:font-normal placeholder:first-letter:capitalize">
+                        </div>
+
+                        <button
+                            class="text-white text-sm font-obviously font-normal uppercase tracking-wider md:min-w-[9.625rem] flex items-center md:border border-white gap-3 md:gap-11 md:px-5 md:py-[14px] absolute right-0 bottom-4 md:static md:hover:text-blue-700 md:hover:bg-white duration-500 z-10 group">
+                            explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.5"
+                                    d="M2.66781 7.5C2.5352 7.5 2.40802 7.55268 2.31425 7.64645C2.22048 7.74021 2.16781 7.86739 2.16781 8C2.16781 8.13261 2.22048 8.25978 2.31425 8.35355C2.40802 8.44732 2.5352 8.5 2.66781 8.5L2.66781 7.5ZM2.66781 8.5L13.3345 8.5L13.3345 7.5L2.66781 7.5L2.66781 8.5Z"
+                                    fill="white" class="md:group-hover:fill-blue-700 duration-500"></path>
+                                <path d="M9.33447 12L13.3345 8L9.33447 4" stroke="white" stroke-linecap="round"
+                                    stroke-linejoin="round" class="md:group-hover:stroke-blue-700 duration-500"></path>
+                            </svg> </button>
+                    </form>
+                </div><!-- form wrap -->
+            </div>
+        </div>
+    </section>
+    <!-- end of the footer section -->
+
+    <footer class="bg-blue1 py-8">
+        <div class="holder">
+            <div class="md:hidden border-b-2 border-white text-white pb-6 space-y-3">
 
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">About
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">About
 
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -209,7 +232,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">I
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">I
                     have been scam
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -223,7 +246,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Protection
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Protection
                     against Scam
 
                     <span>
@@ -238,7 +261,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Type
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Type
                     of scam
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -252,7 +275,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">News
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">News
                     & Alerts
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -266,7 +289,7 @@
                     </span>
                 </a>
                 <a href=""
-                    class="text-xl hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Contact
+                    class="text-lg hover:text-orange-500 duration-500 flex justify-between items-center gap-10 group">Contact
                     Us
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
@@ -281,7 +304,7 @@
                 </a>
             </div>
 
-            <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-10">
+            <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-4">
                 <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">About</a>
                 <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">I have been
                     scam</a>
@@ -295,14 +318,13 @@
                 </a>
             </div>
 
-            <div
-                class="text-white flex md:flex-row flex-col justify-between j items-center pt-6 space-y-5 md:space-y-0">
+            <div class="text-white flex justify-between j items-center pt-2 space-y-5 md:space-y-0">
 
-                <a href="">
-                    <h1 class="text-3xl uppercase font-bold">Scamwatch</h1>
+                <a href="" class="w-14 h-14">
+                    <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
                 </a>
 
-                <div class="space-x-4 md:[&>*]:text-base [&>*]:text-xs font-medium">
+                <div class="space-x-4 md:[&>*]:text-sm [&>*]:text-xs">
                     <span>Site designed by <a href=""
                             class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">
                             Skylark</a></span>
@@ -315,6 +337,7 @@
             </div>
         </div>
     </footer>
+    <!-- end of the footer section -->
     <script src="/wp-content/themes/scamwatch/_/js/jquery.min.js"></script>
     <script src="/wp-content/themes/scamwatch/_/js/swiper.min.js"></script>
     <script src="/wp-content/themes/scamwatch/_/js/script.js"></script>
