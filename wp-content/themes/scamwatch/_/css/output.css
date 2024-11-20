@@ -2214,6 +2214,10 @@ body{
   text-align: center;
 }
 
+.\[\&\>a\]\:font-montserrat>a{
+  font-family: Montserrat, sans-serif;
+}
+
 .\[\&\>a\]\:text-2xl>a{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2223,8 +2227,16 @@ body{
   font-weight: 600;
 }
 
+.\[\&\>a\]\:leading-22>a{
+  line-height: 1.375rem;
+}
+
 .\[\&\>a\]\:leading-5>a{
   line-height: 1.25rem;
+}
+
+.\[\&\>a\]\:tracking-tight>a{
+  letter-spacing: -0.025em;
 }
 
 .\[\&\>a\]\:text-white>a{

@@ -29,6 +29,13 @@ module.exports = {
       fontSize: {
         64: "4rem",
       },
+      lineHeight: {
+        '22': '1.375rem',
+        '32': '2rem',
+      },
+      letterSpacing: {
+        '1.5': '0.09375rem',
+      },
       colors: {
         lightBlue: "#3a79ff",
         blue1: "#266df1",
