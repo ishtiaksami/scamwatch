@@ -60,7 +60,7 @@
 
                     <!-- Mega Menu Dropdown -->
                     <div id="mega-menu"
-                        class="bg-gray-100 absolute -left-4 top-5 w-screen shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
+                        class="bg-gray-100 absolute -left-4 top-5 w-full shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
 
                         <div class="grid grid-cols-3 gap-8 max-w-[53rem] w-full px-4">
                             <!-- Column 1 -->

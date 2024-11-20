@@ -752,12 +752,12 @@ p{
   z-index: 50;
 }
 
-.order-2{
-  order: 2;
-}
-
 .order-1{
   order: 1;
+}
+
+.order-2{
+  order: 2;
 }
 
 .mx-auto{
@@ -787,10 +787,6 @@ p{
 
 .ml-3{
   margin-left: 0.75rem;
-}
-
-.ml-auto{
-  margin-left: auto;
 }
 
 .mt-1\.5{
@@ -1156,10 +1152,6 @@ p{
   overflow: visible !important;
 }
 
-.rounded-full{
-  border-radius: 9999px;
-}
-
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -1287,10 +1279,6 @@ p{
   padding: 1.5rem;
 }
 
-.p-\[15px\]{
-  padding: 15px;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1375,10 +1363,6 @@ p{
   padding-bottom: 1.5rem;
 }
 
-.pb-8{
-  padding-bottom: 2rem;
-}
-
 .pt-10{
   padding-top: 2.5rem;
 }
@@ -1405,6 +1389,11 @@ p{
 
 .text-right{
   text-align: right;
+}
+
+.\!text-base{
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
 }
 
 .text-2xl{
@@ -1440,11 +1429,6 @@ p{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.\!text-base{
-  font-size: 1rem !important;
-  line-height: 1.5rem !important;
 }
 
 .font-bold{
@@ -1672,9 +1656,6 @@ body{
 
 .btn{
   border-radius: 0.25rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(38 109 241 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(38 109 241 / var(--tw-bg-opacity));
   padding-left: 1.5rem;
@@ -1688,16 +1669,12 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 500ms;
 }
 
 .btn:hover{
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(38 109 241 / var(--tw-border-opacity));
-  background-color: transparent;
-  --tw-text-opacity: 1;
-  color: rgb(38 109 241 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 116 45 / var(--tw-bg-opacity));
 }
 
 .btn:hover > svg > path{
@@ -2275,27 +2252,17 @@ body{
   transition-duration: 150ms;
 }
 
-.\[\&\>a\]\:duration-500>a{
-  transition-duration: 500ms;
-}
-
 .\[\&\>a\]\:duration-300>a{
   transition-duration: 300ms;
 }
 
-.\[\&\>a\]\:hover\:bg-blue1:hover>a{
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 109 241 / var(--tw-bg-opacity));
+.\[\&\>a\]\:duration-500>a{
+  transition-duration: 500ms;
 }
 
 .\[\&\>a\]\:hover\:text-orange-500:hover>a{
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
-}
-
-.group:hover .\[\&\>a\]\:group-hover\:bg-blue1>a{
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 109 241 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px){
@@ -2338,22 +2305,4 @@ body{
     font-size: 1rem;
     line-height: 1.5rem;
   }
-}
-
-.\[\&\>p\]\:text-base>p{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.\[\&\>p\]\:font-normal>p{
-  font-weight: 400;
-}
-
-.\[\&\>p\]\:leading-\[150\%\]>p{
-  line-height: 150%;
-}
-
-.\[\&\>p\]\:text-white>p{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
