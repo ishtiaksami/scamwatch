@@ -6,7 +6,8 @@ if ($is_preview) {
 }
 ?>
 
-<section class="bg-blue-light">
+<section class="bg-blue-light<?php echo isset($block['className']) ? $block['className'] : ''; ?>"
+    id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
     <div class="lg:max-w-siteWidth mx-auto">
 
 
