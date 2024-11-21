@@ -1622,8 +1622,7 @@ p{
 }
 
 .text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.4rem;
 }
 
 .text-4xl{
@@ -1899,6 +1898,7 @@ body{
 }
 
 .btn{
+  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(38 109 241 / var(--tw-bg-opacity));
   padding-left: 1.5rem;
@@ -1975,9 +1975,47 @@ body{
   opacity: 1 !important;
 }
 
-.no-scroll {
-  overflow: hidden;
-  height: 100vh;
+.accc-cards__list > li {
+  counter-increment: item;
+}
+
+.accc-cards__list a {
+  transition: background-color 0.1s linear, color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+.accc-cards__list li:nth-child(2n) a {
+  background-color: #fafafa;
+}
+
+.accc-cards__list a:hover {
+  border-left-color: #266df1;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.06), 0 0 0.2rem rgba(0, 0, 0, 0.12);
+}
+
+.accc-cards__list a:hover h3 {
+  text-decoration: underline;
+  text-decoration-color: #0a2391;
+}
+
+.accc-cards__list > li::after {
+  position: absolute;
+  top: 1rem;
+  left: -1.3rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  content: counter(item);
+  background: #fff;
+  border: 0.5rem solid #9d9d9d;
+  border-radius: 50%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.accc-cards__list > li:hover::after {
+  border-color: #266df1;
 }
 
 .placeholder\:text-sm::-moz-placeholder{
@@ -2363,6 +2401,10 @@ body{
     flex-shrink: 0;
   }
 
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2389,6 +2431,11 @@ body{
 
   .lg\:border-none{
     border-style: none;
+  }
+
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:py-50{
@@ -2519,6 +2566,64 @@ body{
   }
 }
 
+.\[\&\>li\>a\>h3\]\:mb-4>li>a>h3{
+  margin-bottom: 1rem;
+}
+
+.\[\&\>li\>a\>h3\]\:text-3xl>li>a>h3{
+  font-size: 1.4rem;
+}
+
+.\[\&\>li\>a\>h3\]\:font-bold>li>a>h3{
+  font-weight: 700;
+}
+
+.\[\&\>li\>a\>h3\]\:leading-normal>li>a>h3{
+  line-height: 1.5;
+}
+
+.\[\&\>li\>a\>h3\]\:tracking-normal>li>a>h3{
+  letter-spacing: 0em;
+}
+
+.\[\&\>li\>a\]\:block>li>a{
+  display: block;
+}
+
+.\[\&\>li\>a\]\:border-b-0>li>a{
+  border-bottom-width: 0px;
+}
+
+.\[\&\>li\>a\]\:border-l-8>li>a{
+  border-left-width: 8px;
+}
+
+.\[\&\>li\>a\]\:border-gray5>li>a{
+  --tw-border-opacity: 1;
+  border-color: rgb(157 157 157 / var(--tw-border-opacity));
+}
+
+.\[\&\>li\>a\]\:bg-white>li>a{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.\[\&\>li\>a\]\:pb-10>li>a{
+  padding-bottom: 2.5rem;
+}
+
+.\[\&\>li\>a\]\:pl-14>li>a{
+  padding-left: 3.5rem;
+}
+
+.\[\&\>li\>a\]\:pr-6>li>a{
+  padding-right: 1.5rem;
+}
+
+.\[\&\>li\>a\]\:pt-6>li>a{
+  padding-top: 1.5rem;
+}
+
 .\[\&\>li\>a\]\:text-sm>li>a{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2572,6 +2677,10 @@ body{
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+
+.\[\&\>li\]\:relative>li{
+  position: relative;
 }
 
 .\[\&\>p\]\:font-light>p{
