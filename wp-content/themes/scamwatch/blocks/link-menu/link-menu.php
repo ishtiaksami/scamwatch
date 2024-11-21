@@ -6,13 +6,14 @@ if ($is_preview) {
 }
 ?>
 
-<section class="bg-blue-light">
+<section class="bg-blue-light<?php echo isset($block['className']) ? $block['className'] : ''; ?>"
+    id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
     <div class="lg:max-w-siteWidth mx-auto">
 
 
         <?php if (have_rows('custom_links')): ?>
             <div
-                class=" flex  items-center <?php ksa('[&>a]:font-semibold [&>a]:text-2xl [&>a]:leading-5 [&>a]:text-white [&>a]:py-8 [&>a]:px-5  [&>a]:lg:px-4 [&>a]:cursor-pointer [&>a]:text-center divide-y-[1px]  md:divide-x-[1px] divide-blue1 [&>a:hover]:bg-blue1 [&>a]:transition [&>a]:duration-300'); ?>">
+                class=" flex items-center justify-center flex-col md:flex-row <?php ksa('[&>a]:font-montserrat [&>a]:font-semibold [&>a]:text-2xl [&>a]:leading-22 [&>a]:tracking-tight [&>a]:text-white [&>a]:py-8 [&>a]:px-5  [&>a]:lg:px-4 [&>a]:cursor-pointer [&>a]:text-center divide-y-[1px]  md:divide-x-[1px] divide-blue1 [&>a:hover]:bg-blue1 [&>a]:transition [&>a]:duration-300'); ?>">
 
 
                 <?php while (have_rows('custom_links')):

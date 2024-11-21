@@ -1,0 +1,23 @@
+{
+  "name": "acf/acc-card-block",
+  "title": "Acc Card Block",
+  "description": "show a acc card text of a page in this block",
+  "category": "layout",
+  "icon": "editor-ol",
+  "keywords": ["Acc", "Card", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "acc-card-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

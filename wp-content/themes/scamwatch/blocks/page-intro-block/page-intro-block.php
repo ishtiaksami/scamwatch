@@ -7,7 +7,7 @@ if ($is_preview) {
 ?>
 
 <!-- start of Page Intro Block  -->
-<section class="lg:py-50 py-8 <?php echo isset($block['className']) ? $block['className'] : ''; ?>" id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
+<section class="block-pad <?php echo isset($block['className']) ? $block['className'] : ''; ?>" id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
     <div class="holder">
         <div class="space-y-5 text-center max-w-5xl mx-auto">
 

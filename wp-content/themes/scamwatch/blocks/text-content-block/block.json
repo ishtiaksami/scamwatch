@@ -1,0 +1,23 @@
+{
+  "name": "acf/text-content-block",
+  "title": "Text Content Block",
+  "description": "show a text of a page in this block",
+  "category": "layout",
+  "icon": "text-page",
+  "keywords": ["Text", "Content", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "text-content-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

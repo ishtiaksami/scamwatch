@@ -145,8 +145,9 @@
 
             <div class=" flex gap-8">
                 <div class=" order-2 grow-0 shrink-0 basis-full max-w-full md:basis-2/3 md:max-w-2/3 space-y-6">
-                    <h3 class="text-3xl leading-normal">Background</h3>
+
                     <div class="space-y-5">
+                        <h3 class="text-3xl leading-normal">Background</h3>
                         <p>Criminals are emailing people and falsely claiming they have hacked into their computers or
                             webcams
                             and have access to compromising images and videos of them. These criminals are threatening
