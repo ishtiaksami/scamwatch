@@ -382,6 +382,78 @@
     </section>
     <!-- end of the Accordion section -->
 
+    <section class="block-pad bg-soft-vanilla">
+        <div class="holder">
+            <h2 class="tracking-wider pb-8">Types of scams</h2>
+            <div class="space-y-6">
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
+                        <img src="/wp-content/themes/scamwatch/_/img/dateromance.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Online dating and romance scams</h3>
+                        <p>Online dating and romance scams are on the rise. Criminals use dating sites and social media to build a relationship with their victims. They may pretend to be a soldier, a diplomat, a businessperson, or even a government official. They may even pretend to be a victim of a natural</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
+                        <img src="/wp-content/themes/scamwatch/_/img/invest.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Investment scams</h3>
+                        <p>If you're looking to make money through investing, watch out – scammers have created all sorts of fake opportunities to get you excited and take away your cash.</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
+                        <img src="/wp-content/themes/scamwatch/_/img/products.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Product and service scams</h3>
+                        <p>Scammers prey on consumers and businesses that are buying or selling products and services. Not every transaction is legitimate. </p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
+                        <img src="/wp-content/themes/scamwatch/_/img/treats.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Threats and extortion scams</h3>
+                        <p>Scammers will use any means possible to steal your identity or your money – including threatening your life or 'hijacking' your computer.</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
+                        <img src="/wp-content/themes/scamwatch/_/img/job.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Jobs and employment scams</h3>
+                        <p>Jobs and employment scams deceive you into handing over your money by offering you a ‘guaranteed’ way to make fast money or a high-paying job for little effort.</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
+                        <img src="/wp-content/themes/scamwatch/_/img/unespected.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">Unexpected money</h3>
+                        <p>Don't be lured by a surprise win. These scams try to deceive you into giving money upfront or your personal information in order to receive a prize from a lottery or competition that you never entered.</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
+                    <div class="col-span-1 w-[150px] pl-4">
+                        <img src="/wp-content/themes/scamwatch/_/img/impersonation.png" alt="" class="w-full">
+                    </div>
+                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
+                        <h3 class="tracking-wider">impersonation scams</h3>
+                        <p>Scammers impersonate trusted businesses, friends or family, to steal your money or personal information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Start of the Tab section -->
     <section class="block-pad">
         <div class="holder">
@@ -1103,76 +1175,6 @@
     <!-- end of the Tab section -->
 
 
-    <section class="block-pad bg-soft-vanilla">
-        <div class="holder">
-            <h2 class="tracking-wider pb-8">Types of scams</h2>
-            <div class="space-y-6">
-                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-1 w-[150px] pl-4">
-                        <img src="/wp-content/themes/scamwatch/_/img/dateromance.png" alt="" class="w-full">
-                    </div>
-                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
-                        <h3 class="tracking-wider">Online dating and romance scams</h3>
-                        <p>Online dating and romance scams are on the rise. Criminals use dating sites and social media to build a relationship with their victims. They may pretend to be a soldier, a diplomat, a businessperson, or even a government official. They may even pretend to be a victim of a natural</p>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-1 w-[150px] pl-4">
-                        <img src="/wp-content/themes/scamwatch/_/img/invest.png" alt="" class="w-full">
-                    </div>
-                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
-                        <h3 class="tracking-wider">Investment scams</h3>
-                        <p>If you're looking to make money through investing, watch out – scammers have created all sorts of fake opportunities to get you excited and take away your cash.</p>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-1 w-[150px] pl-4">
-                        <img src="/wp-content/themes/scamwatch/_/img/products.png" alt="" class="w-full">
-                    </div>
-                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
-                        <h3 class="tracking-wider">Product and service scams</h3>
-                        <p>Scammers prey on consumers and businesses that are buying or selling products and services. Not every transaction is legitimate. </p>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-1 w-[150px] pl-4">
-                        <img src="/wp-content/themes/scamwatch/_/img/treats.png" alt="" class="w-full">
-                    </div>
-                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
-                        <h3 class="tracking-wider">Threats and extortion scams</h3>
-                        <p>Scammers will use any means possible to steal your identity or your money – including threatening your life or 'hijacking' your computer.</p>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-1 w-[150px] pl-4">
-                        <img src="/wp-content/themes/scamwatch/_/img/job.png" alt="" class="w-full">
-                    </div>
-                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
-                        <h3 class="tracking-wider">Jobs and employment scams</h3>
-                        <p>Jobs and employment scams deceive you into handing over your money by offering you a ‘guaranteed’ way to make fast money or a high-paying job for little effort.</p>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-1 w-[150px] pl-4">
-                        <img src="/wp-content/themes/scamwatch/_/img/unespected.png" alt="" class="w-full">
-                    </div>
-                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
-                        <h3 class="tracking-wider">Unexpected money</h3>
-                        <p>Don't be lured by a surprise win. These scams try to deceive you into giving money upfront or your personal information in order to receive a prize from a lottery or competition that you never entered.</p>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-6 items-center bg-white shadow-custom1 hover:shadow-custom2 transition-all duration-200">
-                    <div class="col-span-1 w-[150px] pl-4">
-                        <img src="/wp-content/themes/scamwatch/_/img/impersonation.png" alt="" class="w-full">
-                    </div>
-                    <div class="col-span-5 space-y-4 [&>p]:font-light p-5 border-t border-gray-200 lg:border-none">
-                        <h3 class="tracking-wider">impersonation scams</h3>
-                        <p>Scammers impersonate trusted businesses, friends or family, to steal your money or personal information.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Start of the Contact Form section -->
     <section class="block-pad">
@@ -1414,8 +1416,8 @@
             </div>
         </div>
     </footer>
-    <!-- end of the footer section -->
-  
+    <!-- End of the footer section -->
+
     <script src="/wp-content/themes/scamwatch/_/js/jquery.min.js"></script>
     <script src="/wp-content/themes/scamwatch/_/js/swiper.min.js"></script>
     <script src="/wp-content/themes/scamwatch/_/js/script.js"></script>
