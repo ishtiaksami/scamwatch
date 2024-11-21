@@ -788,6 +788,11 @@ p{
   margin-right: auto;
 }
 
+.mx-\[-1\.5rem\]{
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
 .\!mt-5{
   margin-top: 1.25rem !important;
 }
@@ -846,6 +851,14 @@ p{
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mb-\[1\.5rem\]{
+  margin-bottom: 1.5rem;
+}
+
+.mt-0{
+  margin-top: 0px;
 }
 
 .block{
@@ -1530,6 +1543,11 @@ p{
   padding-bottom: 15px;
 }
 
+.py-14{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2077,9 +2095,41 @@ body{
   top: 0px;
 }
 
+.before\:bottom-0::before{
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
 .before\:z-10::before{
   content: var(--tw-content);
   z-index: 10;
+}
+
+.before\:mx-\[-1\.5rem\]::before{
+  content: var(--tw-content);
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.before\:mx-0::before{
+  content: var(--tw-content);
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.before\:mb-\[1\.5rem\]::before{
+  content: var(--tw-content);
+  margin-bottom: 1.5rem;
+}
+
+.before\:mt-0::before{
+  content: var(--tw-content);
+  margin-top: 0px;
+}
+
+.before\:mb-6::before{
+  content: var(--tw-content);
+  margin-bottom: 1.5rem;
 }
 
 .before\:h-full::before{
@@ -2087,9 +2137,47 @@ body{
   height: 100%;
 }
 
+.before\:h-1::before{
+  content: var(--tw-content);
+  height: 0.25rem;
+}
+
 .before\:w-full::before{
   content: var(--tw-content);
   width: 100%;
+}
+
+.before\:border-t::before{
+  content: var(--tw-content);
+  border-top-width: 1px;
+}
+
+.before\:border-b::before{
+  content: var(--tw-content);
+  border-bottom-width: 1px;
+}
+
+.before\:border-t-2::before{
+  content: var(--tw-content);
+  border-top-width: 2px;
+}
+
+.before\:border-blue1::before{
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(38 109 241 / var(--tw-border-opacity));
+}
+
+.before\:border-gray1::before{
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(233 233 228 / var(--tw-border-opacity));
+}
+
+.before\:bg-blue1::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 109 241 / var(--tw-bg-opacity));
 }
 
 .before\:transition-all::before{

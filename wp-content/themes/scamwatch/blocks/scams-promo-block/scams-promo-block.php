@@ -8,28 +8,31 @@ if ($is_preview) {
 $thumb_url = has_post_thumbnail($post_id) ? get_the_post_thumbnail_url($post_id, 'full') : get_template_directory_uri() . '/wp-content/uploads/2024/07/placeholder.png';
 ?>
 
-<section class="bg-soft-vanilla block-pad<?php echo isset($block['className']) ? $block['className'] : ''; ?>" id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
+<section class="bg-soft-vanilla block-pad<?php echo isset($block['className']) ? $block['className'] : ''; ?>"
+    id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
     <div class="holder">
-        <?php if (get_field('post_selection') == 'automatic') :
+        <?php if (get_field('post_selection') == 'automatic'):
             $args = [
-                'post_type'      => 'scam',
-                'post_status'    => 'publish',
+                'post_type' => 'scam',
+                'post_status' => 'publish',
                 'posts_per_page' => 3,
             ];
             $query = new WP_Query($args);
 
-            if ($query->have_posts()) : ?>
+            if ($query->have_posts()): ?>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
                     <?php
                     // $post_count = $query->post_count;
-                    while ($query->have_posts()) : $query->the_post(); ?>
+                    while ($query->have_posts()):
+                        $query->the_post(); ?>
                         <a href="<?php the_permalink(); ?>"
-                            class="relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
+                            class="relative block bg-white py-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
                             <figure class="relative w-full">
-                                <img class="max-h-[150px] w-auto mx-auto pb-6 "
-                                    src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title(); ?>">
+                                <img class="max-h-[150px] w-auto mx-auto pb-6 " src="<?php the_post_thumbnail_url('full'); ?>"
+                                    alt="<?php the_title(); ?>">
 
-                                <figcaption class="pt-6">
+                                <figcaption
+                                    class="p-6 relative before:absolute before:w-full before:border-t before:top-0 before:left-0 before:border-gray1 before:z-10 before:mt-0 before:mx-0 before:mb-6">
                                     <h3><?php the_title(); ?></h3>
 
                                     <div class="mt-6">
@@ -39,31 +42,31 @@ $thumb_url = has_post_thumbnail($post_id) ? get_the_post_thumbnail_url($post_id,
                             </figure>
 
                             <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                                <?php get_template_part('svgs/arrow-right') ?>
+                                <?php get_template_part('/svgs/arrow-right') ?>
                             </div>
-
-                            <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
                         </a>
                     <?php endwhile; ?>
                 </div>
             <?php endif;
             wp_reset_postdata();
 
-        elseif (get_field('post_selection') === 'manual') :
+        elseif (get_field('post_selection') === 'manual'):
             global $post;
             $posts = get_field('scams_post');
-            if ($posts) : ?>
+            if ($posts): ?>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
                     <?php
 
-                    foreach ($posts as $post) : setup_postdata($post); ?>
+                    foreach ($posts as $post):
+                        setup_postdata($post); ?>
                         <a href="<?php the_permalink(); ?>"
-                            class="relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
+                            class="relative block bg-white py-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
                             <figure class="relative w-full">
-                                <img class="max-h-[150px] w-auto mx-auto pb-6 "
-                                    src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title(); ?>">
+                                <img class="max-h-[150px] w-auto mx-auto pb-6 " src="<?php the_post_thumbnail_url('full'); ?>"
+                                    alt="<?php the_title(); ?>">
 
-                                <figcaption class="pt-6">
+                                <figcaption
+                                    class="p-6 relative before:absolute before:w-full before:border-t before:top-0 before:left-0 before:border-gray1 before:z-10 before:mt-0 before:mx-0 before:mb-6">
                                     <h3><?php the_title(); ?></h3>
 
                                     <div class="mt-6">
@@ -73,10 +76,8 @@ $thumb_url = has_post_thumbnail($post_id) ? get_the_post_thumbnail_url($post_id,
                             </figure>
 
                             <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                                <?php get_template_part('/svgs/right-arrow') ?>
+                                <?php get_template_part('/svgs/arrow-right') ?>
                             </div>
-
-                            <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
                         </a>
                     <?php endforeach; ?>
 
