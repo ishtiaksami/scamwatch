@@ -775,20 +775,8 @@ p{
   order: 3;
 }
 
-.col-span-2{
-  grid-column: span 2 / span 2;
-}
-
-.col-span-7{
-  grid-column: span 7 / span 7;
-}
-
 .col-span-1{
   grid-column: span 1 / span 1;
-}
-
-.col-span-4{
-  grid-column: span 4 / span 4;
 }
 
 .col-span-5{
@@ -1004,8 +992,8 @@ p{
   width: 1.5rem;
 }
 
-.w-\[200px\]{
-  width: 200px;
+.w-\[150px\]{
+  width: 150px;
 }
 
 .w-\[70px\]{
@@ -1026,10 +1014,6 @@ p{
 
 .w-screen{
   width: 100vw;
-}
-
-.w-\[150px\]{
-  width: 150px;
 }
 
 .max-w-3xl{
@@ -1078,10 +1062,6 @@ p{
 
 .max-w-full{
   max-width: 100%;
-}
-
-.max-w-\[150px\]{
-  max-width: 150px;
 }
 
 .flex-1{
@@ -1582,6 +1562,10 @@ p{
   padding-bottom: 2rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .pl-8{
   padding-left: 2rem;
 }
@@ -1608,10 +1592,6 @@ p{
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
 }
 
 .text-center{
@@ -2367,25 +2347,12 @@ body{
     grid-column: span 3 / span 3;
   }
 
-  .lg\:mx-0{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .lg\:block{
     display: block;
   }
 
   .lg\:hidden{
     display: none;
-  }
-
-  .lg\:w-auto{
-    width: auto;
-  }
-
-  .lg\:w-\[150px\]{
-    width: 150px;
   }
 
   .lg\:max-w-siteWidth{
@@ -2402,10 +2369,6 @@ body{
 
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-9{
-    grid-template-columns: repeat(9, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-6{
@@ -2428,17 +2391,9 @@ body{
     border-style: none;
   }
 
-  .lg\:p-0{
-    padding: 0px;
-  }
-
   .lg\:py-50{
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .lg\:text-left{
-    text-align: left;
   }
 }
 

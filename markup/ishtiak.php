@@ -1415,8 +1415,7 @@
         </div>
     </footer>
     <!-- end of the footer section -->
-
-
+  
     <script src="/wp-content/themes/scamwatch/_/js/jquery.min.js"></script>
     <script src="/wp-content/themes/scamwatch/_/js/swiper.min.js"></script>
     <script src="/wp-content/themes/scamwatch/_/js/script.js"></script>
