@@ -21,19 +21,12 @@ if ($is_preview) {
                     <?php get_template_part('svgs/category-prev-arrow') ?>
                 </div>
                 <div class="promo-next">
-
                     <?php get_template_part('svgs/category-next-arrow') ?>
                 </div>
-
             </div>
-
         </div>
-
-
-
         <div class="swiper cardSlider !overflow-visible">
             <div class="swiper-wrapper flex gap-4">
-
                 <?php
                 $category = get_field('category');
 
@@ -59,19 +52,19 @@ if ($is_preview) {
 
             </div>
         </div>
-        <div class="flex justify-center items-center pt-8 gap-5 ">
-            <?php
-            $link = get_field('cta_button');
-            if ($link) :
-                $link_url = $link['url'];
-                $link_title = $link['title'];
-                $link_target = $link['target'] ? $link['target'] : '_self';
-            ?>
+        <?php
+        $link = get_field('cta_button');
+        if ($link) :
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+        ?>
+            <div class="flex justify-center items-center pt-8 gap-5 ">
                 <a class="btn group flex justify-end flex-end items-center gap-3 !text-base" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
-                    <?php get_template_part('svgs/right-arrow') ?>
+                    <?php  get_template_part('svgs/right-arrow') ?>
                 </a>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
     </div>
 </section>
 <!-- end of the cardSlider section -->

@@ -39,7 +39,7 @@ $thumb_url = has_post_thumbnail($post_id) ? get_the_post_thumbnail_url($post_id,
                             </figure>
 
                             <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
-                                <?php get_template_part('svgs/right-arrow') ?>
+                                <?php get_template_part('svgs/arrow-right') ?>
                             </div>
 
                             <div class=" absolute top-[48%] left-0 w-full h-[1px] bg-gray1 "></div>
