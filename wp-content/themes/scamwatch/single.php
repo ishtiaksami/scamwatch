@@ -10,6 +10,12 @@ $post_tags = get_the_tags($post_id);
 ?>
 <?php get_header(); ?>
 
+ <section>
+    <div class="holder">
+        <h1>This is News Page</h1>
+    </div>
+ </section>
+
 
 <?php
 // Check if there are posts
