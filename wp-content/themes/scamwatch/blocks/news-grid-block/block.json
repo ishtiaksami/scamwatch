@@ -1,0 +1,23 @@
+{
+  "name": "acf/news-grid-block",
+  "title": "News Grid Block",
+  "description": "show a news text of a page in this block",
+  "category": "layout",
+  "icon": "media-document",
+  "keywords": ["News", "Grid", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "news-grid-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

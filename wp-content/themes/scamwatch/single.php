@@ -10,5 +10,11 @@ $post_tags = get_the_tags($post_id);
 
 ?>
 
+ <section>
+    <div class="holder">
+        <h1>This is News Page</h1>
+    </div>
+ </section>
+
 
 <?php get_footer(); ?>
