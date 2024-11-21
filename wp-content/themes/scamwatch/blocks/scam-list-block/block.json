@@ -1,0 +1,23 @@
+{
+  "name": "acf/scam-list-block",
+  "title": "Scam List Block",
+  "description": "show a list text of a page in this block",
+  "category": "layout",
+  "icon": "editor-ul",
+  "keywords": ["Scams", "List", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "scam-list-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

@@ -5,12 +5,10 @@ if ($is_preview) {
     return;
 }
 ?>
-
 <!-- start of the cardSlider section -->
 <section
     class="block-pad overflow-hidden <?php echo isset($block['className']) ? $block['className'] : ''; ?>" id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
     <div class="holder">
-
         <div class="flex justify-between items-center gap-5 pb-6">
             <?php if ($block_title = get_field('block_title')) : ?>
                 <h2 class="font-bold leading-none uppercase"> <?php echo esc_html($block_title); ?></h2>
@@ -37,9 +35,7 @@ if ($is_preview) {
                     'orderby'        => 'date',         // Order by date
                     'order'          => 'DESC',         // Latest posts first
                 ];
-
                 $latest_posts_query = new WP_Query($args);
-
                 // Loop through the posts
                 if ($latest_posts_query->have_posts()) :
                     while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post();
@@ -49,7 +45,6 @@ if ($is_preview) {
                 else : ?>
                     <p>No posts found in this category.</p>
                 <?php endif; ?>
-
             </div>
         </div>
         <?php
@@ -61,10 +56,10 @@ if ($is_preview) {
         ?>
             <div class="flex justify-center items-center pt-8 gap-5 ">
                 <a class="btn group flex justify-end flex-end items-center gap-3 !text-base" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
-                    <?php  get_template_part('svgs/right-arrow') ?>
+                    <?php get_template_part('svgs/right-arrow') ?>
                 </a>
             </div>
         <?php endif; ?>
     </div>
-</section>
+</section> 
 <!-- end of the cardSlider section -->

@@ -451,8 +451,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section> 
 
     <!-- Start of the Tab section -->
     <section class="block-pad">

@@ -110,3 +110,7 @@ body {
 .accc-cards__list > li:hover::after {
   border-color: #266df1;
 }
+
+.wp-block-image img {
+  @apply w-full pb-5;
+}

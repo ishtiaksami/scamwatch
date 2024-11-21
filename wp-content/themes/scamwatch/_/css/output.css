@@ -1659,6 +1659,15 @@ p{
   line-height: 1rem;
 }
 
+.\!text-xl{
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+
+.\!text-3xl{
+  font-size: 1.4rem !important;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2016,6 +2025,11 @@ body{
 
 .accc-cards__list > li:hover::after {
   border-color: #266df1;
+}
+
+.wp-block-image img{
+  width: 100%;
+  padding-bottom: 1.25rem;
 }
 
 .placeholder\:text-sm::-moz-placeholder{
