@@ -2578,6 +2578,10 @@ body{
   font-weight: 700;
 }
 
+.\[\&\>li\>a\>h3\]\:capitalize>li>a>h3{
+  text-transform: capitalize;
+}
+
 .\[\&\>li\>a\>h3\]\:leading-normal>li>a>h3{
   line-height: 1.5;
 }

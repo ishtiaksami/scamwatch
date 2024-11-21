@@ -13,7 +13,7 @@ if ($is_preview) {
         // Check if the repeater field has rows
         if (have_rows('acc_card')): ?>
             <ol
-                class="accc-cards__list px-4 lg:px-8 <?php ksa('[&>li]:relative [&>li>a]:bg-white [&>li>a]:text-blue1 [&>li>a]:block [&>li>a]:border-b-0 [&>li>a]:border-l-8 [&>li>a]:border-gray5 [&>li>a]:pt-6 [&>li>a]:pr-6 [&>li>a]:pb-10 [&>li>a]:pl-14 [&>li>a>h3]:text-3xl [&>li>a>h3]:font-bold [&>li>a>h3]:leading-normal [&>li>a>h3]:tracking-normal [&>li>a>h3]:mb-4'); ?>">
+                class="accc-cards__list px-4 lg:px-8 <?php ksa('[&>li]:relative [&>li>a]:bg-white [&>li>a]:text-blue1 [&>li>a]:block [&>li>a]:border-b-0 [&>li>a]:border-l-8 [&>li>a]:border-gray5 [&>li>a]:pt-6 [&>li>a]:pr-6 [&>li>a]:pb-10 [&>li>a]:pl-14 [&>li>a>h3]:text-3xl [&>li>a>h3]:font-bold [&>li>a>h3]:leading-normal [&>li>a>h3]:tracking-normal [&>li>a>h3]:capitalize [&>li>a>h3]:mb-4'); ?>">
                 <?php while (have_rows('acc_card')):
                     the_row();
                     // Get sub-field values
