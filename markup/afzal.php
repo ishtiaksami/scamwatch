@@ -216,7 +216,7 @@
                 <a href="#" class="btn">Check for scam warning signs</a>
             </div>
         </div>
-        <img class=" hidden md:block absolute right-32 bottom-0 w-full max-w-[500px] h-[250px] object-cover"
+        <img class=" hidden md:hidden lg:block absolute right-32 bottom-0 w-full max-w-[500px] h-[250px] object-cover"
             src="https://images.pexels.com/photos/1181394/pexels-photo-1181394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="">
     </section>
@@ -263,12 +263,17 @@
 
                 <div class=" hidden md:flex">
                     <a href="#" class="btn flex flex-wrap items-center">
-                        View all news and alerts <i class="fas fa-arrow-right ml-3"></i>
+                        View all news and alerts
+                        <svg width="20" height="20" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                fill="#fff" />
+                        </svg>
                     </a>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mt-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 mt-10">
 
                 <a href="#"
                     class=" relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
@@ -342,36 +347,36 @@
     <section class="block-pad">
         <div class="holder">
 
-            <ol class="accc-cards__list px-4 md:px-0">
-                <li class="">
+            <ol class="accc-cards__list px-4 lg:px-8 [&>li]:relative [&>li>a]:bg-white [&>li>a]:text-blue1 [&>li>a]:block [&>li>a]:border-b-0 [&>li>a]:border-l-8 [&>li>a]:border-gray5 [&>li>a]:pt-6 [&>li>a]:pr-6 [&>li>a]:pb-10 [&>li>a]:pl-14 [&>li>a>h3]:text-3xl [&>li>a>h3]:font-bold [&>li>a>h3]:leading-normal [&>li>a>h3]:tracking-normal [&>li>a>h3]:mb-4 ">
+                <li>
                     <a href="#">
                         <h3>stop</h3>
                         <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
                             delete.</p>
                     </a>
                 </li>
-                <li class="">
+                <li>
                     <a href="#">
                         <h3>stop</h3>
                         <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
                             delete.</p>
                     </a>
                 </li>
-                <li class="">
+                <li>
                     <a href="#">
                         <h3>stop</h3>
                         <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
                             delete.</p>
                     </a>
                 </li>
-                <li class="">
+                <li>
                     <a href="#">
                         <h3>stop</h3>
                         <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
                             delete.</p>
                     </a>
                 </li>
-                <li class="">
+                <li>
                     <a href="#">
                         <h3>stop</h3>
                         <p>Don’t give money or personal details or click on any links if you’re unsure. Say no, hang up,
@@ -382,11 +387,12 @@
 
         </div>
     </section>
+    <!-- ============================ End accc-cards list block ============================ -->
 
     <section class="bg-soft-vanilla block-pad">
         <div class="holder">
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
                 <a href="#"
                     class="relative block bg-white p-6 pb-14 shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
                     <figure class="relative w-full">

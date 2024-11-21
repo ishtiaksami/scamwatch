@@ -1,13 +1,13 @@
 {
-  "name": "acf/news-grid-block",
-  "title": "News Grid Block",
+  "name": "acf/news-letter",
+  "title": "News Letter Block",
   "description": "This block will show multiple items",
   "category": "layout",
   "icon": "grid-view",
-  "keywords": ["news", "grid"],
+  "keywords": ["news", "grid" , "block"],
   "acf": {
     "mode": "edit",
-    "renderTemplate": "news-grid-block.php"
+    "renderTemplate": "news-letter.php"
   },
   "supports": {
     "align": false,
