@@ -1660,6 +1660,10 @@ p{
   padding-top: 3.5rem;
 }
 
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -2257,6 +2261,18 @@ body{
   content: var(--tw-content);
 }
 
+.hover\:gap-1:hover{
+  gap: 0.25rem;
+}
+
+.hover\:gap-6:hover{
+  gap: 1.5rem;
+}
+
+.hover\:gap-4:hover{
+  gap: 1rem;
+}
+
 .hover\:bg-blue1:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(38 109 241 / var(--tw-bg-opacity));
@@ -2265,6 +2281,10 @@ body{
 .hover\:bg-gray3:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.hover\:pl-1:hover{
+  padding-left: 0.25rem;
 }
 
 .hover\:text-orange-500:hover{
@@ -2388,6 +2408,10 @@ body{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2453,6 +2477,10 @@ body{
 
   .md\:pb-32{
     padding-bottom: 8rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-start{
