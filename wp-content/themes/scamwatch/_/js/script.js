@@ -11,7 +11,7 @@ $(function () {
       hide: true,
     },
     navigation: {
-      nextEl: ".swiper- -next",
+      nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     pagination: {
