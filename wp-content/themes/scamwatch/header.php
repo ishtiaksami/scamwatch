@@ -10,7 +10,8 @@
 
 <body>
 
-<header class="relative">
+    <!-- start of the header section -->
+    <header class="relative">
         <div class="bg-blue1 py-1">
             <div class="holder">
                 <ul

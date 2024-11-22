@@ -9,14 +9,6 @@ $post_tags = get_the_tags($post_id);
 
 ?>
 <?php get_header(); ?>
-
- <section>
-    <div class="holder">
-        <h1>This is News Page</h1>
-    </div>
- </section>
-
-
 <?php
 // Check if there are posts
 if (have_posts()) :
@@ -24,22 +16,25 @@ if (have_posts()) :
     while (have_posts()) :
         the_post(); ?>
 
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <!-- Featured Image -->
+        <?php if (has_post_thumbnail()) : ?>
+            <div class="">
+                <?php the_post_thumbnail('full'); ?>
+            </div>
+        <?php endif; ?>
 
-            <?php if (has_post_thumbnail()) : ?>
-                <div class="">
-                    <?php the_post_thumbnail('full'); ?>
-                </div>
-            <?php endif; ?>
+        <div id="main-content" class="holder">
 
-            <div id="main-content" class="holder">
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <!-- Featured Image -->
+
+
+
                 <!-- Post Content -->
-                <div class="space-y-4 pt-5">
+                <div class="space-y-4 py-5">
                     <?php the_content(); ?>
                 </div>
-            </div>
-        </article>
+            </article>
+        </div>
 
     <?php endwhile;
 else : ?>
