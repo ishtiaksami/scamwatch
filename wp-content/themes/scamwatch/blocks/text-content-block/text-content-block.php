@@ -44,42 +44,23 @@ if ($is_preview) {
                                     <?php endif; ?>
 
                                     <?php if ($card_content) : ?>
-                                        <div>
+                                        <div class="space-y-4">
                                             <?php echo $card_content; ?>
                                         </div>
                                     <?php endif; ?>
-
                                 </div>
                             </div>
                         <?php endif; ?>
-
                         <span class=" border-t-[3rem] border-t-pink  absolute border-r-[3rem] border-transparent top-0 -left-[1.5rem] p-3"></span>
-
                     </div>
                 </div>
             <?php endif; ?>
 
-            <?php
-            $link = get_field('cta_button');
-            $sidebar_content = get_field('sidebar_content'); 
-            if ($link || $sidebar_content) : ?>
-            
-          
             <aside class="basis-1/4 grow-0 shrink-0 max-w-1/4 order-3 hidden md:block">
                 <div
                     class=" bg-gray2 relative py-6 pr-6 pl-8 mb-10 shadow-custom3 border border-gray3 after:border-[0.5rem] after:border-blue1 after:absolute after:top-0 after:left-0 after:block after:h-full ">
-                    <?php if ($sidebar_content); ?>
-                        <?php echo wpautop($sidebar_content); ?>
-                    <?php endif; ?>
-                    <?php
-                    $link = get_field('cta_button');
-                    if ($link) :
-                        $link_url = $link['url'];
-                        $link_title = $link['title'];
-                        $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                        <a class="btn !p-2 !text-sm !mt-5 inline-block" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-                    <?php endif; ?>
+                    <p>Subscribe for email alerts on the latest scams. </p>
+                    <a class="btn !p-2 !text-sm !mt-5 inline-block" href="#">Subscribe to email alerts</a>
                 </div>
             </aside>
         </div>

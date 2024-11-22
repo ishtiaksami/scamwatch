@@ -1,0 +1,23 @@
+{
+  "name": "acf/scam-grid-block",
+  "title": "Scam Grid Block",
+  "description": "show a grid text of a page in this block",
+  "category": "layout",
+  "icon": "text-page",
+  "keywords": ["Scam", "Grid", "Block"],
+  "acf": {
+    "mode": "grid-view",
+    "renderTemplate": "scam-grid-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

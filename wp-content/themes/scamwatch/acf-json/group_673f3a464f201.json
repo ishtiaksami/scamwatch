@@ -12,7 +12,28 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_673f3b6a9db97",
+            "label": "Card Title",
+            "name": "card_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -33,37 +54,16 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "allow_in_bindings": 0,
             "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
+            "toolbar": "basic",
+            "media_upload": 0,
             "delay": 0
-        },
-        {
-            "key": "field_673f3b6a9db97",
-            "label": "Card Title",
-            "name": "card_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "allow_in_bindings": 0,
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
         },
         {
             "key": "field_673f3b819db98",
@@ -75,54 +75,16 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "allow_in_bindings": 0,
             "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
+            "toolbar": "basic",
+            "media_upload": 0,
             "delay": 0
-        },
-        {
-            "key": "field_673f3ba09db99",
-            "label": "CTA Button",
-            "name": "cta_button",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "allow_in_bindings": 0
-        },
-        {
-            "key": "field_673f3bdc9db9a",
-            "label": "Sidebar Content",
-            "name": "sidebar_content",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "allow_in_bindings": 1,
-            "rows": 4,
-            "placeholder": "",
-            "new_lines": ""
         }
     ],
     "location": [
@@ -143,5 +105,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1732200862
+    "modified": 1732206353
 }
