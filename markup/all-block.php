@@ -84,7 +84,7 @@
 
             <div class="flex items-center gap-6">
                 <!-- Search Icon -->
-                <a href="#" class="searchBtn" id="openSearch">
+                <a href="#" class="searchbtn-light-light-light" id="openSearch">
                     <svg width="22" height="22" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z"
@@ -199,15 +199,15 @@
 
     <section class="block-pad ">
         <div class="holder">
-            <div class="grid grid-cols-1 lg:grid-cols-8 lg:gap-16 gap-8">
-                <div class="lg:col-span-4 md:order-1 space-y-5 ">
+            <div class="grid md:grid-cols-2 md:items-center lg:items-start md:gap-16 gap-8">
+                <div class=" md:order-1 space-y-5 ">
                     <p class="uppercase text-base leading-22 tracking-1.5">win Cash Prizes & Rewards!</p>
                     <h2 class="text-blue1 mt-5">Play and learn to enhance your personal scams resilience!</h2>
                     <div class="space-y-4">
                         <p>Play #XiamTheScams from 24 Oct 2024 - 22 Jan 2025. Boost anti-scam skills in this life
                             simulation. Make wise choices, avoid scams, and maximise well-being!</p>
                     </div>
-                    <a href="#" class="btn flex items-center">
+                    <a href="#" class="btn-light flex items-center">
                         Play now!
                         <svg width="2rem" height="1rem" id="root" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512">
@@ -218,7 +218,7 @@
                     </a>
                 </div>
 
-                <div class="lg:col-span-4 space-y-4 lg:space-y-6 order-1">
+                <div class="space-y-4 lg:space-y-6 order-1">
                     <div class="aspect-w-16 aspect-h-9">
                         <img class="object-cover w-full h-full"
                             src="https://images.pexels.com/photos/7111619/pexels-photo-7111619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -234,22 +234,22 @@
             <p class="text-center uppercase text-base leading-22 tracking-1.5">get scam protection</p>
             <h2 class="text-center text-blue1 mt-4">Stay safe with the enhanced ScamShield app</h2>
 
-            <div class="grid lg:grid-cols-3 gap-4 place-items-center text-center md:text-start pt-14">
-                <div class="space-y-6 max-w-[325px]">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center text-center md:text-start pt-14">
+                <div class="space-y-4 lg:space-y-6 ">
                     <h3>Check for scams</h3>
                     <p>Know if a suspicious message, link, or number is likely a scam </p>
                 </div>
-                <div class="space-y-6 max-w-[325px]">
-                    <h3>Check for scams</h3>
-                    <p>Know if a suspicious message, link, or number is likely a scam </p>
+                <div class="space-y-4 lg:space-y-6 ">
+                    <h3>Report potential scams </h3>
+                    <p>Submit reports with screenshots, so we can monitor them better </p>
                 </div>
-                <div class="space-y-6 max-w-[325px]">
-                    <h3>Check for scams</h3>
-                    <p>Know if a suspicious message, link, or number is likely a scam </p>
+                <div class=" space-y-4 lg:space-y-6 ">
+                    <h3>Block and filter scams</h3>
+                    <p>Set up your phone to block calls and SMSes from scammers </p>
                 </div>
             </div>
 
-            <a href="#" class="btn flex items-center justify-center pt-14">
+            <a href="#" class="btn-light flex items-center justify-center pt-14">
                 download now
                 <svg width="2rem" height="1rem" id="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -260,17 +260,18 @@
         </div>
     </section>
     <!-- End download block-->
-    <section class="block-pad  ">
+    <section class="block-pad ">
         <div class="holder">
-            <div class="grid grid-cols-1 lg:grid-cols-8  lg:gap-16 gap-8">
-                <div class="lg:col-span-4 md:order-1 space-y-5">
-                    <p class="uppercase text-base leading-22 tracking-1.5">Unsure if it's a scam?</p>
-                    <h2 class="text-blue1 mt-5">Call and check with the ScamShield Helpline: 1799</h2>
+            <div class="grid md:grid-cols-2 md:items-center lg:items-start md:gap-16 gap-8">
+                <div class=" md:order-1 space-y-5 ">
+                    <p class="uppercase text-base leading-22 tracking-1.5">win Cash Prizes & Rewards!</p>
+                    <h2 class="text-blue1 mt-5">Play and learn to enhance your personal scams resilience!</h2>
                     <div class="space-y-4">
-                        <p>Available 24/7, Monday to Sunday</p>
+                        <p>Play #XiamTheScams from 24 Oct 2024 - 22 Jan 2025. Boost anti-scam skills in this life
+                            simulation. Make wise choices, avoid scams, and maximise well-being!</p>
                     </div>
-                    <a href="#" class="btn flex items-center">
-                        Play Now!
+                    <a href="#" class="btn-light flex items-center">
+                        Play now!
                         <svg width="2rem" height="1rem" id="root" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512">
                             <path
@@ -280,7 +281,7 @@
                     </a>
                 </div>
 
-                <div class="lg:col-span-4 space-y-4 lg:space-y-6">
+                <div class="space-y-4 lg:space-y-6">
                     <div class="aspect-w-16 aspect-h-9">
                         <img class="object-cover w-full h-full"
                             src="https://images.pexels.com/photos/7111619/pexels-photo-7111619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -293,14 +294,16 @@
     <!--    End text media block -->
     <section class="block-pad bg-gray1">
         <div class="holder">
-            <div class="grid grid-cols-1 lg:grid-cols-8  lg:gap-16 gap-8">
-                <div class="lg:col-span-4 md:order-1 space-y-5 ">
-                    <h2 class="text-blue1">Scams Bulletin</h2>
+            <div class="grid md:grid-cols-2 md:items-center lg:items-start md:gap-16 gap-8">
+                <div class=" md:order-1 space-y-5 ">
+                    <p class="uppercase text-base leading-22 tracking-1.5">win Cash Prizes & Rewards!</p>
+                    <h2 class="text-blue1 mt-5">Play and learn to enhance your personal scams resilience!</h2>
                     <div class="space-y-4">
-                        <p>Learn about the latest scam trends from the Police's Monthly Scams Bulletin.</p>
+                        <p>Play #XiamTheScams from 24 Oct 2024 - 22 Jan 2025. Boost anti-scam skills in this life
+                            simulation. Make wise choices, avoid scams, and maximise well-being!</p>
                     </div>
-                    <a href="#" class="btn flex items-center">
-                        Read Now
+                    <a href="#" class="btn-light flex items-center">
+                        Play now!
                         <svg width="2rem" height="1rem" id="root" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512">
                             <path
@@ -310,7 +313,7 @@
                     </a>
                 </div>
 
-                <div class="lg:col-span-4 space-y-4 lg:space-y-6 order-1">
+                <div class="space-y-4 lg:space-y-6 order-1">
                     <div class="aspect-w-16 aspect-h-9">
                         <img class="object-cover w-full h-full"
                             src="https://images.pexels.com/photos/7111619/pexels-photo-7111619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -321,45 +324,6 @@
         </div>
     </section>
     <!--    End text media block -->
-
-    <section class="block-pad">
-        <div class="holder">
-            <div class="text-center space-y-4">
-                <p class="uppercase text-base leading-22 tracking-1.5">stay informed</p>
-                <h2 class="text-blue1">Scam threats</h2>
-                <p>Singapore lost $651.8 million to scams in 2023 across 50,376 cases</p>
-            </div>
-
-            <div class="flex flex-col md:flex-row flex-wrap justify-center items-start gap-8 pt-12 w-full">
-                <div
-                    class="w-full sm:max-w-[90%] md:max-w-[40%] flex flex-col items-start gap-4 flex-grow flex-shrink-0 basis-0 self-start text-black2 rounded border border-solid border-gray2 bg-white shadow-shadow1 p-[calc(6rem/4)] cursor-pointer hover:bg-gray3">
-                    <h3>Investment scam</h3>
-                    <p> ~$50,700 lost per case</p>
-                    <a href="#" class="btn !text-base">Learn more</a>
-                </div>
-                <div
-                    class="w-full sm:max-w-[90%] md:max-w-[40%] flex flex-col items-start gap-4 flex-grow flex-shrink-0 basis-0 self-start text-black2 rounded border border-solid border-gray2 bg-white shadow-shadow1 p-[calc(6rem/4)] cursor-pointer hover:bg-gray3">
-                    <h3>Investment scam</h3>
-                    <p> ~$50,700 lost per case</p>
-                    <a href="#" class="btn !text-base">Learn more</a>
-                </div>
-                <div
-                    class="w-full sm:max-w-[90%] md:max-w-[40%] flex flex-col items-start gap-4 flex-grow flex-shrink-0 basis-0 self-start text-black2 rounded border border-solid border-gray2 bg-white shadow-shadow1 p-[calc(6rem/4)] cursor-pointer hover:bg-gray3">
-                    <h3>Investment scam</h3>
-                    <p> ~$50,700 lost per case</p>
-                    <a href="#" class="btn !text-base">Learn more</a>
-                </div>
-                <div
-                    class="w-full sm:max-w-[90%] md:max-w-[40%] flex flex-col items-start gap-4 flex-grow flex-shrink-0 basis-0 self-start text-black2 rounded border border-solid border-gray2 bg-white shadow-shadow1 p-[calc(6rem/4)] cursor-pointer hover:bg-gray3">
-                    <h3>Investment scam</h3>
-                    <p> ~$50,700 lost per case</p>
-                    <a href="#" class="btn !text-base">Learn more</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End news block -->
 
     <section class="block-pad bg-gray1">
         <div class="holder">
@@ -381,6 +345,103 @@
         </div>
     </section>
     <!-- End video block block -->
+
+    <section class="block-pad">
+        <div class="holder">
+            <div class="text-center space-y-4">
+                <p class="uppercase text-base leading-22 tracking-1.5">Anti-Scam efforts</p>
+                <h2 class="text-blue1">Highlights</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full pt-8">
+
+                <div
+                    class=" flex flex-col items-start gap-4  border border-gray2 bg-white shadow-shadow1 p-6 rounded-[4px] text-black2 hover:bg-gray3 hover:cursor-pointer [&>p]:flex-grow [&>a]:text-blue2 [&>a]:underline [&>a]:text-lg [&>a]:font-semibold [&>a]:leading-6 tracking-[0.017em]">
+                    <h3>Investment sca</h3>
+                    <p>~$50,700 lost per case</p>
+                    <a>Learn more</a>
+                </div>
+
+                <div
+                    class=" flex flex-col items-start gap-4  border border-gray2 bg-white shadow-shadow1 p-6 rounded-[4px] text-black2 hover:bg-gray3 hover:cursor-pointer [&>p]:flex-grow [&>a]:text-blue2 [&>a]:underline [&>a]:text-lg [&>a]:font-semibold [&>a]:leading-6 tracking-[0.017em]">
+                    <h3>Investment sca</h3>
+                    <p>~$50,700 lost per case</p>
+                    <a>Learn more</a>
+                </div>
+
+                <div
+                    class=" flex flex-col items-start gap-4  border border-gray2 bg-white shadow-shadow1 p-6 rounded-[4px] text-black2 hover:bg-gray3 hover:cursor-pointer [&>p]:flex-grow [&>a]:text-blue2 [&>a]:underline [&>a]:text-lg [&>a]:font-semibold [&>a]:leading-6 tracking-[0.017em]">
+                    <h3>Investment sca</h3>
+                    <p>~$50,700 lost per case</p>
+                    <a>Learn more</a>
+                </div>
+
+                <div
+                    class=" flex flex-col items-start gap-4  border border-gray2 bg-white shadow-shadow1 p-6 rounded-[4px] text-black2 hover:bg-gray3 hover:cursor-pointer [&>p]:flex-grow [&>a]:text-blue2 [&>a]:underline [&>a]:text-lg [&>a]:font-semibold [&>a]:leading-6 tracking-[0.017em]">
+                    <h3>Investment sca</h3>
+                    <p>~$50,700 lost per case</p>
+                    <a>Learn more</a>
+                </div>
+
+            </div>
+
+    </section>
+    <!-- End card block -->
+    <section class="block-pad">
+        <div class="holder">
+            <div class="text-center space-y-4">
+                <p class="uppercase text-base leading-22 tracking-1.5">Anti-Scam efforts</p>
+                <h2 class="text-blue1">Highlights</h2>
+            </div>
+            <div class="flex flex-col pt-12">
+                <div class="flex flex-col lg:flex-row items-start  p-6 border-y border-gray4 gap-4">
+                    <div class="flex-none w-full lg:w-1/3 space-y-2">
+                        <h3>CPF Withdrawal Limit Reduced</h3>
+                        <p>22 August 2024</p>
+                    </div>
+                    <div class="flex-grow space-y-4">
+                        <p>
+                            Online CPF withdrawal limit reduced from S$200,000 to S$50,000 per day to reduce scam
+                            losses.
+                        </p>
+                        <a href="#" class="btn-light" style="font-weight: inherit; font-style: inherit;">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-start  p-6 border-b border-gray4 gap-4">
+                    <div class="flex-none w-full lg:w-1/3 space-y-2">
+                        <h3>CPF Withdrawal Limit Reduced</h3>
+                        <p>22 August 2024</p>
+                    </div>
+                    <div class="flex-grow space-y-4">
+                        <p>
+                            Online CPF withdrawal limit reduced from S$200,000 to S$50,000 per day to reduce scam
+                            losses.
+                        </p>
+                        <a href="#" class="btn-light" style="font-weight: inherit; font-style: inherit;">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-start  p-6 border-b border-gray4 gap-4">
+                    <div class="flex-none w-full lg:w-1/3 space-y-2">
+                        <h3>CPF Withdrawal Limit Reduced</h3>
+                        <p>22 August 2024</p>
+                    </div>
+                    <div class="flex-grow space-y-4">
+                        <p>
+                            Online CPF withdrawal limit reduced from S$200,000 to S$50,000 per day to reduce scam
+                            losses.
+                        </p>
+                        <a href="#" class="btn-light" style="font-weight: inherit; font-style: inherit;">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End news pdf block -->
 
     <!-- start of the News letter section -->
     <section class="bg-blue1 py-4">
