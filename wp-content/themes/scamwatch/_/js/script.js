@@ -11,7 +11,7 @@ $(function () {
       hide: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
+      nextEl: ".swiper- -next",
       prevEl: ".swiper-button-prev",
     },
     pagination: {
@@ -66,7 +66,7 @@ scamLink.addEventListener("click", (event) => {
   event.preventDefault(); // Prevent the default link behavior
   megaMenu.classList.toggle("opacity-100");
   megaMenu.classList.toggle("pointer-events-auto");
-  megaMenu.classList.toggle("translate-y-2");
+  // megaMenu.classList.toggle("translate-y-2");
 });
 
 // Close the mega menu when clicking outside
@@ -75,7 +75,7 @@ document.addEventListener("click", (event) => {
     megaMenu.classList.remove(
       "opacity-100",
       "pointer-events-auto",
-      "translate-y-2"
+      // "translate-y-2"
     );
   }
 });
@@ -86,7 +86,7 @@ document.addEventListener("keydown", (event) => {
     megaMenu.classList.remove(
       "opacity-100",
       "pointer-events-auto",
-      "translate-y-2"
+      // "translate-y-2"
     );
   }
 });

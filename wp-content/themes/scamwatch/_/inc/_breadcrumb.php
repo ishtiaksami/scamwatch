@@ -3,11 +3,11 @@
 function custom_breadcrumb()
 {
     // Start the breadcrumb with a link to your homepage
-    echo '<a class="text-white/50 hover:text-white" href="' . home_url() . '">Home</a>';
+    echo '<a class="text-white hover:underline" href="' . home_url() . '">Home</a>';
 
     // Check if we're not on the homepage
     if (!is_front_page()) {
-        echo '&nbsp;&nbsp; \ &nbsp;&nbsp;';
+        echo '<span> / </span>';
 
         if (is_single()) {
             // Get the post type
@@ -15,34 +15,15 @@ function custom_breadcrumb()
 
             // Check if the post type is 'post' or a custom post type
             if ($post_type == 'post') {
-                // Get the categories for the current post
-                // $categories = get_the_category();
-                // if ($categories) {
-                //     // Display the first category's name with a link to the category archive
-                //     echo '<a class="text-white/50 hover:text-white" href="' . get_category_link($categories[0]->term_id) . '">' . $categories[0]->name . '</a>';
-                //     echo '&nbsp;&nbsp; \ &nbsp;&nbsp;';
-                // }
-                echo '<a class="text-white/50 hover:text-white" href="/news/">News</a>';
-                echo '&nbsp;&nbsp; \ &nbsp;&nbsp;';
-            } elseif ($post_type == 'music-entertainment') {
-                echo '<a class="text-white/50 hover:text-white" href="/music-entertainment/">Music & Entertainment</a>';
-                echo '&nbsp;&nbsp; \ &nbsp;&nbsp;';
-            } elseif ($post_type == 'restaurant-bar') {
-                echo '<a class="text-white/50 hover:text-white" href="/eat-and-drink/">Eat & Drink</a>';
-                echo '&nbsp;&nbsp; \ &nbsp;&nbsp;';
-            } elseif ($post_type == 'shop-gallery') {
-                echo '<a class="text-white/50 hover:text-white" href="/shops-galleries/">Shops & Galleries</a>';
-                echo '&nbsp;&nbsp; \ &nbsp;&nbsp;';
-            } elseif ($post_type == 'event') {
-                echo '<a class="text-white/50 hover:text-white" href="/happenings/">Happenings</a>';
-                echo '&nbsp;&nbsp; \ &nbsp;&nbsp;';
+                echo '<a class="text-white hover:underline" href="/news/">News</a>';
+                echo '<span> / </span>';
             } else {
                 // Get the custom post type object
                 $post_type_object = get_post_type_object($post_type);
                 if ($post_type_object) {
                     // Display the custom post type archive link
-                    echo '<a class="text-white/50 hover:text-white" href="' . get_post_type_archive_link($post_type) . '">' . $post_type_object->labels->singular_name . '</a>';
-                    echo '&nbsp;&nbsp; \ &nbsp;&nbsp;';
+                    echo '<a class="text-white hover:underline" href="' . get_post_type_archive_link($post_type) . '">' . $post_type_object->labels->singular_name . '</a>';
+                    echo '<span> / </span>';
                 }
             }
             // Display the post title
@@ -59,13 +40,13 @@ function custom_breadcrumb()
                 $breadcrumbs = array();
                 while ($parent_id) {
                     $page = get_post($parent_id);
-                    $breadcrumbs[] = '<a class="text-white/50 hover:text-white" href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
+                    $breadcrumbs[] = '<a class="text-white hover:underline" href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
                     $parent_id  = $page->post_parent;
                 }
                 // Display the parent pages
                 $breadcrumbs = array_reverse($breadcrumbs);
                 foreach ($breadcrumbs as $crumb) {
-                    echo $crumb . '&nbsp;&nbsp; \ &nbsp;&nbsp;';
+                    echo $crumb . '<span> / </span>';
                 }
             }
             // Display the current page title

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,24 +15,16 @@ body {
 }
 
 .btn {
-  @apply px-6 py-3 bg-blue1 text-white text-lg font-semibold rounded transition-all duration-500;
+  @apply px-6 py-3 text-black border-2 border-black border-solid text-lg font-semibold  transition-all duration-500 hover:bg-black hover:text-white;
 }
-.btn:hover {
-  @apply bg-bright-Orange;
+
+.btn-white {
+  @apply px-6 py-3 text-white border-white border-solid border-2 font-semibold transition-all duration-500 hover:bg-white hover:text-blue1 text-lg;
 }
 .btn:hover > svg > path {
   @apply fill-white transition-all duration-300;
 }
 
-.btn-light {
-  @apply text-center text-blue1 font-lato text-lg font-semibold leading-32 cursor-pointer uppercase underline;
-}
-.btn-light:hover {
-  @apply text-blue2;
-}
-.btn-light:hover path {
-  @apply fill-blue2;
-}
 .after-effect::after {
   @apply bg-black bottom-[-2px] content-[""] h-[1px] right-0 absolute w-0 transition-all duration-300;
 }
@@ -137,4 +129,14 @@ body {
 
 .no-scroll {
   overflow: hidden; /* Disable scrolling */
+}
+
+/* .sub-menu {
+ @apply  basis-2/6;
+} */
+.sub-menu li:not(.menu-item-has-title) {
+  @apply mb-2 transition-all duration-300 hover:text-blue1;
+}
+.sub-menu .menu-item-has-title {
+  @apply font-semibold mb-4;
 }

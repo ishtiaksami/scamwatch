@@ -12,70 +12,39 @@
 
     <!-- start of the header section -->
     <header class=" bg-white">
-        <div class="bg-blue1 py-1">
-            <div class="holder">
-                <ul
-                    class="flex justify-end items-center gap-4 md:gap-10 [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:text-sm [&>li>a]:tracking-normal">
-                    <li><a href="">News & Alerts</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Reports</a></li>
-                </ul>
-            </div>
-        </div>
+        <?php require(get_template_directory() . '/layouts-modules/_top_menu.php'); ?>
+
+
         <div class="relative">
             <div class=" holder flex justify-between gap-8 items-center py-2 ">
-                <a href="#" class="w-14 h-14">
-                    <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
-                </a>
 
-                <nav class="md:block hidden py-2 px-4 ">
-                    <ul class="flex justify-center items-center gap-4 md:gap-8 xl:gap-10 [&>li>a]:text-blue1 [&>li>a]:font-medium [&>li>a]:text-xs xl:[&>li>a]:text-base [&>li>a]:uppercase [&>li>a]:tracking-normal">
-                        <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">Home</a></li>
-                        <!-- Mega Menu Parent -->
-                        <li>
-                            <a id="scam-link" href="#" class="after-effect relative hover:text-orange-500 duration-500">Type of Scam</a>
-                            <!-- Mega Menu Dropdown -->
-                            <div id="mega-menu"
-                                class="bg-gray-100 absolute left-0 top-10 w-full shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-10">
-                                <div class="grid grid-cols-3 gap-8 max-w-[53rem] w-full px-4">
-                                    <!-- Column 1 -->
-                                    <div>
-                                        <h4 class="font-semibold mb-4">Online Scams</h4>
-                                        <ul class="space-y-2">
-                                            <li><a href="#">Phishing</a></li>
-                                            <li><a href="#">Fake E-commerce</a></li>
-                                            <li><a href="#">Email Scams</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Column 2 -->
-                                    <div>
-                                        <h4 class="font-semibold mb-4">Investment Scams</h4>
-                                        <ul class="space-y-2">
-                                            <li><a href="#">Ponzi Schemes</a></li>
-                                            <li><a href="#">Crypto Scams</a></li>
-                                            <li><a href="#">Stock Market Scams</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Column 3 -->
-                                    <div>
-                                        <h4 class="font-semibold mb-4">Social Media Scams</h4>
-                                        <ul class="space-y-2">
-                                            <li><a href="#">Fake Profiles</a></li>
-                                            <li><a href="#">Romance Scams</a></li>
-                                            <li><a href="#">Impersonation</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">I have been scam</a></li>
-                        <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">Protection against Scam</a></li>
-                        <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">About</a></li>
-                        <li><a href="" class="after-effect relative hover:text-orange-500 duration-500">More</a></li>
-                    </ul>
-                </nav>
+                <?php if (is_front_page()) : ?>
+                    <h1 class="siteLogo" title="<?php bloginfo('name'); ?>">
+                        <a href="<?php echo home_url('/'); ?>" class="block w-14 h-14">
+
+
+                            <?php
+                            $logo = get_field('logo', 'options');
+                            if ($logo) : ?>
+                                <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
+                            <?php endif; ?>
+                        </a>
+                    </h1>
+                <?php else : ?>
+                    <h2 class="siteLogo" title="<?php bloginfo('name'); ?>">
+                        <a href="<?php echo home_url('/'); ?>" class="block w-14 h-14">
+                            <?php
+                            $logo = get_field('logo', 'options');
+                            if ($logo) : ?>
+                                <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
+                            <?php endif; ?>
+                        </a>
+                    </h2>
+                <?php endif; ?>
+
+
+                <?php require(get_template_directory() . '/layouts-modules/_mega-menu.php'); ?>
+
 
                 <div class="flex items-center gap-6">
                     <!-- Search Icon -->
@@ -148,3 +117,49 @@
         </div>
     </header>
     <!-- end of the header section -->
+
+
+    <?php if ((get_field('show_banner')) && !is_search()) : ?>
+
+        <?php if (get_field('banner_height') == 'slider') : ?>
+            <div>
+                <h2>SLider Content Will Be Here</h2>
+            </div>
+
+        <?php else: ?>
+            <section
+                class="bg-blue1 relative py-[60px] md:py-[100px] flex flex-col justify-center" style="background-image:url('<?php echo esc_url(get_field('banner_image')); ?>'); background-size: auto 500px !important; background-position: bottom 0 right 120px; background-repeat:no-repeat;">
+
+                <div class="holder relative z-10 w-full">
+                    <?php if ($banner_title = get_field('banner_title')) : ?>
+                        <div class="max-w-[600px]">
+                            <?php $banner_title = get_field('banner_title') ?>
+                            <?php if ($is_front_page) : ?>
+                                <h2 class="text-[64px] font-lato font-bold text-white leading-[-0.48px]"><?php echo esc_html($banner_title); ?></h2>
+                            <?php else : ?>
+                                <h1 class="text-[64px] font-lato font-bold text-white leading-[-0.48px]"><?php echo esc_html($banner_title); ?></h1>
+                            <?php endif; ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php
+                    $link = get_field('banner_cta');
+                    if ($link) :
+                        $link_url = $link['url'];
+                        $link_title = $link['title'];
+                        $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                        <div class="md:mt-16 mt-8 flex flex-wrap">
+
+                            <a class="btn-white" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+
+                        </div>
+                </div>
+            <?php endif; ?>
+            </section>
+        <?php endif; ?>
+
+
+    <?php endif; ?>
+
+    <div class="flex-auto">

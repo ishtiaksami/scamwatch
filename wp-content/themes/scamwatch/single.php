@@ -28,9 +28,9 @@ if (have_posts()) :
 
                 <!-- Featured Image -->
                 <?php if (has_post_thumbnail()) : ?>
-                    <div class="h-[700px] bg-no-repeat" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>');">
-</div>
-
+                    <div class="">
+                        <?php the_post_thumbnail('full'); ?>
+                    </div>
                 <?php endif; ?>
 
                 <!-- Post Content -->
