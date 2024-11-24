@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1016,10 +1018,6 @@ p{
   max-width: 1100px;
 }
 
-.max-w-\[325px\]{
-  max-width: 325px;
-}
-
 .max-w-\[44\.375rem\]{
   max-width: 44.375rem;
 }
@@ -1054,6 +1052,10 @@ p{
 
 .flex-auto{
   flex: 1 1 auto;
+}
+
+.flex-none{
+  flex: none;
 }
 
 .flex-shrink-0{
@@ -1265,6 +1267,10 @@ p{
   border-radius: 0.25rem;
 }
 
+.rounded-\[4px\]{
+  border-radius: 4px;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -1288,6 +1294,11 @@ p{
 
 .border{
   border-width: 1px;
+}
+
+.border-y{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }
 
 .border-b{
@@ -1345,6 +1356,11 @@ p{
 .border-gray3{
   --tw-border-opacity: 1;
   border-color: rgb(250 250 250 / var(--tw-border-opacity));
+}
+
+.border-gray4{
+  --tw-border-opacity: 1;
+  border-color: rgb(253 240 242 / var(--tw-border-opacity));
 }
 
 .border-red-500{
@@ -1759,6 +1775,10 @@ p{
   letter-spacing: -0.14px;
 }
 
+.tracking-\[0\.017em\]{
+  letter-spacing: 0.017em;
+}
+
 .tracking-\[0\.56px\]{
   letter-spacing: 0.56px;
 }
@@ -1972,6 +1992,28 @@ body{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+
+.btn-light{
+  cursor: pointer;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(38 109 241 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.btn-light:hover{
+  --tw-text-opacity: 1;
+  color: rgb(67 129 243 / var(--tw-text-opacity));
+}
+
+.btn-light:hover path{
+  fill: #4381f3;
 }
 
 .after-effect::after{
@@ -2241,6 +2283,10 @@ body{
   content: var(--tw-content);
 }
 
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
+}
+
 .hover\:gap-4:hover{
   gap: 1rem;
 }
@@ -2305,12 +2351,6 @@ body{
   fill: #f97316;
 }
 
-@media (min-width: 640px){
-  .sm\:max-w-\[90\%\]{
-    max-width: 90%;
-  }
-}
-
 @media (min-width: 768px){
   .md\:static{
     position: static;
@@ -2356,10 +2396,6 @@ body{
     min-width: 9.625rem;
   }
 
-  .md\:max-w-\[40\%\]{
-    max-width: 40%;
-  }
-
   .md\:basis-2\/3{
     flex-basis: 66.666667%;
   }
@@ -2376,12 +2412,20 @@ body{
     flex-direction: row;
   }
 
+  .md\:items-center{
+    align-items: center;
+  }
+
   .md\:gap-10{
     gap: 2.5rem;
   }
 
   .md\:gap-11{
     gap: 2.75rem;
+  }
+
+  .md\:gap-16{
+    gap: 4rem;
   }
 
   .md\:gap-8{
@@ -2503,16 +2547,16 @@ body{
     grid-column: span 3 / span 3;
   }
 
-  .lg\:col-span-4{
-    grid-column: span 4 / span 4;
-  }
-
   .lg\:block{
     display: block;
   }
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:w-1\/3{
+    width: 33.333333%;
   }
 
   .lg\:max-w-siteWidth{
@@ -2539,12 +2583,12 @@ body{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-8{
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:items-start{
+    align-items: flex-start;
   }
 
   .lg\:items-center{
@@ -2553,10 +2597,6 @@ body{
 
   .lg\:gap-14{
     gap: 3.5rem;
-  }
-
-  .lg\:gap-16{
-    gap: 4rem;
   }
 
   .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]){
@@ -2656,6 +2696,11 @@ body{
   line-height: 2rem;
 }
 
+.\[\&\>a\]\:text-lg>a{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .\[\&\>a\]\:text-xl>a{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -2667,6 +2712,10 @@ body{
 
 .\[\&\>a\]\:leading-22>a{
   line-height: 1.375rem;
+}
+
+.\[\&\>a\]\:leading-6>a{
+  line-height: 1.5rem;
 }
 
 .\[\&\>a\]\:leading-\[22px\]>a{
@@ -2681,9 +2730,18 @@ body{
   letter-spacing: -0.025em;
 }
 
+.\[\&\>a\]\:text-blue2>a{
+  --tw-text-opacity: 1;
+  color: rgb(67 129 243 / var(--tw-text-opacity));
+}
+
 .\[\&\>a\]\:text-white>a{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[\&\>a\]\:underline>a{
+  text-decoration-line: underline;
 }
 
 .\[\&\>a\]\:transition>a{
@@ -2816,6 +2874,10 @@ body{
 
 .\[\&\>li\]\:relative>li{
   position: relative;
+}
+
+.\[\&\>p\]\:flex-grow>p{
+  flex-grow: 1;
 }
 
 .\[\&\>p\]\:text-xl>p{
