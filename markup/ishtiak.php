@@ -13,7 +13,7 @@
 <body>
 
     <!-- start of the header section -->
-    <header class="relative">
+    <header class="absolute w-full z-10 bg-white">
         <div class="bg-blue1 py-1">
             <div class="holder">
                 <ul
@@ -26,8 +26,7 @@
                 </ul>
             </div>
         </div>
-
-        <div class="holder flex justify-between gap-8 items-center py-2 ">
+        <div class="holder flex justify-between gap-8 items-center py-2">
             <a href="#" class="w-14 h-14">
                 <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
             </a>
@@ -147,9 +146,85 @@
             </div>
 
         </div>
-
-
     </header>
+
+    <section class="relative -z-10 h-[528px] md:h-[700px] overflow-hidden flex flex-col justify-end">
+        <div class="swiper bannerSlider w-full h-full absolute left-0 top-0">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide relative">
+                    <img class="w-full h-full object-cover absolute left-0 top-0 z-0"
+                        src="/wp-content/themes/scamwatch/_/img/image.jpg"
+                        alt="Events">
+
+                    <div class="holder relative h-full flex flex-col justify-end">
+                        <div class=" pb-20 md:pb-32">
+                            <div class="max-w-[750px] ">
+                                <h1
+                                    class="text-white text-32 md:text-56 font-montserrat font-extrabold uppercase leading-[90%] tracking-[0.56px] ">
+                                    Help to spot and avoid scams
+                                </h1>
+                            </div>
+                            <div class="mt-8 flex flex-wrap">
+                                <a class="btn" href="#">Check for scam warning signs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide relative">
+                    <img class="w-full h-full object-cover absolute left-0 top-0 z-0"
+                        src="/wp-content/themes/scamwatch/_/img/image5.jpg"
+                        alt="Events">
+
+                    <div class="holder relative h-full flex flex-col justify-end">
+                        <div class="pb-20 md:pb-32">
+                            <div class="max-w-[750px] ">
+                                <h1
+                                    class="text-white text-32 md:text-56 font-montserrat font-extrabold uppercase leading-[90%] tracking-[0.56px] ">
+                                    Know when to stop and check – stay scam safe.
+                                </h1>
+                            </div>
+                            <div class="mt-8 flex flex-wrap ">
+                                <a class="btn" href="#">Check for scam warning signs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- swiper controller -->
+            <div class="swiper-button-next after:content-none w-[70px] h-[70px] z-50 right-8 hidden md:block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 53 53" fill="none">
+                    <path
+                        d="M29.3497 26.5013L19.1914 16.3429L20.7549 14.7794L32.4767 26.5013L20.7549 38.2231L19.1914 36.6596L29.3497 26.5013Z"
+                        fill="white" />
+                </svg>
+            </div>
+
+            <div class="swiper-button-prev after:content-none w-[70px] h-[70px] z-50 left-8 hidden md:block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 53 53" fill="none">
+                    <path
+                        d="M23.6503 26.4987L33.8086 36.6571L32.2451 38.2206L20.5233 26.4987L32.2451 14.7769L33.8086 16.3404L23.6503 26.4987Z"
+                        fill="white" />
+                </svg>
+            </div>
+
+            <div class="absolute bottom-8 md:bottom-14 w-full hidden md:block">
+                <div class="holder flex flex-col gap-4">
+                    <div
+                        class="bg-white/30 swiper-scrollbar !h-px !opacity-100 !relative !left-0 !w-full [&>.swiper-scrollbar-drag]:bg-white">
+                    </div>
+                    <div
+                        class="relative swiper-pagination text-white text-sm tracking-[-0.14px] leading-none font-extrabold text-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!-- end of the header section -->
 
     <!-- start of the Intro section -->
@@ -451,7 +526,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
     <!-- Start of the Tab section -->
     <section class="block-pad">

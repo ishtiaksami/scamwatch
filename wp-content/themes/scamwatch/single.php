@@ -6,9 +6,8 @@ $time = get_the_time('d.m.Y', $post_id);
 $categories = get_the_category($post_id);
 $category_name = !empty($categories) ? esc_html($categories[0]->name) : 'Uncategorized';
 $post_tags = get_the_tags($post_id);
-
 ?>
-<?php get_header(); ?>
+
 <?php
 // Check if there are posts
 if (have_posts()) :
@@ -16,21 +15,26 @@ if (have_posts()) :
     while (have_posts()) :
         the_post(); ?>
 
-        <?php if (has_post_thumbnail()) : ?>
-            <div class="">
-                <?php the_post_thumbnail('full'); ?>
-            </div>
-        <?php endif; ?>
-
-        <div id="main-content" class="holder">
-
+        <div id="main-content" class="holder ">
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+                <!-- Post Title -->
+                <h1 class="font-bold pt-4 uppercase"><?php the_title(); ?></h1>
+
+                <div class="pb-4">
+                    <span class="post-date"><?php echo get_the_date(); ?></span>
+                    <span class="post-author"><?php echo get_the_author(); ?></span>
+                </div>
+
                 <!-- Featured Image -->
+                <?php if (has_post_thumbnail()) : ?>
+                    <div class="h-[700px] bg-no-repeat" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>');">
+</div>
 
-
+                <?php endif; ?>
 
                 <!-- Post Content -->
-                <div class="space-y-4 py-5">
+                <div class="space-y-6 <?php // ksa('[&>p]:text-xl'); ?>">
                     <?php the_content(); ?>
                 </div>
             </article>
@@ -40,6 +44,5 @@ if (have_posts()) :
 else : ?>
     <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'textdomain'); ?></p>
 <?php endif; ?>
-
 
 <?php get_footer(); ?>

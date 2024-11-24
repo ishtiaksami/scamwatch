@@ -114,3 +114,17 @@ body {
 .wp-block-image img {
   @apply w-full pb-5;
 }
+
+/* Fullscreen Search Overlay */
+#fullscreenSearch {
+  transition: all 0.5s ease-in-out;
+}
+
+#fullscreenSearch.open {
+  width: 100%;
+  height: 100%;
+}
+
+.no-scroll {
+  overflow: hidden; /* Disable scrolling */
+}
