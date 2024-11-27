@@ -124,16 +124,16 @@
 
         <?php else: ?>
             <section
-                class="bg-blue1 relative py-[60px] md:py-[100px] flex flex-col justify-center" style="background-image:url('<?php echo esc_url(get_field('banner_image')); ?>'); background-size: auto 500px !important; background-position: bottom 0 right 120px; background-repeat:no-repeat;">
+                class="bg-bright-Orange relative py-[60px] md:py-[100px] flex flex-col justify-center" style="background-image:url('<?php echo esc_url(get_field('banner_image')); ?>'); background-size: auto 428px !important; background-position: bottom 0 right 0; background-repeat:no-repeat;">
 
                 <div class="holder relative z-10 w-full">
                     <?php if ($banner_title = get_field('banner_title')) : ?>
                         <div class="max-w-[600px]">
                             <?php $banner_title = get_field('banner_title') ?>
                             <?php if ($is_front_page) : ?>
-                                <h2 class="text-[64px] font-lato font-bold text-white leading-[-0.48px]"><?php echo esc_html($banner_title); ?></h2>
+                                <h2 class="text-[64px] font-lato font-bold text-blue1 leading-[-0.48px]"><?php echo esc_html($banner_title); ?></h2>
                             <?php else : ?>
-                                <h1 class="text-[64px] font-lato font-bold text-white leading-[-0.48px]"><?php echo esc_html($banner_title); ?></h1>
+                                <h1 class="text-[64px] font-lato font-bold text-blue1 leading-[-0.48px]"><?php echo esc_html($banner_title); ?></h1>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>
@@ -147,7 +147,7 @@
                     ?>
                         <div class="md:mt-16 mt-8 flex flex-wrap">
 
-                            <a class="btn-white" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                            <a class="btn" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
 
                         </div>
                 </div>
