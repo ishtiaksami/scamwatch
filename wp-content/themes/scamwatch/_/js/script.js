@@ -11,7 +11,7 @@ $(function () {
       hide: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
+      nextEl: ".swiper- -next",
       prevEl: ".swiper-button-prev",
     },
     pagination: {
@@ -32,16 +32,41 @@ $(function () {
   });
 });
 
+// search bar
+
+$(document).ready(function () {
+  // Open search overlay
+  $("#openSearch").click(function (e) {
+    e.preventDefault();
+    $("#fullscreenSearch").addClass("open");
+    $("body").addClass("no-scroll"); // Disable body scroll
+  });
+
+  // Close search overlay
+  $("#closeSearch").click(function () {
+    $("#fullscreenSearch").removeClass("open");
+    $("body").removeClass("no-scroll"); // Enable body scroll
+  });
+
+  // Close on ESC key
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape") {
+      $("#fullscreenSearch").removeClass("open");
+      $("body").removeClass("no-scroll"); // Enable body scroll
+    }
+  });
+});
+
 // mega menu
 const scamLink = document.getElementById("scam-link");
 const megaMenu = document.getElementById("mega-menu");
 
-// Toggle Mega Menu on Click (for mobile or touch users)
+// Toggle Mega Menu on Click
 scamLink.addEventListener("click", (event) => {
-  event.preventDefault();
+  event.preventDefault(); // Prevent the default link behavior
   megaMenu.classList.toggle("opacity-100");
   megaMenu.classList.toggle("pointer-events-auto");
-  megaMenu.classList.toggle("translate-y-2");
+  // megaMenu.classList.toggle("translate-y-2");
 });
 
 // Close the mega menu when clicking outside
@@ -50,7 +75,7 @@ document.addEventListener("click", (event) => {
     megaMenu.classList.remove(
       "opacity-100",
       "pointer-events-auto",
-      "translate-y-2"
+      // "translate-y-2"
     );
   }
 });
@@ -61,22 +86,9 @@ document.addEventListener("keydown", (event) => {
     megaMenu.classList.remove(
       "opacity-100",
       "pointer-events-auto",
-      "translate-y-2"
+      // "translate-y-2"
     );
   }
-});
-
-// Hover effect for desktop users
-scamLink.parentElement.addEventListener("mouseenter", () => {
-  megaMenu.classList.add("opacity-100", "pointer-events-auto", "translate-y-2");
-});
-
-scamLink.parentElement.addEventListener("mouseleave", () => {
-  megaMenu.classList.remove(
-    "opacity-100",
-    "pointer-events-auto",
-    "translate-y-2"
-  );
 });
 
 // conflict bugg solution
@@ -214,30 +226,5 @@ $(document).ready(function () {
     $(`#${targetTab}`)
       .removeClass("hidden opacity-0 scale-95")
       .addClass("opacity-100 scale-100");
-  });
-});
-
-// search bar
-
-$(document).ready(function () {
-  // Open search overlay
-  $("#openSearch").click(function (e) {
-    e.preventDefault();
-    $("#fullscreenSearch").removeClass("w-0 h-0").addClass("w-full h-full");
-    $("body").addClass("no-scroll"); // Disable body scroll
-  });
-
-  // Close search overlay
-  $("#closeSearch").click(function () {
-    $("#fullscreenSearch").removeClass("w-full h-full").addClass("w-0 h-0");
-    $("body").removeClass("no-scroll"); // Enable body scroll
-  });
-
-  // Close on ESC key
-  $(document).on("keydown", function (e) {
-    if (e.key === "Escape") {
-      $("#fullscreenSearch").removeClass("w-full h-full").addClass("w-0 h-0");
-      $("body").removeClass("no-scroll"); // Enable body scroll
-    }
   });
 });

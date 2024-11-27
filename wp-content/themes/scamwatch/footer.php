@@ -1,3 +1,4 @@
+</div>
 <!-- Start of the footer section -->
 <footer class="bg-blue1 py-8">
     <div class="holder">
@@ -90,8 +91,17 @@
             </a>
         </div>
 
-        <div class="hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-4">
-            <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">About</a>
+        <?php
+        $defaults = array(
+            'theme_location' => 'footer_menu',
+            'menu' => 'footer_menu',
+            'menu_class' => 'hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-4  [&>li>a:hover]:text-orange-500 [&>li>a]:duration-500 [&>li>a]:after-effect [&>li>a]:relative [&>li>a]:after:bg-white',
+            'menu_id' => 'footer-nav',
+            'container' => 'ul'
+        );
+        wp_nav_menu($defaults);
+        ?>
+        <!-- <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">About</a>
             <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">I have been
                 scam</a>
             <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">Protection
@@ -101,8 +111,7 @@
             <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">News & Alerts
             </a>
             <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">Contact Us
-            </a>
-        </div>
+            </a> -->
 
         <div
             class="text-white flex justify-between j items-center pt-2 space-y-5 md:space-y-0">
@@ -111,15 +120,12 @@
                 <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
             </a>
 
-            <div class="space-x-4 md:[&>*]:text-sm [&>*]:text-xs">
-                <span>Site designed by <a href=""
-                        class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">
-                        Skylark</a></span>
-                <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">Legal</a>
-                <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">Cookie
-                    Policy</a>
-                <a href="" class="hover:text-orange-500 duration-500 after-effect relative after:bg-white">Privacy
-                    Policy</a>
+            <div>
+                <ul class="flex flex-wrap gap-[30px] order-1 md:order-2 leading-normal space-x-4 md:[&>*]:text-sm [&>*]:text-xs">
+                    <li><a class="hover:text-orange-500 duration-500 after-effect relative after:bg-white" href="/legal">Legal</a></li>
+                    <li><a class="hover:text-orange-500 duration-500 after-effect relative after:bg-white" href="/cookie-policy">Cookie Policy</a></li>
+                    <li><a class="hover:text-orange-500 duration-500 after-effect relative after:bg-white" href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300&display=swap');
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -745,6 +745,10 @@ p{
   top: 74px;
 }
 
+.top-full{
+  top: 100%;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1174,6 +1178,15 @@ p{
   gap: 2rem;
 }
 
+.gap-\[30px\]{
+  gap: 30px;
+}
+
+.gap-x-40{
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1396,6 +1409,11 @@ p{
   background-color: rgb(58 121 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .bg-soft-vanilla{
   --tw-bg-opacity: 1;
   background-color: rgb(255 245 210 / var(--tw-bg-opacity));
@@ -1513,6 +1531,11 @@ p{
   padding-bottom: 0.5rem;
 }
 
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1536,6 +1559,16 @@ p{
 .py-\[15px\]{
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.py-\[30px\]{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py-\[60px\]{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .pb-10{
@@ -1614,12 +1647,20 @@ p{
   padding-top: 2rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
 
 .text-right{
   text-align: right;
+}
+
+.font-lato{
+  font-family: Lato, sans-serif;
 }
 
 .font-montserrat{
@@ -1657,6 +1698,14 @@ p{
 
 .text-64{
   font-size: 4rem;
+}
+
+.text-\[0\.6875rem\]{
+  font-size: 0.6875rem;
+}
+
+.text-\[64px\]{
+  font-size: 64px;
 }
 
 .text-base{
@@ -1716,6 +1765,14 @@ p{
   line-height: 1.375rem;
 }
 
+.leading-\[-0\.48px\]{
+  line-height: -0.48px;
+}
+
+.leading-\[126\%\]{
+  line-height: 126%;
+}
+
 .leading-\[90\%\]{
   line-height: 90%;
 }
@@ -1742,6 +1799,10 @@ p{
 
 .tracking-\[0\.017em\]{
   letter-spacing: 0.017em;
+}
+
+.tracking-\[0\.13406rem\]{
+  letter-spacing: 0.13406rem;
 }
 
 .tracking-\[0\.56px\]{
@@ -1799,10 +1860,6 @@ p{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-white\/50{
-  color: rgb(255 255 255 / 0.5);
 }
 
 .underline{
@@ -1959,28 +2016,6 @@ body{
   transition-duration: 300ms;
 }
 
-.btn-light{
-  cursor: pointer;
-  text-align: center;
-  font-family: Lato, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 2rem;
-  --tw-text-opacity: 1;
-  color: rgb(38 109 241 / var(--tw-text-opacity));
-  text-decoration-line: underline;
-}
-
-.btn-light:hover{
-  --tw-text-opacity: 1;
-  color: rgb(67 129 243 / var(--tw-text-opacity));
-}
-
-.btn-light:hover path{
-  fill: #4381f3;
-}
-
 .after-effect::after{
   position: absolute;
   bottom: -2px;
@@ -2075,6 +2110,43 @@ body{
 .wp-block-image img{
   width: 100%;
   padding-bottom: 1.25rem;
+}
+
+/* Fullscreen Search Overlay */
+
+#fullscreenSearch {
+  transition: all 0.5s ease-in-out;
+}
+
+#fullscreenSearch.open {
+  width: 100%;
+  height: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+  /* Disable scrolling */
+}
+
+/* .sub-menu {
+ @apply  basis-2/6;
+} */
+
+.sub-menu li:not(.menu-item-has-title){
+  margin-bottom: 0.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.sub-menu li:not(.menu-item-has-title):hover{
+  --tw-text-opacity: 1;
+  color: rgb(38 109 241 / var(--tw-text-opacity));
+}
+
+.sub-menu .menu-item-has-title{
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .placeholder\:text-sm::-moz-placeholder{
@@ -2260,9 +2332,8 @@ body{
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }
 
 .hover\:shadow-custom2:hover{
@@ -2311,6 +2382,10 @@ body{
 
   .md\:order-1{
     order: 1;
+  }
+
+  .md\:order-2{
+    order: 2;
   }
 
   .md\:mt-10{
@@ -2423,9 +2498,19 @@ body{
     padding-bottom: 50px;
   }
 
+  .md\:py-\[100px\]{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .md\:py-\[14px\]{
     padding-top: 14px;
     padding-bottom: 14px;
+  }
+
+  .md\:py-\[60px\]{
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .md\:pb-32{
@@ -2542,6 +2627,10 @@ body{
 
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:justify-end{
+    justify-content: flex-end;
   }
 
   .lg\:gap-14{
@@ -2679,11 +2768,6 @@ body{
   letter-spacing: -0.025em;
 }
 
-.\[\&\>a\]\:text-blue2>a{
-  --tw-text-opacity: 1;
-  color: rgb(67 129 243 / var(--tw-text-opacity));
-}
-
 .\[\&\>a\]\:text-white>a{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2716,6 +2800,11 @@ body{
   }
 }
 
+.\[\&\>li\>a\:hover\]\:text-orange-500>li>a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
 .\[\&\>li\>a\>h3\]\:mb-4>li>a>h3{
   margin-bottom: 1rem;
 }
@@ -2738,6 +2827,10 @@ body{
 
 .\[\&\>li\>a\>h3\]\:tracking-normal>li>a>h3{
   letter-spacing: 0em;
+}
+
+.\[\&\>li\>a\]\:relative>li>a{
+  position: relative;
 }
 
 .\[\&\>li\>a\]\:block>li>a{
@@ -2788,6 +2881,10 @@ body{
   line-height: 1rem;
 }
 
+.\[\&\>li\>a\]\:font-bold>li>a{
+  font-weight: 700;
+}
+
 .\[\&\>li\>a\]\:font-medium>li>a{
   font-weight: 500;
 }
@@ -2798,6 +2895,10 @@ body{
 
 .\[\&\>li\>a\]\:uppercase>li>a{
   text-transform: uppercase;
+}
+
+.\[\&\>li\>a\]\:tracking-\[0\.0175rem\]>li>a{
+  letter-spacing: 0.0175rem;
 }
 
 .\[\&\>li\>a\]\:tracking-normal>li>a{
@@ -2814,6 +2915,16 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.\[\&\>li\>a\]\:duration-500>li>a{
+  transition-duration: 500ms;
+}
+
+.\[\&\>li\>a\]\:after\:bg-white>li>a::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1280px){
   .xl\:\[\&\>li\>a\]\:text-base>li>a{
     font-size: 1rem;
@@ -2827,6 +2938,11 @@ body{
 
 .\[\&\>p\]\:flex-grow>p{
   flex-grow: 1;
+}
+
+.\[\&\>p\]\:text-xl>p{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .\[\&\>p\]\:font-light>p{

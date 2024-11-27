@@ -5,7 +5,6 @@ if ($is_preview) {
     return;
 }
 ?>
-
 <!-- start of Page Intro Block  -->
 <section class="block-pad bg-gray1 <?php echo isset($block['className']) ? $block['className'] : ''; ?>" id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
     <div class="holder">
@@ -42,9 +41,8 @@ if ($is_preview) {
             <?php endif; ?>
         </div>
 
-
         <?php
-        $link = get_field('link');
+        $link = get_field('cta_button');
         if ($link) : ?>
             <div class="gap-30 flex flex-wrap justify-center items-center pt-6">
                 <?php
@@ -60,6 +58,5 @@ if ($is_preview) {
             </div>
         <?php endif; ?>
     </div>
-
 </section>
 <!-- End of Page Intro Block  -->

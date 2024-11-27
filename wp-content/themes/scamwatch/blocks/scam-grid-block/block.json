@@ -3,10 +3,10 @@
   "title": "Scam Grid Block",
   "description": "show a grid text of a page in this block",
   "category": "layout",
-  "icon": "text-page",
+  "icon": "grid-view",
   "keywords": ["Scam", "Grid", "Block"],
   "acf": {
-    "mode": "grid-view",
+    "mode": "edit",
     "renderTemplate": "scam-grid-block.php"
   },
   "supports": {
