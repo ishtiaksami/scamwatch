@@ -49,11 +49,7 @@
                 <div class="flex items-center gap-6">
                     <!-- Search Icon -->
                     <a href="#" class="searchBtn" id="openSearch">
-                        <svg width="22" height="22" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.0381 16.5L12.4965 12.9521M14.4591 8.21053C14.4591 9.99027 13.7521 11.6971 12.4937 12.9556C11.2352 14.2141 9.52835 14.9211 7.74861 14.9211C5.96887 14.9211 4.26202 14.2141 3.00355 12.9556C1.74509 11.6971 1.03809 9.99027 1.03809 8.21053C1.03809 6.43078 1.74509 4.72394 3.00355 3.46547C4.26202 2.207 5.96887 1.5 7.74861 1.5C9.52835 1.5 11.2352 2.207 12.4937 3.46547C13.7521 4.72394 14.4591 6.43078 14.4591 8.21053V8.21053Z"
-                                stroke="#266df1" stroke-width="1.57895" stroke-linecap="round">
-                            </path>
-                        </svg>
+                        <?php get_template_part('svgs/searchBtn') ?>
                     </a>
                     <!-- Fullscreen Search Bar -->
                     <div id="fullscreenSearch" class="fixed top-0 right-0 w-0 h-0 bg-blue1 bg-opacity-70 flex justify-center items-center z-50 overflow-hidden transition-all duration-500">

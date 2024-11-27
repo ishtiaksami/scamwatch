@@ -35,7 +35,7 @@ if (have_posts()):
             </div>
         </section>
         <section class="block-pad">
-            <div class="holder">
+            <div class="holder space-y-4">
                 <?php
                 the_post();
                 the_content();

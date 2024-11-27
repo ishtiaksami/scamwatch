@@ -15,11 +15,17 @@ if (have_posts()) :
     while (have_posts()) :
         the_post(); ?>
 
-        <div id="main-content" class="holder ">
+        <div id="main-content" class="holder">
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                <!-- Post Title -->
-                <h1 class="font-bold pt-4 uppercase"><?php the_title(); ?></h1>
+                <div class="pb-4">
+                    <?php if ($is_front_page) : ?>
+                        <h1 class="text-[64px] font-lato font-normal leading-[-0.48px]"><?php esc_html(the_title()); ?></h1>
+                    <?php else : ?>
+                        <h2 class="text-[64px] font-lato font-normal leading-[-0.48px]"><?php esc_html(the_title()); ?></h2>
+                    <?php endif; ?>
+
+                </div>
 
                 <div class="pb-4">
                     <span class="post-date"><?php echo get_the_date(); ?></span>
@@ -34,7 +40,7 @@ if (have_posts()) :
                 <?php endif; ?>
 
                 <!-- Post Content -->
-                <div class="space-y-6 <?php // ksa('[&>p]:text-xl'); ?>">
+                <div class="space-y-6">
                     <?php the_content(); ?>
                 </div>
             </article>
