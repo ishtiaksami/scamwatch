@@ -15,10 +15,11 @@ body {
 }
 
 .btn {
-  @apply px-6 py-3 bg-blue1 text-white text-lg font-semibold rounded transition-all duration-500;
+  @apply px-6 py-3 text-black border-2 border-black border-solid text-lg font-semibold  transition-all duration-500 hover:bg-black hover:text-white;
 }
-.btn:hover {
-  @apply bg-bright-Orange;
+
+.btn-white {
+  @apply px-6 py-3 text-white border-white border-solid border-2 font-semibold transition-all duration-500 hover:bg-white hover:text-blue1 text-lg;
 }
 .btn:hover > svg > path {
   @apply fill-white transition-all duration-300;
