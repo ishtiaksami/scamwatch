@@ -1,0 +1,23 @@
+{
+  "name": "acf/news-letter-block",
+  "title": "News Letter Block",
+  "description": "Show a news in this block",
+  "category": "layout",
+  "icon": "",
+  "keywords": ["News", "Letter", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "news-letter-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

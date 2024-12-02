@@ -1220,6 +1220,10 @@ p{
   max-width: 100%;
 }
 
+.max-w-96{
+  max-width: 24rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }

@@ -20,10 +20,10 @@ if ($is_preview) {
                     $card_title = get_sub_field('card_title');
                     $card_description = get_sub_field('card_description');
                     $card_link = get_sub_field('card_link');
-                    ?>
+                ?>
                     <li>
                         <a href="<?php echo esc_url($card_link); ?>">
-                            <h3><?php echo esc_html($card_title); ?></h3>
+                            <h3 class="uppercase"><?php echo esc_html($card_title); ?></h3>
                             <?php if ($card_description = get_sub_field('card_description')): ?>
                                 <?php echo $card_description; ?>
                             <?php endif; ?>
@@ -37,7 +37,7 @@ if ($is_preview) {
                     $link_url = $link['url'];
                     $link_title = $link['title'];
                     $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
+                ?>
                     <a class="button" href="<?php echo esc_url($link_url); ?>"
                         target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                 <?php endif; ?>
