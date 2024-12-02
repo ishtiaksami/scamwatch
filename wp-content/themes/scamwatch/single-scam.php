@@ -23,7 +23,6 @@ if (have_posts()):
             <div class="holder w-full">
 
                 <div>
-
                     <?php if ($is_front_page) : ?>
                         <h1 class="text-[64px] font-lato font-normal text-blue1 leading-[-0.48px]"><?php esc_html(the_title()); ?></h1>
                     <?php else : ?>
