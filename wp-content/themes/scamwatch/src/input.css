@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -110,7 +110,7 @@ body {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 .accc-cards__list > li:hover::after {
-  border-color: #266df1;
+  @apply border-blue1;
 }
 
 .wp-block-image img {
@@ -123,21 +123,19 @@ body {
 }
 
 #fullscreenSearch.open {
-  width: 100%;
-  height: 100%;
+  @apply w-full h-full;
 }
 
 .no-scroll {
-  overflow: hidden; /* Disable scrolling */
+  @apply overflow-hidden;
 }
-
 
 /* .sub-menu {
  @apply  basis-2/6;
 } */
-.sub-menu li:not(.menu-item-has-title){
- @apply  mb-2 transition-all duration-300 hover:text-blue1;
+.sub-menu li:not(.menu-item-has-title) {
+  @apply mb-2 transition-all duration-300 hover:text-blue1;
 }
-.sub-menu .menu-item-has-title{
- @apply  font-semibold mb-4;
+.sub-menu .menu-item-has-title {
+  @apply font-semibold mb-4;
 }

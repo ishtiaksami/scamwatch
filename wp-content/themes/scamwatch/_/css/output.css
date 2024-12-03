@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300&display=swap");
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -1218,10 +1218,6 @@ p{
 
 .max-w-full{
   max-width: 100%;
-}
-
-.max-w-96{
-  max-width: 24rem;
 }
 
 .flex-1{
@@ -3767,8 +3763,9 @@ body{
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-.accc-cards__list > li:hover::after {
-  border-color: #266df1;
+.accc-cards__list > li:hover::after{
+  --tw-border-opacity: 1;
+  border-color: rgb(38 109 241 / var(--tw-border-opacity));
 }
 
 .wp-block-image img{
@@ -3782,14 +3779,13 @@ body{
   transition: all 0.5s ease-in-out;
 }
 
-#fullscreenSearch.open {
-  width: 100%;
+#fullscreenSearch.open{
   height: 100%;
+  width: 100%;
 }
 
-.no-scroll {
+.no-scroll{
   overflow: hidden;
-  /* Disable scrolling */
 }
 
 /* .sub-menu {

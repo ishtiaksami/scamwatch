@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<header class="relative">
+    <header class="relative">
         <div class="bg-blue1 py-1">
             <div class="holder">
                 <ul
@@ -27,7 +27,6 @@
                 </ul>
             </div>
         </div>
-
         <div class="holder flex justify-between gap-8 items-center py-2 ">
             <a href="#" class="w-14 h-14">
                 <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
@@ -148,8 +147,6 @@
             </div>
 
         </div>
-
-
     </header>
     <!-- end of the header section -->
 
