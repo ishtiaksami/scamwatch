@@ -949,6 +949,10 @@ p{
   margin-top: 2rem;
 }
 
+.mb-11{
+  margin-bottom: 2.75rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1897,6 +1901,12 @@ p{
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -2966,6 +2976,10 @@ p{
   line-height: 1rem;
 }
 
+.text-\[2\.75rem\]{
+  font-size: 2.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -3084,6 +3098,10 @@ p{
 
 .leading-tight{
   line-height: 1.25;
+}
+
+.leading-\[100\%\]{
+  line-height: 100%;
 }
 
 .tracking-1\.5{

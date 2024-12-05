@@ -95,7 +95,7 @@
         $defaults = array(
             'theme_location' => 'footer_menu',
             'menu' => 'footer_menu',
-            'menu_class' => 'hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-4  [&>li>a:hover]:text-orange-500 [&>li>a]:duration-500 [&>li>a]:after-effect [&>li>a]:relative [&>li>a]:after:bg-white',
+            'menu_class' => 'hidden md:flex justify-between items-center gap-10 border-b border-white text-white pb-4 [&>li>a:hover]:text-orange-500 [&>li>a]:duration-500 [&>li>a]:after-effect [&>li>a]:relative [&>li>a]:after:bg-white',
             'menu_id' => 'footer-nav',
             'container' => 'ul'
         );
@@ -117,7 +117,12 @@
             class="text-white flex justify-between j items-center pt-2 space-y-5 md:space-y-0">
 
             <a href="" class="w-14 h-14">
-                <img src="/wp-content/themes/scamwatch/_/img/logo.png" alt="">
+                <?php
+                $footer_logo = get_field('footer_logo', 'options');
+                if ($footer_logo) : ?>
+                    <img src="<?php echo esc_url($footer_logo['url']); ?>" alt="<?php echo esc_attr($footer_logo['alt']); ?>">
+                <?php endif; ?>
+
             </a>
 
             <div>
