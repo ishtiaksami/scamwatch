@@ -1,0 +1,23 @@
+{
+  "name": "acf/container-block",
+  "title": "Container Block",
+  "description": "Container block",
+  "category": "layout",
+  "icon": "book",
+  "keywords": ["container", "block"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "container-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}

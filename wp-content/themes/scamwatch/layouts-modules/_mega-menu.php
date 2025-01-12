@@ -20,7 +20,7 @@ if (!empty($menu)) :
                     <?php if (!empty($menu_item['submenu'])) : ?>
 
                         <div id="mega-menu"
-                            class="bg-gray-100 absolute left-0 top-full w-full shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-50">
+                            class="bg-gray-100 absolute left-0 top-[90%] w-full shadow-md py-10 opacity-0 pointer-events-none ease-in-out flex justify-center transition-all duration-500 z-50">
 
 
                             <div>

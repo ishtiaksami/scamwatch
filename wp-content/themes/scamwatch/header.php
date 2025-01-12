@@ -41,11 +41,7 @@
                         </a>
                     </h2>
                 <?php endif; ?>
-
-
                 <?php require(get_template_directory() . '/layouts-modules/_mega-menu.php'); ?>
-
-
                 <div class="flex items-center gap-6">
                     <!-- Search Icon -->
                     <a href="#" class="searchBtn" id="openSearch">

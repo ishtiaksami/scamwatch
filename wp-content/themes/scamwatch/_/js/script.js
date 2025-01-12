@@ -74,7 +74,7 @@ document.addEventListener("click", (event) => {
   if (!scamLink.contains(event.target) && !megaMenu.contains(event.target)) {
     megaMenu.classList.remove(
       "opacity-100",
-      "pointer-events-auto",
+      "pointer-events-auto"
       // "translate-y-2"
     );
   }
@@ -85,7 +85,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     megaMenu.classList.remove(
       "opacity-100",
-      "pointer-events-auto",
+      "pointer-events-auto"
       // "translate-y-2"
     );
   }
