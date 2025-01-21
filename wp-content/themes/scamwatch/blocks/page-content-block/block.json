@@ -1,0 +1,23 @@
+{
+  "name": "acf/page-content-block",
+  "title": "Page Content Block",
+  "description": "show a content of a page in this block",
+  "category": "layout",
+  "icon": "text-page",
+  "keywords": ["Page", "Intro", "Block"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "page-content-block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "mode": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "is_preview": true
+    }
+  }
+}
