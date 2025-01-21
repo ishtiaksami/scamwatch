@@ -4,7 +4,7 @@
   "description": "show a content of a page in this block",
   "category": "layout",
   "icon": "text-page",
-  "keywords": ["Page", "Intro", "Block"],
+  "keywords": ["Page", "Content", "Block"],
   "acf": {
     "mode": "edit",
     "renderTemplate": "page-content-block.php"
