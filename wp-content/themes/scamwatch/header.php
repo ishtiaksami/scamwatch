@@ -48,7 +48,7 @@
                         <?php get_template_part('svgs/searchBtn') ?>
                     </a>
                     <!-- Fullscreen Search Bar -->
-                    <div id="fullscreenSearch" class="fixed top-0 right-0 w-0 h-0 bg-blue1 bg-opacity-70 flex justify-center items-center z-50 overflow-hidden transition-all duration-500">
+                    <div id="fullscreenSearch" class="fixed top-0 right-0 w-0 h-0 bg-darkNavy bg-opacity-70 flex justify-center items-center z-50 overflow-hidden transition-all duration-500">
                         <div class="w-full max-w-3xl px-4">
                             <input
                                 type="text"
@@ -62,9 +62,9 @@
                             <!-- Hamburger Icon (Mobile) -->
                             <div class="lg:hidden flex items-center">
                                 <button onclick="toggleMenu()" class="outline-none mobile-menu-button relative">
-                                    <span id="line1" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out"></span>
-                                    <span id="line2" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
-                                    <span id="line3" class="block w-6 h-0.5 bg-blue1 transition-all duration-500 ease-in-out mt-1.5"></span>
+                                    <span id="line1" class="block w-6 h-0.5 bg-darkNavy transition-all duration-500 ease-in-out"></span>
+                                    <span id="line2" class="block w-6 h-0.5 bg-darkNavy transition-all duration-500 ease-in-out mt-1.5"></span>
+                                    <span id="line3" class="block w-6 h-0.5 bg-darkNavy transition-all duration-500 ease-in-out mt-1.5"></span>
                                 </button>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
 
         <?php else: ?>
             <section
-                class="bg-blue1 relative py-[60px] md:py-[100px] flex flex-col justify-center" style="background-image:url('<?php echo esc_url(get_field('banner_image')); ?>'); background-size: auto 500px !important; background-position: bottom 0 right 120px; background-repeat:no-repeat;">
+                class="bg-darkNavy relative py-[60px] md:py-[100px] flex flex-col justify-center" style="background-image:url('<?php echo esc_url(get_field('banner_image')); ?>'); background-size: auto 500px !important; background-position: bottom 0 right 120px; background-repeat:no-repeat;">
                 <div class="holder relative z-10 w-full">
                     <?php if ($banner_title = get_field('banner_title')) : ?>
                         <div class="max-w-[600px]">

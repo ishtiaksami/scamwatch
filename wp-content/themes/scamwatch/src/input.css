@@ -15,18 +15,18 @@ body {
 }
 
 .btn {
-  @apply px-6 py-3 text-black border-2 border-black border-solid text-lg font-semibold  transition-all duration-500 hover:bg-black hover:text-white;
+  @apply px-6 py-3 text-darkNavy border-2 border-darkNavy border-solid text-lg font-semibold  transition-all duration-500 hover:bg-darkNavy hover:text-white;
 }
 
 .btn-white {
-  @apply px-6 py-3 text-white border-white border-solid border-2 font-semibold transition-all duration-500 hover:bg-white hover:text-blue1 text-lg;
+  @apply px-6 py-3 text-white border-white border-solid border-2 font-semibold transition-all duration-500 hover:bg-white hover:text-darkNavy text-lg;
 }
 .btn:hover > svg > path {
   @apply fill-white transition-all duration-300;
 }
 
 .after-effect::after {
-  @apply bg-black bottom-[-2px] content-[""] h-[2px] right-0 absolute w-0 transition-all duration-300;
+  @apply bg-darkNavy bottom-[-2px] content-[""] h-[2px] right-0 absolute w-0 transition-all duration-300;
 }
 
 .after-effect:hover::after {
@@ -85,11 +85,11 @@ body {
   @apply bg-gray3;
 }
 .accc-cards__list a:hover {
-  @apply border-l-blue1 shadow-custom1 transition-all duration-300;
+  @apply border-l-darkNavy shadow-custom1 transition-all duration-300;
 }
 
 .accc-cards__list a:hover h3 {
-  @apply decoration-blue1 hover:underline transition-all duration-300;
+  @apply decoration-darkNavy hover:underline transition-all duration-300;
 }
 .accc-cards__list > li::after {
   position: absolute;
@@ -107,7 +107,7 @@ body {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 .accc-cards__list > li:hover::after {
-  @apply border-blue1;
+  @apply border-darkNavy;
 }
 
 .wp-block-image img {
@@ -132,7 +132,7 @@ body {
  @apply  basis-2/6;
 } */
 .sub-menu li:not(.menu-item-has-title) {
-  @apply mb-2 transition-all duration-300 hover:text-blue1;
+  @apply mb-2 transition-all duration-300 hover:text-darkNavy;
 }
 .sub-menu .menu-item-has-title {
   @apply font-semibold mb-4;

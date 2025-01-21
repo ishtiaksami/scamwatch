@@ -17,7 +17,7 @@ if ($is_preview) {
             <?php endif; ?>
 
             <?php if ($block_title) : ?>
-                <h2 class="text-center text-blue1 mt-4"> <?php echo esc_html($block_title); ?></h2>
+                <h2 class="text-center text-darkNavy mt-4"> <?php echo esc_html($block_title); ?></h2>
             <?php endif; ?>
         <?php endif; ?>
         <div class="grid md:grid-cols-3 gap-10 justify-center text-center md:text-left pt-10">

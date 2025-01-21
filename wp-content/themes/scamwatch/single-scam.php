@@ -24,9 +24,9 @@ if (have_posts()):
 
                 <div>
                     <?php if ($is_front_page) : ?>
-                        <h1 class="text-[64px] font-lato font-normal text-blue1 leading-[-0.48px]"><?php esc_html(the_title()); ?></h1>
+                        <h1 class="text-[64px] font-lato font-normal text-darkNavy leading-[-0.48px]"><?php esc_html(the_title()); ?></h1>
                     <?php else : ?>
-                        <h2 class="text-[64px] font-lato font-normal text-blue1 leading-[-0.48px]"><?php esc_html(the_title()); ?></h2>
+                        <h2 class="text-[64px] font-lato font-normal text-darkNavy leading-[-0.48px]"><?php esc_html(the_title()); ?></h2>
                     <?php endif; ?>
 
                 </div>

@@ -9,7 +9,7 @@ if (!empty($menu)) :
 ?>
 
     <nav class="md:block hidden py-2 px-4 ">
-        <ul class="flex justify-center items-center gap-4 md:gap-8 xl:gap-10 [&>li>a]:text-blue1 [&>li>a]:font-medium [&>li>a]:text-xs xl:[&>li>a]:text-base [&>li>a]:uppercase [&>li>a]:tracking-normal">
+        <ul class="flex justify-center items-center gap-4 md:gap-8 xl:gap-10 [&>li>a]:text-darkNavy [&>li>a]:font-medium [&>li>a]:text-xs xl:[&>li>a]:text-base [&>li>a]:uppercase [&>li>a]:tracking-normal">
             <?php
             foreach ($menu_array as $menu_item) :
                 $hide_cta_button = get_field('hide_cta_button', $menu_item['menu_id']);

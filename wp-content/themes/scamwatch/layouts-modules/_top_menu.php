@@ -1,4 +1,4 @@
-<div class="bg-blue1 py-2.5">
+<div class="bg-darkNavy py-2.5">
     <div class="holder">
         <!-- <ul
             class="flex justify-end items-center gap-4 md:gap-10 [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:text-sm [&>li>a]:tracking-normal">

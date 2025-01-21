@@ -12,7 +12,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "70",
                 "class": "",
                 "id": ""
             },
@@ -22,6 +22,23 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_678f5e6d44f53",
+            "label": "Cta Button",
+            "name": "cta_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
         },
         {
             "key": "field_6739d20165ba8",
@@ -63,5 +80,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1731853499
+    "modified": 1737449117
 }

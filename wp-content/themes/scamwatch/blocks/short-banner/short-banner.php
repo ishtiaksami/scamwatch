@@ -14,7 +14,7 @@ if ($is_preview) {
         <div class="max-w-[550px]">
 
             <?php if ($banner_title = get_field('banner_title')): ?>
-                <h2 class="text-5xl font-bold text-blue1 leading-tight"><?php echo esc_html($banner_title); ?></h2>
+                <h2 class="text-5xl font-bold text-darkNavy leading-tight"><?php echo esc_html($banner_title); ?></h2>
             <?php endif; ?>
 
         </div>

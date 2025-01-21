@@ -25,7 +25,7 @@ $thumb_url = has_post_thumbnail($post_id) ? get_the_post_thumbnail_url($post_id,
                     while ($query->have_posts()):
                         $query->the_post(); ?>
                         <a href="<?php the_permalink(); ?>"
-                            class="relative block bg-white shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1">
+                            class="relative block bg-white shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-darkNavy">
                             <figure class="w-full">
                                 <div class="overflow-hidden group">
                                     <img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" src="<?php the_post_thumbnail_url('url'); ?>"
@@ -42,7 +42,7 @@ $thumb_url = has_post_thumbnail($post_id) ? get_the_post_thumbnail_url($post_id,
                                 </figcaption>
                             </figure>
 
-                            <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
+                            <div class=" absolute bottom-0 right-0 bg-darkNavy py-2 px-3">
                                 <?php get_template_part('/svgs/arrow-right') ?>
                             </div>
                         </a>
@@ -60,7 +60,7 @@ $thumb_url = has_post_thumbnail($post_id) ? get_the_post_thumbnail_url($post_id,
                     foreach ($posts as $post):
                         setup_postdata($post); ?>
                         <a href="<?php the_permalink(); ?>"
-                            class="relative block bg-white shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-blue1 ">
+                            class="relative block bg-white shadow-custom1 transition-all hover:shadow-custom2 rounded-md w-full  border-b-[5px] border-darkNavy ">
                             <figure class="w-full">
                                 <div class=" overflow-hidden group">
                                     <img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" src="<?php the_post_thumbnail_url('url'); ?>"
@@ -77,7 +77,7 @@ $thumb_url = has_post_thumbnail($post_id) ? get_the_post_thumbnail_url($post_id,
                                 </figcaption>
                             </figure>
 
-                            <div class=" absolute bottom-0 right-0 bg-blue1 py-2 px-3">
+                            <div class=" absolute bottom-0 right-0 bg-darkNavy py-2 px-3">
                                 <?php get_template_part('/svgs/arrow-right') ?>
                             </div>
                         </a>

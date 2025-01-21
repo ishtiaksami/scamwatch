@@ -58,7 +58,7 @@ if ($is_preview) {
 
             <aside class="basis-1/4 grow-0 shrink-0 max-w-1/4 order-3 hidden md:block">
                 <div
-                    class=" bg-gray2 relative py-6 pr-6 pl-8 mb-10 shadow-custom3 border border-gray3 after:border-[0.5rem] after:border-blue1 after:absolute after:top-0 after:left-0 after:block after:h-full ">
+                    class=" bg-gray2 relative py-6 pr-6 pl-8 mb-10 shadow-custom3 border border-gray3 after:border-[0.5rem] after:border-darkNavy after:absolute after:top-0 after:left-0 after:block after:h-full ">
                     <p>Subscribe for email alerts on the latest scams. </p>
                     <a class="btn !p-2 !text-sm !mt-5 inline-block" href="#">Subscribe to email alerts</a>
                 </div>

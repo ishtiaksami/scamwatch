@@ -1,6 +1,6 @@
 </div>
 <!-- Start of the footer section -->
-<footer class="bg-blue1 py-8">
+<footer class="bg-darkNavy py-8">
     <div class="holder">
         <div class="md:hidden border-b-2 border-white text-white pb-4 space-y-3">
 
