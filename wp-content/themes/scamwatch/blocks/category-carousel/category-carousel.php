@@ -24,7 +24,7 @@ if ($is_preview) {
             </div>
         </div>
         <div class="swiper cardSlider !overflow-visible">
-            <div class="swiper-wrapper flex gap-4">
+            <div class="swiper-wrapper gap-2">
                 <?php
                 $category = get_field('category');
 

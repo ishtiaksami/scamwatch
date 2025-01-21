@@ -11,7 +11,7 @@ module.exports = {
         custom4: '0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)',
       },
       maxWidth: {
-        siteWidth: "1512px",
+        siteWidth: "1712px",
       },
 
       Spacing: {
@@ -42,7 +42,8 @@ module.exports = {
       },
       colors: {
         'lightBlue': "#3a79ff",
-        'blue1': "#266df1",
+        'blue1': "#050523",
+        'blue2': "#266df1",
         'gray1': "#e9e9e4",
         'gray2': "#fbf3f1",
         'gray3': "#fafafa",

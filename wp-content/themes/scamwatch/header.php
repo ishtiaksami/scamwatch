@@ -52,7 +52,7 @@
                         <div class="w-full max-w-3xl px-4">
                             <input
                                 type="text"
-                                placeholder="Search..."
+                                placeholder="<?php echo get_field('search_placeholder_text') ?: 'Search...'; ?>"
                                 class="w-full p-4 bg-white rounded-lg shadow-lg text-gray-800 text-lg focus:outline-none" />
                             <button id="closeSearch" class="absolute top-4 right-4 text-white text-4xl">&times;</button>
                         </div>
