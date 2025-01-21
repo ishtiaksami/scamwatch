@@ -39,16 +39,16 @@ body {
   } */
 
   h1 {
-    @apply text-5xl font-normal leading-none font-raleway tracking-wide;
+    @apply text-5xl font-normal leading-none font-lato tracking-wide;
   }
   h2 {
-    @apply text-4xl font-bold leading-none font-raleway tracking-wide;
+    @apply text-4xl font-bold leading-none font-lato tracking-wide;
   }
   h3 {
-    @apply text-2xl font-bold leading-none font-raleway tracking-wide;
+    @apply text-2xl font-bold leading-none font-lato tracking-wide;
   }
   h4 {
-    @apply text-xl font-bold leading-none font-raleway tracking-wide;
+    @apply text-xl font-bold leading-none font-lato tracking-wide;
   }
 
   p {

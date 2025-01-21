@@ -9,11 +9,15 @@ if ($is_preview) {
 <!-- start of Page Intro Block  -->
 <section class="block-pad <?php echo isset($block['className']) ? $block['className'] : ''; ?>" id="<?php echo isset($block['anchor']) ? $block['anchor'] : $block['id']; ?>">
     <div class="holder">
-        <div>
-            <h2></h2>
-            <div>
-                <p></p>
-            </div>
+        <div class="space-y-4">
+            <?php if ($block_title = get_field('block_title')) : ?>
+                <h2><?php echo esc_html($block_title); ?> </h2>
+            <?php endif; ?>
+
+            <?php if ($content = get_field('content')) : ?>
+                <?php echo $content; ?>
+            <?php endif; ?>
+
         </div>
     </div>
 </section>

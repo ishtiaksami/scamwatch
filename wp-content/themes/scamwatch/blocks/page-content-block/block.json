@@ -1,9 +1,9 @@
 {
   "name": "acf/page-content-block",
   "title": "Page Content Block",
-  "description": "show a content of a page in this block",
+  "description": "show a Content text of a page in this block",
   "category": "layout",
-  "icon": "text-page",
+  "icon": "text-view",
   "keywords": ["Page", "Content", "Block"],
   "acf": {
     "mode": "edit",
