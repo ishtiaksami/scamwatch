@@ -138,32 +138,35 @@ body {
   @apply font-semibold mb-4;
 }
 
-body .gform_title {
-  @apply hidden;
+.cursor {
+  @apply w-10 h-10 opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 rounded-full border border-sky-400 bg-sky-400 pointer-events-none z-50 transition-all ease-out duration-200 animate-moveCursor1;
 }
 
-body .gfield .gform-theme--foundation .gfield .ginput_password.large,
-.gform-theme--foundation .gfield input.large,
-.gform-theme--foundation .gfield select.large {
-  @apply border-b-[1px] border-[#33333333] text-[#333333] shadow-none bg-transparent text-[14px] md:text-base rounded-none border-t-0 border-l-0 border-r-0 pl-0;
-}
-/* body .gfield .gform-theme--framework .gfield_list_group_item::before, .gform-theme--framework .gform-field-label:where(:not([class*=gform-field-label--type-])){
-  @apply !leading-[110%] !font-normal !mb-[-28px] !text-[14px] md:!text-base !text-[#333333];
-} */
-body .gfield textarea {
-  @apply border-b-[1px] border-[#33333333] text-[#333333] shadow-none bg-transparent text-[14px] md:text-base rounded-none border-t-0 border-l-0 border-r-0 pl-0;
+.expand {
+  @apply bg-transparent animate-moveCursor2 border border-yellow-400;
 }
 
-body .contact-form button,
-input:where([type="button"]),
-input:where([type="reset"]),
-input:where([type="submit"]) {
-  @apply !text-xs !uppercase !leading-[140%] !tracking-[0.0375rem] border !bg-transparent !border-brightEmerald !text-brightEmerald !min-w-[11.375rem] md:!min-w-[13.25rem] !py-3 md:!py-4 !px-8 !pb-2.5 md:!pb-3 !text-center !transition-all duration-300 hover:!text-white hover:!bg-brightEmerald !inline-block !rounded-none;
+@keyframes moveCursor1 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
 }
-body .gform-theme--foundation .gform_footer,
-.gform-theme--foundation .gform_page_footer {
-  @apply justify-center mt-10;
+
+@keyframes moveCursor2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2.5);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
-/* body .gform-theme--foundation .gform_fields{
-  @apply gap-[30px];
-} */

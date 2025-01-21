@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+<div class="cursor"></div>
     <!-- start of the header section -->
     <header class=" bg-white">
         <?php require(get_template_directory() . '/layouts-modules/_top_menu.php'); ?>

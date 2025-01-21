@@ -35,7 +35,7 @@ if (have_posts()) :
                 <!-- Featured Image -->
                 <?php if (has_post_thumbnail()) : ?>
                     <div class="">
-                        <?php the_post_thumbnail('full'); ?>
+                        <?php // the_post_thumbnail('full'); ?>
                     </div>
                 <?php endif; ?>
 

@@ -3840,6 +3840,82 @@ body{
   font-weight: 600;
 }
 
+.cursor{
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  height: 2.5rem;
+  width: 2.5rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes moveCursor1{
+  0%{
+    transform: scale(1);
+  }
+
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+.cursor{
+  animation: moveCursor1 0.5s infinite alternate;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(56 189 248 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+  opacity: 0.5;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes moveCursor2{
+  100%{
+    transform: scale(2);
+  }
+}
+
+.expand{
+  animation: moveCursor2 0.5s forwards;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
+  background-color: transparent;
+}
+
+@keyframes moveCursor1 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes moveCursor2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2.5);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
